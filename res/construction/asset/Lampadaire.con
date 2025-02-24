@@ -35,8 +35,8 @@ local panneauOneModel = {
 
 local panneauTwoModel = {
     "assets/empty.mdl",
-    "assets/panneau_indicateur_dir_both.mdl",
-    "assets/panneau_indicateur_train.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_dir_both.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_train.mdl",
 }
 
 function data()

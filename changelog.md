@@ -1,8 +1,12 @@
+# 24/02/2025
+- Réorganisation des dossiers des assets
+
 # 23/02/2025
 
 - Ajout en assets des quais 1,2,3,4,5,6
-- Ajou des panneau indicateur sur les lampadaires
+- Ajout des panneaux indicateur sur les lampadaires
 
+---
 # Présentable Infra
 ## Gare PDL
 - Ancenis
