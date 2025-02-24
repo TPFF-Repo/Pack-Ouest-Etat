@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.51860046386719, -1.9953622754088e-08, 1.8050202131271, },
+		bbMin = { -0.51860046386719, -0.017401894554496, 1.5949798822403, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.51860046386719, 0.0087009370326996, 0.10502016544342, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_sortie.mtl", },
+						mesh = "assets/panneau_sortie_lod0.msh",
+						name = "panneau_sortie",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, -3.7063578872676e-08, 1.7000000476837, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 86.526336669922,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

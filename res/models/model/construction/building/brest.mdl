@@ -1,0 +1,148 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 30.98784828186, 50.327857971191, 37.26188659668, },
+		bbMin = { -29.367719650269, -50.327861785889, -0.089004993438721, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 30.177783966064, 50.327857971191, 18.675445556641, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/brest/batiment_a.mtl", },
+						mesh = "construction/building/brest/batiment_a_lod0.msh",
+						name = "batiment_a",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.075250625610352, 32.258644104004, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_c.mtl", },
+						mesh = "construction/building/brest/batiment_c_lod0.msh",
+						name = "batiment_c",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -19.367897033691, -34.189502716064, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_b.mtl", },
+						mesh = "construction/building/brest/batiment_b_lod0.msh",
+						name = "batiment_b",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 23.594329833984, -8.4966840744019, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/panneau.mtl", },
+						mesh = "construction/building/brest/nom_gare_lod0.msh",
+						name = "nom_gare",
+						transf = { -1, -1.5099580252809e-07, -9.2458253069811e-24, 0, 1.5099580252809e-07, -1, 4.3711388286738e-08, 0, -6.6002361555513e-15, 4.3711388286738e-08, 1, 0, -0.038400650024414, 50.030536651611, 4.9291315078735, 1, },
+					},
+					{
+						materials = { "construction/building/brest/panneau.mtl", },
+						mesh = "construction/building/brest/panneau_parking_lod0.msh",
+						name = "panneau_parking",
+						transf = { -4.3711388286738e-08, -1, -6.1232342629258e-17, 0, 3.6734198463196e-40, 6.1232342629258e-17, -1, 0, 1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 27.345922470093, 40.744552612305, 3.273627281189, 1, },
+					},
+					{
+						materials = { "construction/building/brest/panneau.mtl", },
+						mesh = "construction/building/brest/panneau_sortie_lod0.msh",
+						name = "panneau_sortie",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 8.6633939743042, 16.316555023193, 3.4505181312561, 1, },
+					},
+					{
+						materials = { "construction/building/brest/panneau.mtl", },
+						mesh = "construction/building/brest/panneau_autre_lod0.msh",
+						name = "panneau_autre",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 2.7458686828613, 16.392917633057, 3.2312467098236, 1, },
+					},
+					{
+						materials = { "construction/building/brest/panneau.mtl", },
+						mesh = "construction/building/brest/panneau_entree_lod0.msh",
+						name = "panneau_entree",
+						transf = { 0.85756033658981, -0.51438337564468, -3.1496896982594e-17, 0, 0, 6.1232342629258e-17, -1, 0, 0.51438337564468, 0.85756033658981, 5.2510427827769e-17, 0, 7.4630317687988, 45.194171905518, 3.4843063354492, 1, },
+					},
+					{
+						materials = { "construction/building/brest/panneau.mtl", },
+						mesh = "construction/building/brest/panneau_ter_lod0.msh",
+						name = "panneau_ter",
+						transf = { 0.8762514591217, -0.48185414075851, -2.9505055993734e-17, 0, 0, 6.1232342629258e-17, -1, 0, 0.48185414075851, 0.8762514591217, 5.3654924849464e-17, 0, 7.3395085334778, 44.8879737854, 0.36983942985535, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_tour.mtl", },
+						mesh = "construction/building/brest/batiment_tour_lod0.msh",
+						name = "batiment_tour",
+						transf = { 0.77715957164764, 0.62930357456207, 3.8533729071028e-17, 0, 0, 6.1232342629258e-17, -1, 0, -0.62930357456207, 0.77715957164764, 4.7587300284759e-17, 0, 14.74462890625, 39.529655456543, -2.3841857910156e-07, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/brest/batiment_a.mtl", },
+						mesh = "construction/building/brest/batiment_a_lod1.msh",
+						name = "batiment_a",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.075250625610352, 32.258644104004, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_c.mtl", },
+						mesh = "construction/building/brest/batiment_c_lod1.msh",
+						name = "batiment_c",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -19.367897033691, -34.189502716064, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_b.mtl", },
+						mesh = "construction/building/brest/batiment_b_lod1.msh",
+						name = "batiment_b",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 23.594329833984, -8.4966840744019, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_tour.mtl", },
+						mesh = "construction/building/brest/batiment_tour_lod1.msh",
+						name = "batiment_tour",
+						transf = { 0.77715957164764, 0.62930357456207, 3.8533729071028e-17, 0, 0, 6.1232342629258e-17, -1, 0, -0.62930357456207, 0.77715957164764, 4.7587300284759e-17, 0, 14.74462890625, 39.529655456543, -2.3841857910156e-07, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 750,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/brest/batiment_c.mtl", },
+						mesh = "construction/building/brest/batiment_c_lod1.msh",
+						name = "batiment_c",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -19.367897033691, -34.189502716064, 0, 1, },
+					},
+					{
+						materials = { "construction/building/brest/batiment_b.mtl", },
+						mesh = "construction/building/brest/batiment_b_lod1.msh",
+						name = "batiment_b",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 23.594329833984, -8.4966840744019, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 750,
+			visibleTo = 1000,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,42 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.16886672377586, 0.16886615753174, 3.6691250801086, },
+		bbMin = { -0.16886557638645, -0.16886615753174, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.16886615753174, 0.16886615753174, 1.8345625400543, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/lampadaire_la_forest.mtl", "assets/vitre_lampadaire_la_forest.mtl", },
+						mesh = "assets/lampadaire_la_forest_lod0.msh",
+						name = "lampadaire_la_forest",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/lampe.mtl", },
+						mesh = "assets/lampe_lampadaire_la_forest_lod0.msh",
+						name = "lampe_lampadaire_la_forest",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 239.04125976563,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

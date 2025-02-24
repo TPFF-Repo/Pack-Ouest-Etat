@@ -1,0 +1,73 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.72000002861023, 0.061408504843712, 1.8999999761581, },
+		bbMin = { -0.72001671791077, -0.061408437788486, 2.1055921783616e-18, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.7200083732605, 0.061408471316099, 0.94999998807907, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_gare.mtl", },
+						mesh = "assets/panneau_gare_support_double/panneau_lod0.msh",
+						name = "panneau",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.75, -0.064890280365944, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 349.76275634766,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 14, 1.2000000476837, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.70999997854233, -0.070000000298023, 1.7599999904633, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 1.3999999761581, 0.11999999731779, },
+					transf = { -1, -8.7422776573476e-08, 0, 0, -3.8213709303294e-15, 4.3711388286738e-08, 1, 0, -8.7422776573476e-08, 1, -4.3711388286738e-08, 0, 0.70999997854233, 0.070000000298023, 1.7599999904633, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end

@@ -1,0 +1,85 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.039999961853, 0.018605411052704, 3.2348184585571, },
+		bbMin = { -1.0599999427795, -0.016394639387727, 2.9348182678223, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.5, 0.017500024288893, 0.15000009536743, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_indicateur_dir_left/panneau_indicateur.mtl", },
+						mesh = "assets/panneau_indicateur_dir_left/panneau_indicateur_dir_left_lod0.msh",
+						name = "panneau_indicateur_dir_left",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0.54095089435577, 0.018605386838317, 3.0848183631897, 1, },
+					},
+					{
+						materials = { "assets/panneau_indicateur_dir_right/panneau_indicateur.mtl", },
+						mesh = "assets/panneau_indicateur_dir_right/panneau_indicateur_dir_right_lod0.msh",
+						name = "panneau_indicateur_dir_right",
+						transf = { 1, 0, 0, 0, -0, 1, 1.6292065652124e-07, 0, 0, -1.6292065652124e-07, 1, 0, -0.52999997138977, 0.018605386838317, 3.0848183631897, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100.2308883667,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "RIGHT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "CUSTOM",
+					fitting = "SCALE",
+					nLines = 1,
+					params = {
+                    	expr = "([A-Za-z0-9]+)?( ([A-Za-z0-9]+))?",
+                    	replace = "\\1",
+                    },
+					renderMode = "STD",
+					size = { 68.849998474121, 14.050000190735, },
+					transf = { 0.0099999997764826, 0, 0, 0, 0, -4.3711387287537e-10, 0.0099999997764826, 0, 0, -0.0099999997764826, -4.3711387287537e-10, 0, 0.070000000298023, -0.019999999552965, 2.9500000476837, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "CUSTOM",
+					fitting = "SCALE",
+					nLines = 1,
+					params = {
+                    						expr = "([A-Za-z0-9]+)?( ([A-Za-z0-9]+))?",
+                    						replace = "\\2",
+                    					},
+					renderMode = "STD",
+					size = { 68.849998474121, 14.050000190735, },
+					transf = { 0.0099999997764826, 0, 0, 0, 0, -4.3711387287537e-10, 0.0099999997764826, 0, 0, -0.0099999997764826, -4.3711387287537e-10, 0, -0.79000002145767, -0.019999999552965, 2.9500000476837, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end

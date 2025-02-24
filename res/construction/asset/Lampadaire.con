@@ -1,0 +1,166 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+local function map(a, f)
+	local res = {}
+	if a and type(a) =="table" then
+		for _, v in ipairs(a) do
+			table.insert(res, f(v))
+		end
+	end
+	return res
+end
+
+local function intRange(start, stop, step)
+	local a = {}
+	local i = start
+	while i <= stop do
+		table.insert(a, i)
+		i = i + step
+	end
+	return a
+end
+local degrees = intRange(-180,180, 1)
+
+local lampModel = {
+    "assets/lampadaire/lampadaire_generique_ouest.mdl",
+    "assets/lampadaire/lampadaire_double_generique_ouest.mdl",
+    "assets/lampadaire/lampadaire_la_forest.mdl",
+}
+
+local panneauOneModel = {
+    "assets/empty.mdl",
+    "assets/panneau_sortie.mdl",
+}
+
+local panneauTwoModel = {
+    "assets/empty.mdl",
+    "assets/panneau_indicateur_dir_both.mdl",
+    "assets/panneau_indicateur_train.mdl",
+}
+
+function data()
+    return {
+        type = "ASSET_TRACK",
+        buildMode = "MULTI",
+        description = {
+            name = _("Lampadaire"),
+            icon = "ui/construction/asset/Lampadaire.tga"
+        },
+        categories = {"Gares Ouest-Etat"},
+        skipCollision = true,--false,
+        autoRemovable = false,
+        order = 4404,
+        params = {
+            {
+                key = "model_lamp",
+                name = _("Lampadaire"),
+                uiType = "COMBOBOX",
+                values = {
+                    _("Lampadaire Générique Ouest"),
+                    _("Lampadaire Générique Ouest Double"),
+                    _("Lampadaire La Forest"),
+                },
+                defaultIndex = 0,
+            },
+            {
+                key = "model_panneau_1",
+                name = _("Panneau Supplémentaire 1"),
+                uiType = "BUTTON",
+                values = {
+                    _("Aucun"),
+                    _("Panneau Sortie"),
+                },
+                defaultIndex = 0,
+            },
+            {
+                key = "model_panneau_2",
+                name = _("Panneau Supplémentaire 2"),
+                uiType = "BUTTON",
+                values = {
+                    _("Aucun"),
+                    _("Panneau Direction"),
+                    _("Panneau Train"),
+                },
+                defaultIndex = 0,
+            },
+            {
+            	key = "positiony_gare",
+            	name = _("Position"), --translate on string.lua
+            	uiType = "BUTTON",
+            	values = { _("Gauche"), _("Droite") },
+            	tooltip = _(""),
+            	defaultIndex = 0,
+            },
+            {
+            	key = "offsetz",
+            	name = _("Hauteur"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+            	key = "offsety",
+            	name = _("Distance de la voie"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+            	key = "offsetx",
+            	name = _("Espacement"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+        },
+        updateFn = function(params)
+            local result = {}
+            result.models = { }
+            local modelLamp = lampModel[params.model_lamp+1]
+            local modelOnePanneau = panneauOneModel[params.model_panneau_1+1]
+            local modelTwoPanneau = panneauTwoModel[params.model_panneau_2+1]
+
+            local grad = 0
+            local height = 0
+            local shiftm = 0
+            local spacingm = 0
+            local offsetz = intRange(-500, 500, 5)[params.offsetz+1]/100
+            local offsety = intRange(-500, 500, 5)[params.offsety+1]/100
+            local offsetx = intRange(-500, 500, 5)[params.offsetx+1]/100
+
+
+             -- Règle la valeur d'espacement de l'asset
+            if params.positiony_gare == 0 then shiftm = -5 end
+            if params.positiony_gare == 0 then height = 1 end
+            if params.positiony_gare == 1 then shiftm = 5 end
+            if params.positiony_gare == 1 then height = 1 end
+
+            result.models[#result.models + 1] = {id=modelLamp, transf = transf.rotZYXTransl(transf.degToRad(0,0,0), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}
+            result.models[#result.models + 1] = {id=modelOnePanneau, transf = transf.rotZYXTransl(transf.degToRad(0,0,0), vec3.new(spacingm+offsetx, shiftm+offsety+(-0.05), height+offsetz))}
+            result.models[#result.models + 1] = {id=modelTwoPanneau, transf = transf.rotZYXTransl(transf.degToRad(degrees[180],0,0), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}
+
+            result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+
+            result.groundFaces = {
+            	{
+            	face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+            	modes = {
+            		{
+            		  type = "FILL",
+            		  key = "industry_floor.lua"
+            		}
+            	},
+            	loop = true,
+            	alignmentOffsetMode = "OBJECT",
+            	alignmentDirMode = "OBJECT",
+            	alignmentOffset = { -2.0, -1.0 },
+            	},
+            }
+
+
+            return result
+
+        end
+    }
+end

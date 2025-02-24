@@ -1,0 +1,143 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+local function map(a, f)
+    local res = {}
+    if a and type(a) == "table" then
+        for _, v in ipairs(a) do
+            table.insert(res, f(v))
+        end
+    end
+    return res
+end
+
+local function intRange(start, stop, step)
+    local a = {}
+    local i = start
+    while i <= stop do
+        table.insert(a, i)
+        i = i + step
+    end
+    return a
+end
+
+local degrees = intRange(-180, 180, 1)
+
+local models = {
+    "assets/abri_velo/abri_velo_baule.mdl",
+    "assets/abri_velo/abri_velo_baule_2.mdl",
+}
+
+function data()
+    return {
+        type = "ASSET_TRACK",
+        buildMode = "MULTI",
+        description = {
+            name = _("Abri de Vélo"),
+            icon = "ui/construction/asset/abri_velo.tga"
+        },
+        categories = { "Gares Ouest-Etat" },
+        skipCollision = true, --false,
+        autoRemovable = false,
+        order = 4406,
+        params = {
+            {
+                key = "type_abri",
+                name = _("Type"),
+                uiType = "COMBOBOX",
+                values = {
+                    _("Abri Velo Baule-Escoublac"),
+                    _("Abri Velo Baule-Escoublac 2"),
+                },
+                defaultIndex = 0,
+            },
+            {
+                key = "positiony_abri",
+                name = _("Position"), --translate on string.lua
+                uiType = "BUTTON",
+                values = { _("Gauche"), _("Droite") },
+                tooltip = _(""),
+                defaultIndex = 0,
+            },
+            {
+                key = "offsetz",
+                name = _("Hauteur"),
+                values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
+            },
+            {
+                key = "offsety",
+                name = _("Distance de la voie"),
+                values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
+            },
+            {
+                key = "offsetx",
+                name = _("Espacement"),
+                values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
+            },
+            {
+                key = "zRotate",
+                name = _("Rotation Z"),
+                values = map(degrees, function(i) return "" .. i .. " °" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#degrees / 2),
+            },
+            {
+                key = "Assets_terrainAlignment",
+                name = _("Alignement de terrain"),
+                values = { _("Yes"), _("No") },
+                defaultIndex = 1
+            }
+        },
+        updateFn = function(params)
+            local result = {}
+            result.models = {}
+            local model = models[params.type_abri + 1]
+            local grad = 0
+            local height = 0
+            local shiftm = 0
+            local spacingm = 0
+            local offsetz = intRange(-500, 500, 5)[params.offsetz + 1] / 100
+            local offsety = intRange(-500, 500, 5)[params.offsety + 1] / 100
+            local offsetx = intRange(-500, 500, 5)[params.offsetx + 1] / 100
+            local zRotate = degrees[params.zRotate + 1]
+
+
+
+            -- Règle la valeur d'espacement de l'asset
+            if params.positiony_abri == 0 then shiftm = -5 end
+            if params.positiony_abri == 0 then height = 1 end
+            if params.positiony_abri == 1 then shiftm = 5 end
+            if params.positiony_abri == 1 then height = 1 end
+
+            result.models = { { id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz)) } }
+
+            result.groundFaces = {
+                {
+                    face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+                    modes = {
+                        {
+                            type = "FILL",
+                            key = "industry_floor.lua"
+                        }
+                    },
+                    loop = true,
+                    alignmentOffsetMode = "OBJECT",
+                    alignmentDirMode = "OBJECT",
+                    alignmentOffset = { -2.0, -1.0 },
+                },
+            }
+
+            if params.Assets_terrainAlignment == 1 then
+                result.terrainAlignmentLists = { { type = "GREATER", faces = {} } }
+            end
+
+            return result
+        end
+    }
+end

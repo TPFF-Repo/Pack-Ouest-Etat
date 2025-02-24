@@ -1,0 +1,59 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.995096206665, 1.4178432226181, 1.8250204324722, },
+		bbMin = { -2.0120801925659, -1.3816820383072, 0.00099842250347137, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.0035881996155, 1.3997626304626, 0.91201102733612, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_velo_baule_2/abri_2.mtl", },
+						mesh = "assets/abri_velo_baule_2/abri_velo_lod0.msh",
+						name = "abri_velo",
+						transf = { 1, 0, 0, 0, 0, -0.031393978744745, -0.99950706958771, 0, 0, 0.99950706958771, -0.031393978744745, 0, -0.0084919929504395, 0.015582203865051, 1.6220463514328, 1, },
+					},
+					{
+						materials = { "assets/abri_velo_baule_2/abri_2.mtl", },
+						mesh = "assets/abri_velo_baule_2/arceaux_lod0.msh",
+						name = "arceaux",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, -1.3348010778427, 0.97257894277573, 0.15944685041904, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_velo_baule_2/abri_2.mtl", },
+						mesh = "assets/abri_velo_baule_2/abri_velo_lod0.msh",
+						name = "abri_velo",
+						transf = { 1, 0, 0, 0, 0, -0.031393978744745, -0.99950706958771, 0, 0, 0.99950706958771, -0.031393978744745, 0, -0.0084919929504395, 0.015582203865051, 1.6220463514328, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 1000,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

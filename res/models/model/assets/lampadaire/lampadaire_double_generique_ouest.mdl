@@ -1,0 +1,42 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.15656667947769, 0.34434187412262, 3.9620802402496, },
+		bbMin = { -0.15656667947769, -0.34434187412262, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.15656667947769, 0.34434187412262, 1.9810401201248, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/lampadaire_generique_ouest.mtl", },
+						mesh = "assets/lampadaire_double_generique_ouest_lod0.msh",
+						name = "lampadaire_double_generique_ouest",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/lampe.mtl", },
+						mesh = "assets/lampe_lampadaire_double_generique_ouest_lod0.msh",
+						name = "lampe_lampadaire_double_generique_ouest",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 311.87240600586,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

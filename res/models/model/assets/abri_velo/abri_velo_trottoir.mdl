@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 22.5, 5.0463824272156, 0.25, },
+		bbMin = { -22.5, -7.9536180496216, -3.9801022047273e-16, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 22.5, 6.5, 0.125, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_velo_trottoir/trottoir.mtl", },
+						mesh = "assets/abri_velo_trottoir/trottoir_lod0.msh",
+						name = "trottoir",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -1.4536180496216, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4422.041015625,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

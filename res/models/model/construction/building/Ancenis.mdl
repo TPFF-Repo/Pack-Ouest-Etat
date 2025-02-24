@@ -1,0 +1,246 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 18.145589828491, 6.2500004768372, 15.616786956787, },
+		bbMin = { -18.118104934692, -6.2499990463257, -0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 15, 0, 7.8083934783936, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/ancenis/beton.mtl", "construction/building/ancenis/tuiles.mtl", "construction/building/ancenis/toiture_metal.mtl", },
+						mesh = "construction/building/ancenis/gare_lod0.msh",
+						name = "ancenis",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/orange_jointure_ardoise.mtl", },
+						mesh = "construction/building/ancenis/jointures_ardoises_lod0.msh",
+						name = "jointures_ardoises",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/brique.mtl", "construction/building/ancenis/orange_jointure_ardoise.mtl", },
+						mesh = "construction/building/ancenis/cheminees_lod0.msh",
+						name = "cheminees",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/toiture_metal.mtl", },
+						mesh = "construction/building/ancenis/details_lod0.msh",
+						name = "details",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/beton.mtl", "construction/building/ancenis/toiture_metal.mtl", },
+						mesh = "construction/building/ancenis/moulures_lod0.msh",
+						name = "moulures",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/gris.mtl", },
+						mesh = "construction/building/ancenis/cadres_fenetres_lod0.msh",
+						name = "cadres_fenetres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/details_fenetres.mtl", },
+						mesh = "construction/building/ancenis/fentres_lod0.msh",
+						name = "fentres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/toiture_metal.mtl", },
+						mesh = "construction/building/ancenis/gouttieres_lod0.msh",
+						name = "gouttieres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/ecrito.mtl", "construction/building/ancenis/logo_sncf_2011.mtl", },
+						mesh = "construction/building/ancenis/ecrito_ancenis_lod0.msh",
+						name = "ecrito_ancenis",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/ancenis/support_ecrito.mtl", },
+						mesh = "construction/building/ancenis/support_ecrito_lod0.msh",
+						name = "support_ecrito",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/cadre_horloge_lod0.msh",
+								name = "horloge",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/horloges_sncf/accroche_et_mat_horloge_sncf.mtl", },
+								mesh = "construction/horloges_sncf/accroche_murale_horloge_sncf_lod0.msh",
+								name = "accroche_murale_horloge",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									seconds = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/seconds/era_c_seconds_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/trotteuse_lod0.msh",
+								name = "trotteuse",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/minutes_lod0.msh",
+								name = "minutes",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/heures_lod0.msh",
+								name = "heures",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									seconds = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/seconds/era_c_seconds_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/trotteuse_lod0.msh",
+								name = "trotteuse",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0.15999999642372, 2.5, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/minutes_lod0.msh",
+								name = "minutes",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0.15999999642372, 2.5, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/heures_lod0.msh",
+								name = "heures",
+								transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, 0, 0.15999999642372, 2.5, 1, },
+							},
+						},
+						name = "GRP_horloge_1",
+						transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 6.5799999237061, 2.4000000953674, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "construction/horloges_sncf/cadre_horloge_simple_lod0.msh",
+								name = "horloge",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									seconds = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/seconds/era_c_seconds_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/trotteuse_lod0.msh",
+								name = "trotteuse",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/minutes_lod0.msh",
+								name = "minutes",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },
+								mesh = "construction/horloges_sncf/heures_lod0.msh",
+								name = "heures",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+						},
+						name = "GRP_horloge_2",
+						transf = { 1.3999999761581, 0, 0, 0, -0, 1.3999999761581, 0, 0, 0, -0, 1.3999999761581, 0, 0, -6.0199999809265, 0.94999998807907, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -5.7199997901917, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4569.4287109375,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.4837694168091, 1.905769109726, 3.0371398925781, },
+		bbMin = { -6.4834985733032, -1.9056167602539, 0.25, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.4836339950562, 1.9056929349899, 1.3935699462891, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_velo_1/abri.mtl", },
+						mesh = "assets/abri_velo_1/abri_lod0.msh",
+						name = "abri",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -6.4373588562012, 1.8743090629578, 0.25, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1299.8305664063,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

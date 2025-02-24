@@ -1,0 +1,87 @@
+--déclarer ici le mdl de chaque variante
+local variant_0 = "construction/building/gare_saverne.mdl"
+local variant_1 = "construction/building/gare_saverne_generique.mdl"
+local variant_2 = "construction/building/gare_brumath.mdl"
+local variant_3 = "construction/building/gare_brumath_generique.mdl"
+local variant_4 = "construction/building/gare_hochfelden.mdl"
+local variant_5 = "construction/building/gare_hochfelden_generique.mdl"
+local variant_6 = "construction/building/gare_liverdun.mdl"
+local variant_7 = "construction/building/gare_liverdun_generique.mdl"
+local variant_8 = "construction/building/ancienne_gare_rechicourt.mdl"
+function data()
+
+return {
+	type = "ASSET_DEFAULT", -- Permet d'aimanter l'asset au rail
+
+	description = {
+		name = _("Gare située entre Strasbourg et Sarrebourg"), -- voir fichier string.lua
+	},
+	availability =
+	{
+		yearFrom = 2000,
+	},
+	buildMode = "MULTI",
+	categories = {"CMF"}, -- Bien laisser "SNCF", et joindre le fichier .TGA dans res/texture/ui/construction/categories
+	order = 72, -- Permet de mettre un ordre dans la liste. Je suis parti de 100 pour les miennes(?). Mettre <100 pour être avant, >100 pour être après
+	skipCollision = true,
+	autoRemovable = false,
+
+	params = {
+		{
+			key = "height",
+			name = _("asset_height"), --Strings: ["asset_height"] = "Hauteur",
+			values = { _("asset_height_ground") } --Strings:	["asset_height_ground"] = "Sol",
+		}, -- La hauteur de l'asset, à hauteur de rail ou au niveau du sol
+		{
+			key = "spacing",
+			name = _("asset_spacing"), --Strings: ["asset_spacing"] = "Espacement",
+			values = {_("0"),}
+		}, -- Option d'espacement entre les assets
+		{
+		key = "variant",
+		name = _("asset_variants"), --Strings: ["asset_variants"] = "Variantes",
+		uiType = "ICON_BUTTON",
+		values = { _("ui/models_small/construction/building/gare_saverne@1x.tga"), --0
+					_("ui/models_small/construction/building/gare_saverne_generique@1x.tga"), --1
+					_("ui/models_small/construction/building/gare_brumath@1x.tga"), --2
+					_("ui/models_small/construction/building/gare_brumath_generique@1x.tga"), --3
+					_("ui/models_small/construction/building/gare_hochfelden@1x.tga"), --4
+					_("ui/models_small/construction/building/gare_hochfelden_generique@1x.tga"), --5
+					_("ui/models_small/construction/building/gare_liverdun@1x.tga"), --6
+					_("ui/models_small/construction/building/gare_liverdun_generique@1x.tga"), --7
+					_("ui/models_small/construction/building/ancienne_gare_rechicourt@1x.tga"), --8		
+				},
+		}, --[[ Les icones du menu d'achat pour selectionner l'asset.
+		Bien utiliser l'image dans models_small, celle de modèle_20 est trop petite. Adapter selon les variantes présentes.]]
+	},
+
+	updateFn = function(params)
+		local result = { }
+		result.models = { }
+		local grad = 0
+		local height = 0
+		local shiftm = 0
+		local spacingm = 0
+
+		if params.height == 0 then height = 0 end -- Règle la hauteur pour le paramètre de hauteur du rail
+
+		if params.spacing == 0 then spacingm = 0 end
+
+-- Pour chaque valeur d'espacement, ajouter chaque variante, cf. la liste au début. par exemple id = variant_0 correspond au mdl de la première variante
+
+	--Espacement 0
+		if ( params.spacing == 0 ) and ( params.variant == 0 ) then result.models[#result.models+1] = { id = variant_0, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 1 ) then result.models[#result.models+1] = { id = variant_1, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 2 ) then result.models[#result.models+1] = { id = variant_2, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 3 ) then result.models[#result.models+1] = { id = variant_3, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 4 ) then result.models[#result.models+1] = { id = variant_4, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 5 ) then result.models[#result.models+1] = { id = variant_5, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 6 ) then result.models[#result.models+1] = { id = variant_6, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 7 ) then result.models[#result.models+1] = { id = variant_7, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		if ( params.spacing == 0 ) and ( params.variant == 8 ) then result.models[#result.models+1] = { id = variant_8, transf = { 1, 0, grad, 0, 0, 1, 0, 0, grad, 0, 1, 0, spacingm, shiftm, height, 1 } } end
+		result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+		return result
+	end
+}
+
+end

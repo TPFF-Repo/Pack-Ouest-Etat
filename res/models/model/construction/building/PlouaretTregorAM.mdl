@@ -1,0 +1,106 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 19, 0, 10.60000038147, },
+		bbMin = { -15, -20.200000762939, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 8.3540573120117, 15.014999389648, 4.9080419540405, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/plouaret/beton.mtl", "construction/building/plouaret/details_batiment.mtl", "construction/building/plouaret/pierre.mtl", "construction/building/plouaret/panneau_danger.mtl", "construction/building/plouaret/panneau_danger_2.mtl", },
+						mesh = "construction/building/plouaret/plouaret_tregor_lod0.msh",
+						name = "plouaret_tregor",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -5.2800002098083, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/plouaret/gouttierres_grises.mtl", "construction/building/plouaret/gouttierres_blanches.mtl", },
+						mesh = "construction/building/plouaret/gouttierres_lod0.msh",
+						name = "gouttierres",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -5.2800002098083, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/plouaret/pierre.mtl", "construction/building/plouaret/contour_fenetres.mtl", "construction/building/plouaret/gris_pierre.mtl", },
+						mesh = "construction/building/plouaret/details_lod0.msh",
+						name = "details",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -5.2800002098083, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/plouaret/toiture.mtl", "construction/building/plouaret/toiture_poste.mtl", "construction/building/plouaret/gris_fonce_1.mtl", "construction/building/plouaret/gris_fonce_2.mtl", },
+						mesh = "construction/building/plouaret/toiture_lod0.msh",
+						name = "toiture",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -5.2800002098083, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/plouaret/clim.mtl", },
+						mesh = "construction/building/plouaret/clim_lod0.msh",
+						name = "clim",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -5.2800002098083, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/plouaret/toit_quai_plouaret_tregor.mtl", },
+						mesh = "construction/building/plouaret/toit_quai_plouaret_tregor_lod0.msh",
+						name = "toit_quai_plouaret_tregor",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -5.2800002098083, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/commun/support.mtl", "construction/building/commun/muret_support.mtl", },
+						mesh = "construction/building/plouaret/support_plouaret_tregor_lod0.msh",
+						name = "support",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4460.27734375,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 17, -20.299999237061, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 17, -17.10000038147, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 17, -17.10000038147, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 17, 0, 0.85000002384186, },
+							{ 1.4500000476837, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

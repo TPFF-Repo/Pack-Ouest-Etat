@@ -1,0 +1,76 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.4211912155151, 6.2445812225342, 10.67764377594, },
+		bbMin = { -5.4090127944946, -6.3256106376648, 0.0077652931213379, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.4151020050049, 6.2850961685181, 5.3349390029907, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/montauban/Toit.mtl", "construction/building/montauban/Goutierre.mtl", "construction/building/montauban/Faitage.mtl", "construction/building/montauban/BriqueToit.mtl", "construction/building/montauban/Crepi.mtl", "construction/building/montauban/PierreBlanche.mtl", "construction/building/montauban/PierreBase.mtl", "construction/building/montauban/Metal.mtl", "construction/building/montauban/Ouvertures/Signe.mtl", },
+						mesh = "construction/building/montauban/Batiment.001_lod0.msh",
+						name = "Batiment",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1999998092651, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/commun/support.mtl", },
+						mesh = "construction/building/montauban/support_montauban_lod0.msh",
+						name = "Support",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2719.1762695313,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ -1.8, -14.25, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1.8, -10.449999809265, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1.8, -10.449999809265, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1.8, 0, 0.85000002384186, },
+							{ 1.4500000476837, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

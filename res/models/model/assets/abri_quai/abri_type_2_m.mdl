@@ -1,0 +1,48 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.4473795890808, 1.271959900856, 2.8883905410767, },
+		bbMin = { -3.4408116340637, -1.1902890205383, 0.010330677032471, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 3.4440956115723, 1.2311244010925, 1.4390299320221, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_type_2_sm/abri_type_2_sm.mtl", },
+						mesh = "assets/abri_type_2_sm/Objet002_lod0.msh",
+						name = "Objet002",
+						transf = { -1.0316512799591e-07, -0.63322299718857, -3.8773727253954e-17, 0, 1.4693735437217e-39, 6.1232342629258e-17, -1, 0, 0.63322299718857, -1.0316512799591e-07, -6.3170423289811e-24, 0, 2.9370436668396, 1.189759850502, 2.6404824256897, 1, },
+					},
+					{
+						materials = { "assets/abri_type_2_sm/abri_type_2_sm.mtl", },
+						mesh = "assets/abri_type_2_sm/toit001_lod0.msh",
+						name = "toit001",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -1.7178831100464, 0.0012735605705529, 2.8566949367523, 1, },
+					},
+					{
+						materials = { "assets/abri_type_2_sm/abri_type_2_sm.mtl", },
+						mesh = "assets/abri_type_2_sm/toit002_lod0.msh",
+						name = "toit002",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 1.7244510650635, 0.0012735605705529, 2.8566949367523, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1.5, 0, 0, 0, -0, 2, 0, 0, 0, -0, 1.1000000238419, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 853.53240966797,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

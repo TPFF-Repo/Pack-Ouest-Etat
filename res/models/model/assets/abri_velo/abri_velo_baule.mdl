@@ -1,0 +1,54 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 22.700000762939, 5.1500000953674, 5.2138500213623, },
+		bbMin = { -22.64999961853, -8.1999998092651, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 22.5, 5.0017533302307, 2.6069250106812, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/hauvent_abri_velo/hauvent_abri.mtl", },
+						mesh = "assets/hauvent_abri_velo/hauvent_abri_lod0.msh",
+						name = "hauvent_abri",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -1.3716422664345e-08, 4.4638500213623, 1, },
+					},
+					{
+						materials = { "assets/abri_velo_trottoir/trottoir.mtl", },
+						mesh = "assets/abri_velo_trottoir/trottoir_lod0.msh",
+						name = "trottoir",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -1.4536180496216, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_velo_1/abri.mtl", },
+						mesh = "assets/abri_velo_1/abri_lod0.msh",
+						name = "abri",
+						transf = { 1, 0, 0, 0, 0, -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, -21.069999694824, 4.8099999427795, 0.25, 1, },
+					},
+					{
+						materials = { "assets/abri_velo_1/abri.mtl", },
+						mesh = "assets/abri_velo_1/abri_lod0.msh",
+						name = "abri",
+						transf = { -1, -6.2783294652036e-07, 0, 0, -2.7443449056763e-14, 4.3711388286738e-08, -1, 0, 6.2783294652036e-07, -1, -4.3711388286738e-08, 0, 8.2399997711182, 1.0900000333786, 0.25, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3920.1806640625,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,177 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+local function map(a, f)
+	local res = {}
+	if a and type(a) =="table" then
+		for _, v in ipairs(a) do
+			table.insert(res, f(v))
+		end
+	end
+	return res
+end
+
+local function intRange(start, stop, step)
+	local a = {}
+	local i = start
+	while i <= stop do
+		table.insert(a, i)
+		i = i + step
+	end
+	return a
+end
+
+local degrees = intRange(-180,180, 5)
+
+local tradTypeQuai = {
+    "25_simple",
+    "25_simple_end",
+    "base",
+    "base_bordure",
+    "double",
+    "double_20m",
+    "double_end",
+    "simple",
+    "simple_20m",
+    "simple_bordure",
+    "simple_end"
+}
+
+function data()
+    return {
+        description = {
+            name = _("Plateforme"),
+            icon = "ui/construction/asset/quai.tga"
+        },
+        type = "ASSET_TRACK",
+        buildMode = "MULTI",
+        categories = {"Gares Ouest-Etat"},
+        skipCollision = true,--false,
+        autoRemovable = true,
+        order = 4409,
+        params = {
+            {
+            	key = "model_quai",
+            	name = _("Modele de Quai"),
+            	uiType = "ICON_BUTTON",
+            	values = {
+            	    _("ui/parameters/quai/quai_1.tga"),
+            	    _("ui/parameters/quai/quai_2.tga"),
+            	    _("ui/parameters/quai/quai_3.tga"),
+            	    _("ui/parameters/quai/quai_4.tga"),
+            	    _("ui/parameters/quai/quai_5.tga"),
+            	    _("ui/parameters/quai/quai_6.tga"),
+            	 },
+            	tooltip = _("Choisissez le model de quai"),
+            	defaultIndex = 0,
+            },
+            {
+            	key = "type_quai",
+            	name = _("Type de Quai"),
+            	uiType = "BUTTON",
+            	values = {
+            	    _("2,5m simple"),
+            	    _("2,5m simple fin de quai"),
+            	    _("base"),
+            	    _("base + bordure"),
+            	    _("double"),
+            	    _("double 20m"),
+            	    _("double fin de quai"),
+            	    _("simple"),
+            	    _("simple 20m"),
+            	    _("simple bordure"),
+            	    _("simple fin de quai"),
+            	},
+            	tooltip = _(""),
+            	defaultIndex = 0,
+            },
+            {
+            	key = "position_quai",
+            	name = _("Position"), --translate on string.lua
+            	uiType = "BUTTON",
+            	values = { _("Gauche"), _("Droite") },
+            	tooltip = _(""),
+            	defaultIndex = 0,
+            },
+            {
+            	key = "offsetz",
+            	name = _("Hauteur"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+            	key = "offsety",
+            	name = _("Distance de la voie"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+            	key = "offsetx",
+            	name = _("Espacement"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+                key = "zRotate",
+                name = _("Rotation Z"),
+                values = map(degrees, function(i) return ""..i.." °"  end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#degrees/2),
+            },
+            {
+                key = "Assets_terrainAlignment",
+                name = _("Alignement de terrain"),
+                values = { _("Yes"), _("No") },
+                defaultIndex = 1
+            }
+        },
+        updateFn = function(params)
+            local result = {}
+            local modelQuai = params.model_quai+1
+            local typeQuai = tradTypeQuai[params.type_quai+1]
+            result.models = { }
+            local grad = 0
+            local height = 0
+            local shiftm = 0
+            local spacingm = 0
+            local offsetz = intRange(-500, 500, 5)[params.offsetz+1]/100
+            local offsety = intRange(-500, 500, 5)[params.offsety+1]/100
+            local offsetx = intRange(-500, 500, 5)[params.offsetx+1]/100
+            local zRotate = degrees[params.zRotate+1]
+
+            -- Règle la valeur d'espacement de l'asset
+            if params.position_quai == 0 then shiftm = -5 end
+            if params.position_quai == 0 then height = 1 end
+            if params.position_quai == 1 then shiftm = 5 end
+            if params.position_quai == 1 then height = 1 end
+
+            -- Inscription du modèle de quai
+            result.models = {{id = "assets/quai/quai_"..modelQuai.."_"..typeQuai..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+
+            result.groundFaces = {
+                {
+                face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+                modes = {
+                    {
+                        type = "FILL",
+                        key = "industry_floor.lua"
+                    }
+                },
+                loop = true,
+                alignmentOffsetMode = "OBJECT",
+                alignmentDirMode = "OBJECT",
+                alignmentOffset = { -2.0, -1.0 },
+                },
+            }
+
+            if params.Assets_terrainAlignment == 1 then
+                result.terrainAlignmentLists = { { type = "GREATER", faces =  { } } }
+            end
+
+            return result
+        end
+    }
+end

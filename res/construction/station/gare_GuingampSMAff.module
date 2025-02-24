@@ -1,0 +1,61 @@
+local vec2 = require "vec2"
+local vec3 = require "vec3"
+local transf = require "transf"
+local modulesutil = require "modulesutil"
+local trainstationutil = require "modules/trainstationutil"
+local constructionutil = require "constructionutil"
+
+function data()
+
+return { 
+	cost = {
+		price = 36000,
+	},
+	description = {
+		name = _("Gare de Guingamp"),			
+		description = _("Gare de Guingamp"),
+		icon = "ui/models_small/construction/building/GuingampSMAff@2x.tga"
+	}, 
+	availability = {
+		yearFrom = 1850,
+		yearTo = 0
+	},
+	category = {
+		categories = { "passenger buildings", },
+	},
+	type = "rail_main_building_size3",
+	order = {
+		--value = 594, --sunshine
+		--value = 592, --waldbronn
+		value = 575, --dreieichen
+	},
+	metadata = {
+		-- Building "era" (0 = a, 1 = b, 2 = c, 5 = cargo)
+		era = 0,
+		-- Building "height"
+		level = 2,
+		-- Ocupied slots (building width (in slots))
+		span = {1, 2}
+	},
+	
+	updateFn = function(result, transform, tag, slotId, addModuleFn, params)
+		local config = {
+			extend = { -32, 32, -20, 0.20, 7.76, 17, },
+			main = "construction/building/GuingampSMAff.mdl",
+
+			slotIdOffset = 1, --1!
+			translationY = 0, 
+		}
+	
+		local tran = trainstationutil.MakeMainBuildingModule(result, transform, tag, slotId, addModuleFn, params, config)
+
+	end,
+	
+	getModelsFn = function() 
+		local result = { 
+			{  id = "construction/building/GuingampSMAff.mdl", transf = transf.rotZTransl(math.rad(-90), vec3.new(10,0,-12)), }, }
+		return result
+	end
+}
+
+end

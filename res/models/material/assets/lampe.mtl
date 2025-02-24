@@ -1,0 +1,31 @@
+function data()
+return {
+	__version = "",
+	order = 0,
+	params = {
+		emissive_scale = {
+			emissiveScale = { 1, 1, 0.89999997615814, },
+		},
+		fade_out_range = {
+			fadeOutEndDist = 20000,
+			fadeOutStartDist = 10000,
+		},
+		map_emissive = {
+			fileName = "models/assets/lampe.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		polygon_offset = {
+			factor = 0,
+			forceDepthWrite = false,
+			units = 0,
+		},
+		two_sided = {
+			flipNormal = true,
+			twoSided = false,
+		},
+	},
+	type = "EMISSIVE",
+}
+end
