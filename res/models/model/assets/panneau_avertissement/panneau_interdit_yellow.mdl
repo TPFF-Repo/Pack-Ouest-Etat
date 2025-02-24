@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.7313746213913, 1.2604551315308, 2.8883905410767, },
+		bbMin = { -1.7471659183502, -1.2017937898636, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.7392702102661, 1.2311244010925, 1.4441952705383, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+                    	materials = { "assets/abri_type_1_sm/abri_type_1_sm.mtl", },
+                    	mesh = "assets/abri_type_1_sm/panneau_interdit_yellow_lod0.msh",
+                    	name = "panneau_interdit_yellow",
+                    	transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0, 0, 1, },
+                    },
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1.1000000238419, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

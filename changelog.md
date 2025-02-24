@@ -1,5 +1,6 @@
 # 24/02/2025
 - Réorganisation des dossiers des assets
+- Ajout des panneaux d'avertissement sur les lampadaires
 
 # 23/02/2025
 
