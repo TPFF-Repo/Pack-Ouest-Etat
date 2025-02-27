@@ -93,8 +93,19 @@ return {
 		{
             key = "variant_gares",
             name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-            uiType = "COMBOBOX",
-            values = { _("Guingamp AM"), _("Guingamp AM Aff"), _("Guingamp SM"), _("Guingamp SM Aff"), _("Lamballe SM"), _("Montauban"), _("Montauban2"), _("Montauban3"), _("PlouaretTregorAM"), _("Brest"),}
+            uiType = "ICON_BUTTON",
+            values = {
+                _("ui/parameters/building/GuingampAM.tga"),
+                _("ui/parameters/building/GuingampAMAff.tga"),
+                _("ui/parameters/building/GuingampSM.tga"),
+                _("ui/parameters/building/GuingampSMAff.tga"),
+                _("ui/parameters/building/LamballeSM.tga"),
+                _("ui/parameters/building/Montauban.tga"),
+                _("ui/parameters/building/Montauban2.tga"),
+                _("ui/parameters/building/Montauban3.tga"),
+                _("ui/parameters/building/PouaretTregorAM.tga"),
+                _("ui/parameters/building/brest.tga"),
+            }
 		},
 	},
 

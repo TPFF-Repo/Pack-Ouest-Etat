@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.2886409759521, 0.00951705314219, 0.31065458059311, },
+		bbMin = { -1.2886409759521, -0.00951705314219, -0.31065440177917, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.2886409759521, 0.00951705314219, 0.31065449118614, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "asset/panneau/panneau_gare_fr_bre_white/panneau.mtl", },
+						mesh = "asset/panneau/panneau_gare_fr_bre_white/panneau_lod0.msh",
+						name = "panneau",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 1.9022096829176e-17, -0.31065440177917, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 231.96856689453,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
