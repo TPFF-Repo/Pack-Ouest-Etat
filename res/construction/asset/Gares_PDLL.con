@@ -47,7 +47,18 @@ return {
 	order = 4402,       --order of your loco will appear
 	skipCollision = true,
 	autoRemovable = false, --se supprime tous seul quand la voie s'enléve.
-	params = {	
+	params = {
+
+	    {
+    	    key = "variant_gares",
+    	    name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+    	    uiType = "ICON_BUTTON",
+    	    values = {
+                    _("ui/parameters/building/Ancenis.tga"),
+                    _("ui/parameters/building/Cholet.tga"),
+                    _("ui/parameters/building/Possoniere.tga"),
+    	    },
+    	},
 	    {
 			key = "positiony_gare",
 			name = _("Position"), --translate on string.lua
@@ -84,16 +95,13 @@ return {
             uiType = "SLIDER",
             defaultIndex = math.floor(#degrees/2),
         },
-		{
-		key = "variant_gares", 
-		name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-		uiType = "ICON_BUTTON",
-		values = {
-                _("ui/parameters/building/Ancenis.tga"),
-                _("ui/parameters/building/Cholet.tga"),
-                _("ui/parameters/building/Possoniere.tga"),
-		    },
-		},
+        {
+            key = "Assets_terrainAlignment",
+            name = _("Alignement de terrain"),
+            values = { _("Yes"), _("No") },
+            defaultIndex = 1
+        }
+
 	},
 
 	updateFn = function(params)
@@ -117,27 +125,28 @@ return {
 		if params.positiony_gare == 1 then height = 1 end
 			
 	--Transf du modele
-    result.models = {{id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
-		
-	
-		result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
-		
-		result.groundFaces = {
-			{  
-			face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
-			modes = {
-				{
-				  type = "FILL",               
-				  key = "industry_floor.lua"
-				}
-			},
-			loop = true,
-			alignmentOffsetMode = "OBJECT",
-			alignmentDirMode = "OBJECT",
-			alignmentOffset = { -2.0, -1.0 },
-		   
-			},
-		}
+        result.models = {{id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+
+        result.groundFaces = {
+            {
+                face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+                modes = {
+                    {
+                        type = "FILL",
+                        key = "industry_floor.lua"
+                    }
+                },
+                loop = true,
+                alignmentOffsetMode = "OBJECT",
+                alignmentDirMode = "OBJECT",
+                alignmentOffset = { -2.0, -1.0 },
+            },
+        }
+
+        if params.Assets_terrainAlignment == 1 then
+            result.terrainAlignmentLists = { { type = "GREATER", faces =  { } } }
+        end
+
 		return result
 	end
 }
