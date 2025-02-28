@@ -1,0 +1,127 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 21.677791595459, 5.3465461730957, 9.0737705230713, },
+		bbMin = { -21.677795410156, -5.3462705612183, -1.0331657307461e-08, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 21.677793502808, 5.346408367157, 4.5368852615356, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/Rosporden/crepi_rose.mtl", },
+						mesh = "construction/building/Rosporden/crepi_rose_lod0.msh",
+						name = "crepi_rose",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/plastic.mtl", },
+						mesh = "construction/building/Rosporden/plastic_lod0.msh",
+						name = "plastic",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/terracota.mtl", },
+						mesh = "construction/building/Rosporden/terracota_lod0.msh",
+						name = "terracota",
+						transf = { -4.3711387287537e-10, 0.0099999997764826, 6.1232339527331e-19, 0, -0.0099999997764826, -4.3711387287537e-10, 4.3711387287537e-10, 0, 4.3711387287537e-10, 1.8494530960657e-17, 0.0099999997764826, 0, -14.096639633179, -0.0050684483721852, 6.5443639755249, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/crepi.mtl", },
+						mesh = "construction/building/Rosporden/crepi_lod0.msh",
+						name = "crepi",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/glass.mtl", },
+						mesh = "construction/building/Rosporden/glass_lod0.msh",
+						name = "glass",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/toit_haut.mtl", },
+						mesh = "construction/building/Rosporden/toit_haut_lod0.msh",
+						name = "toit_haut",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/toit.mtl", },
+						mesh = "construction/building/Rosporden/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/mur_brique.mtl", },
+						mesh = "construction/building/Rosporden/mur_lod0.msh",
+						name = "mur",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/metal.mtl", },
+						mesh = "construction/building/Rosporden/metal_lod0.msh",
+						name = "metal",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/Rosporden/metal.mtl", },
+						mesh = "construction/building/Rosporden/gris_lod0.msh",
+						name = "gris",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3987.83203125,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.04810456931591, 0.069895692169666, 0.090196073055267, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 17.85000038147, 1.75, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, 4.0999999046326, -5.0799999237061, 3.6400001049042, 1, },
+					type = "NAME",
+					verticalAlignment = "TOP",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.04810456931591, 0.069895692169666, 0.090196073055267, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "EMISSIVE",
+					size = { 17.85000038147, 1.75, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, 4.3200001716614, -5.0799999237061, 3.3900001049042, 1, },
+					type = "NAME",
+					verticalAlignment = "TOP",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
