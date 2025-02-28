@@ -1,14 +1,14 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 8, 0, 11.430000305176, },
-		bbMin = { -8.1000003814697, -14.130000114441, 0, },
+		bbMax = { 6.0500001907349, 0, 11.430000305176, },
+		bbMin = { -6.0999999046326, -10.430000305176, 0, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 8.05, -7.06, 2.65, },
+			halfExtents = { 6.0749998092651, 5.2150001525879, 5.7150001525879, },
 		},
-		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.024999856948853, -5.2150001525879, 5.7150001525879, 1, },
 		type = "BOX",
 	},
 	lods = {
@@ -19,13 +19,7 @@ return {
 						materials = { "construction/building/montauban/Toit.mtl", "construction/building/montauban/Goutierre.mtl", "construction/building/montauban/Faitage.mtl", "construction/building/montauban/BriqueToit.mtl", "construction/building/montauban/Crepi.mtl", "construction/building/montauban/PierreBlanche.mtl", "construction/building/montauban/PierreBase.mtl", "construction/building/montauban/Metal.mtl", "construction/building/montauban/Ouvertures/Signe.mtl", },
 						mesh = "construction/building/montauban/Batiment.001_lod0.msh",
 						name = "Batiment",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1999998092651, 0, 0.80000001192093, 1, },
-					},
-					{
-						materials = { "construction/building/commun/support.mtl", },
-						mesh = "construction/building/montauban/support_montauban_lod0.msh",
-						name = "Support",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1999998092651, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",
@@ -44,22 +38,12 @@ return {
 					nodes = {
 						{
 							{ 0, -14.25, 0.050000000745058, },
-							{ 0, 0, 0.80000001192093, },
+							{ 0, -14.25, 0, },
 							1.5,
 						},
 						{
-							{ 0, -10.449999809265, 0.85000002384186, },
-							{ 0, 0, 0.80000001192093, },
-							1.5,
-						},
-						{
-							{ 0, -10.449999809265, 0.85000002384186, },
-							{ 0, 0, 0.80000001192093, },
-							1.5,
-						},
-						{
-							{ 0, 0, 0.85000002384186, },
-							{ 1.4500000476837, 0, 0.80000001192093, },
+							{ 0, 0, 0.050000000745058, },
+							{ 0, -14.25, 0, },
 							1.5,
 						},
 					},

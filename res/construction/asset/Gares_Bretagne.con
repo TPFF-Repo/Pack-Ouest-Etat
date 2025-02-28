@@ -23,16 +23,15 @@ end
 local degrees = intRange(-180,180, 1)
 
 local models = {
-    "construction/building/GuingampAM.mdl",
-    "construction/building/GuingampAff.mdl",
-    "construction/building/GuingampSM.mdl",
-    "construction/building/GuingampSMAff.mdl",
-    "construction/building/LamballeSM.mdl",
-    "construction/building/Montauban.mdl",
-    "construction/building/Montauban2.mdl",
-    "construction/building/Montauban3.mdl",
-    "construction/building/PlouaretTregorAM.mdl",
-    "construction/building/brest.mdl",
+    "GuingampAM",
+    "GuingampAMAff",
+    "GuingampSM",
+    "GuingampSMAff",
+    "LamballeSM",
+    "Montauban",
+    "Montauban2",
+    "Montauban3",
+    "PlouaretTregorAM",
 }
 
 function data()
@@ -63,6 +62,34 @@ return {
 			defaultIndex = 0,
 		},
 		{
+            key = "variant_gares",
+            name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+            uiType = "COMBOBOX",
+            values = {
+                _("GUINGAMP AM"),
+                _("GUINGAMP AM Aff"),
+                _("GUINGAMP SM"),
+                _("GUINGAMP SM Aff"),
+                _("LAMBALLE SM"),
+                _("MONTAUBAN"),
+                _("MONTAUBAN 2"),
+                _("MONTAUBAN 3"),
+                _("PLOUARET TREGOR AM"),
+            }
+		},
+		{
+        	key = "socle",
+        	name = _("Socle de Base"),
+        	values = { _("Oui"), _("Non") },
+        	defaultIndex = 0
+        },
+		{
+			key = "AlignTerrain",
+			name = _("Alignement terrain"),
+			values = { _("Oui"), _("Non") },
+			defaultIndex = 1
+		},
+		{
 			key = "offsetz",
 			name = _("Offset Z"),
 			values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
@@ -90,23 +117,6 @@ return {
             uiType = "SLIDER",
             defaultIndex = math.floor(#degrees/2),
         },
-		{
-            key = "variant_gares",
-            name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-            uiType = "ICON_BUTTON",
-            values = {
-                _("ui/parameters/building/GuingampAM.tga"),
-                _("ui/parameters/building/GuingampAMAff.tga"),
-                _("ui/parameters/building/GuingampSM.tga"),
-                _("ui/parameters/building/GuingampSMAff.tga"),
-                _("ui/parameters/building/LamballeSM.tga"),
-                _("ui/parameters/building/Montauban.tga"),
-                _("ui/parameters/building/Montauban2.tga"),
-                _("ui/parameters/building/Montauban3.tga"),
-                _("ui/parameters/building/PouaretTregorAM.tga"),
-                _("ui/parameters/building/brest.tga"),
-            }
-		},
 	},
 
 	updateFn = function(params)
@@ -129,26 +139,19 @@ return {
 		if params.positiony_gare == 1 then shiftm = 5 end
 		if params.positiony_gare == 1 then height = 1 end
 
-		result.models = {{id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+		if params.socle == 0 then
+		    result.models = {{id = "assets/gares/"..models[params.variant_gares+1]..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+		else
+		    result.models = {{id = "assets/gares/"..models[params.variant_gares+1].."_ss.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+		end
 	
-		result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
-		
-		result.groundFaces = {
-			{  
-			face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
-			modes = {
-				{
-				  type = "FILL",               
-				  key = "industry_floor.lua"
-				}
-			},
-			loop = true,
-			alignmentOffsetMode = "OBJECT",
-			alignmentDirMode = "OBJECT",
-			alignmentOffset = { -2.0, -1.0 },
-		   
-			},
-		}
+		 if params.AlignTerrain == 1 then
+			result.groundFaces = { { face = {  {0.001, -0.001, 0}, {-0.001, -0.001, 0}, {-0.001, 0.001, 0}, {0.001, 0.001, 0}, }, modes = { { type = "FILL", key = "ballast.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+				result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+			else
+				result.groundFaces = { { face = {  {0.001, -0.001, 0}, {-0.001, -0.001, 0}, {-0.001, 0.001, 0}, {0.001, 0.001, 0}, }, modes = { { type = "FILL", key = "ballast.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+			end
+				
 		return result
 	end
 }
