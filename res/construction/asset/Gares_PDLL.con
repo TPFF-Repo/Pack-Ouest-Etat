@@ -24,9 +24,8 @@ end
 local degrees = intRange(-180,180, 1)
 
 local models = {
-    "construction/building/Ancenis.mdl",
-    "construction/building/Cholet.mdl",
-    "construction/building/Possoniere.mdl",
+    "Ancenis",
+    "Cholet",
 }
 
 function data()
@@ -49,16 +48,7 @@ return {
 	autoRemovable = false, --se supprime tous seul quand la voie s'enléve.
 	params = {
 
-	    {
-    	    key = "variant_gares",
-    	    name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-    	    uiType = "ICON_BUTTON",
-    	    values = {
-                    _("ui/parameters/building/Ancenis.tga"),
-                    _("ui/parameters/building/Cholet.tga"),
-                    _("ui/parameters/building/Possoniere.tga"),
-    	    },
-    	},
+	    
 	    {
 			key = "positiony_gare",
 			name = _("Position"), --translate on string.lua
@@ -66,6 +56,24 @@ return {
 			values = { _("Gauche"), _("Droite") },
 			tooltip = _(""),
 			defaultIndex = 0,
+		},
+		{
+        	key = "variant_gares",
+        	name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+        	uiType = "COMBOBOX",
+        	values = { _("Ancenis"), _("Cholet")}
+        },
+        {
+        	key = "socle",
+        	name = _("Socle de Base"),
+        	values = { _("Oui"), _("Non") },
+        	defaultIndex = 0
+        },
+		{
+			key = "AlignTerrain",
+			name = _("Alignement terrain"),
+			values = { _("Oui"), _("Non") },
+			defaultIndex = 1
 		},
 		{
 			key = "offsetz",
@@ -95,12 +103,6 @@ return {
             uiType = "SLIDER",
             defaultIndex = math.floor(#degrees/2),
         },
-        {
-            key = "Assets_terrainAlignment",
-            name = _("Alignement de terrain"),
-            values = { _("Yes"), _("No") },
-            defaultIndex = 1
-        }
 
 	},
 
@@ -125,28 +127,19 @@ return {
 		if params.positiony_gare == 1 then height = 1 end
 			
 	--Transf du modele
-        result.models = {{id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
-
-        result.groundFaces = {
-            {
-                face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
-                modes = {
-                    {
-                        type = "FILL",
-                        key = "industry_floor.lua"
-                    }
-                },
-                loop = true,
-                alignmentOffsetMode = "OBJECT",
-                alignmentDirMode = "OBJECT",
-                alignmentOffset = { -2.0, -1.0 },
-            },
-        }
-
-        if params.Assets_terrainAlignment == 1 then
-            result.terrainAlignmentLists = { { type = "GREATER", faces =  { } } }
+        if params.socle == 0 then
+            result.models = {{id = "assets/gares/"..models[params.variant_gares+1]..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+        else
+            result.models = {{id = "assets/gares/"..models[params.variant_gares+1].."_ss.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
         end
 
+       if params.AlignTerrain == 1 then
+			result.groundFaces = { { face = {  {0.001, -0.001, 0}, {-0.001, -0.001, 0}, {-0.001, 0.001, 0}, {0.001, 0.001, 0}, }, modes = { { type = "FILL", key = "ballast.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+				result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+			else
+				result.groundFaces = { { face = {  {0.001, -0.001, 0}, {-0.001, -0.001, 0}, {-0.001, 0.001, 0}, {0.001, 0.001, 0}, }, modes = { { type = "FILL", key = "ballast.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+			end
+				
 		return result
 	end
 }
