@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/rosporden/toit_albedo_opacity.dds",
+			fileName = "models/building/era_b/shared/all_roof_metal_02_albedo.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 			wrapS = "REPEAT",
@@ -25,32 +25,14 @@ return {
 			wrapT = "REPEAT",
 		},
 		map_normal = {
-			fileName = "default_normal_map.dds",
+			fileName = "models/building/era_b/shared/all_roof_metal_02_normal.dds",
 			redGreen = true,
 			type = "TWOD",
-		},
-		map_op_1 = {
-			fileName = "buildings/overlay.dds",
-			type = "TWOD",
-		},
-		map_op_2 = {
-			fileName = "unknown_albedo_1k.dds",
-			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
 		},
 		normal_scale = {
-			normalScale = 1,
-		},
-		operation_1 = {
-			mode = "TEXCOORD",
-			op = "OVERLAY",
-			opacity = 1,
-			scale = { 1, 1, },
-		},
-		operation_2 = {
-			mode = "TEXCOORD",
-			op = "NO_OP",
-			opacity = 1,
-			scale = { 1, 1, },
+			normalScale = 1.4500000476837,
 		},
 		polygon_offset = {
 			factor = 0,
@@ -62,6 +44,6 @@ return {
 			twoSided = false,
 		},
 	},
-	type = "PHYSICAL_NRML_MAP_OP",
+	type = "PHYSICAL_NRML_MAP",
 }
 end
