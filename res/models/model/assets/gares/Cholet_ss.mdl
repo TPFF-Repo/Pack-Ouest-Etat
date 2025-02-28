@@ -1,12 +1,12 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 38.770000457764, 0.10000000149012, 13.60000038147, },
-		bbMin = { -38.770000457764, -38.840000152588, 0, },
+		bbMax = { 30.120000839233, 0.10000000149012, 13.60000038147, },
+		bbMin = { -30.120000839233, -14.640000343323, 0, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 38.77, -19.42, 6.3, },
+			halfExtents = { 30.120000839233, -7.25, 6.8000001907349, },
 		},
 		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 		type = "BOX",
@@ -19,37 +19,37 @@ return {
 						materials = { "construction/building/cholet/portes+fenetres.mtl", },
 						mesh = "construction/building/cholet/portes+fenetres_lod0.msh",
 						name = "portes+fenetres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/mur.mtl", },
 						mesh = "construction/building/cholet/cheminees_lod0.msh",
 						name = "cheminees",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/mur.mtl", "construction/building/cholet/toit.mtl", "construction/building/cholet/hall_verre.mtl", },
 						mesh = "construction/building/cholet/batiment_lod0.msh",
 						name = "batiment",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", "construction/building/cholet/ecrito.mtl", },
 						mesh = "construction/building/cholet/details_lod0.msh",
 						name = "details",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/moulures_gres.mtl", "construction/building/cholet/moulures_pierre.mtl", "construction/building/cholet/pierre.mtl", },
 						mesh = "construction/building/cholet/moulures_lod0.msh",
 						name = "moulures",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/metal.mtl", },
 						mesh = "construction/building/cholet/goutierres_lod0.msh",
 						name = "goutierres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						children = {
@@ -129,13 +129,7 @@ return {
 							},
 						},
 						name = "era_a_small_clock_grp",
-						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 9.6100006103516, 1, },
-					},
-					{
-						materials = { "construction/building/commun/support.mtl", },
-						mesh = "construction/building/cholet/support_cholet_lod0.msh",
-						name = "support",
-						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
+						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 8.8100004196167, 1, },
 					},
 				},
 				name = "RootNode",
@@ -152,37 +146,37 @@ return {
 						materials = { "construction/building/cholet/portes+fenetres.mtl", },
 						mesh = "construction/building/cholet/portes+fenetres_lod0.msh",
 						name = "portes+fenetres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/mur.mtl", },
 						mesh = "construction/building/cholet/cheminees_lod1.msh",
 						name = "cheminees",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/mur.mtl", "construction/building/cholet/toit.mtl", "construction/building/cholet/hall_verre.mtl", },
 						mesh = "construction/building/cholet/batiment_lod0.msh",
 						name = "batiment",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", "construction/building/cholet/ecrito.mtl", },
 						mesh = "construction/building/cholet/details_lod1.msh",
 						name = "details",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/moulures_gres.mtl", "construction/building/cholet/moulures_pierre.mtl", "construction/building/cholet/pierre.mtl", },
 						mesh = "construction/building/cholet/moulures_lod0.msh",
 						name = "moulures",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/metal.mtl", },
 						mesh = "construction/building/cholet/goutierres_lod0.msh",
 						name = "goutierres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
 						children = {
@@ -262,7 +256,7 @@ return {
 							},
 						},
 						name = "era_a_small_clock_grp",
-						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 9.6100006103516, 1, },
+						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 8.8100004196167, 1, },
 					},
 				},
 				name = "RootNode",

@@ -1,0 +1,60 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 20.85000038147, 0, 10, },
+		bbMin = { -27.64999961853, -10.39999961853, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 24.25, 5.1999998092651, 5, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.3999996185303, -5.1999998092651, 5, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/lamballe/Toit metal.mtl", "construction/building/lamballe/Toit haut.mtl", "construction/building/lamballe/Toit Bas.mtl", "construction/building/lamballe/Goutierre.mtl", "construction/building/lamballe/Pierre.mtl", "construction/building/lamballe/Crepi2.mtl", "construction/building/lamballe/Fenetre Contour.mtl", "construction/building/lamballe/Fenetre .mtl", "construction/building/lamballe/Soutien.mtl", "construction/building/lamballe/Metal.mtl", },
+						mesh = "construction/building/lamballe/LamballeSM_lod0.msh",
+						name = "LamballeSM",
+						transf = { -4.3711388286738e-08, -1, -0, 0, 1, -4.3711388286738e-08, 0, 0, -0, 0, 1, 0, 0, -0.97000002861023, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 6608.0927734375,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -15.25, 0.050000000745058, },
+							{ 1.4500000476837, -15.25, 0, },
+							1.5,
+						},
+						{
+							{ -1.4500000476837, 0, 0.050000000745058, },
+							{ 1.4500000476837, -15.25, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end
