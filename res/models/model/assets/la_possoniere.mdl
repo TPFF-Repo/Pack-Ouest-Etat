@@ -1,0 +1,54 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 27.159999847412, 5.1799998283386, 11.825684547424, },
+		bbMin = { -27.159999847412, -5.1799998283386, -5.1935895584165e-09, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 27.159999847412, 5.1799998283386, 5.9128422737122, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/la_possoniere/possoniere_batiment.mtl", },
+						mesh = "assets/la_possoniere/batiment_lod0.msh",
+						name = "batiment",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/la_possoniere/possoniere_autre.mtl", },
+						mesh = "assets/la_possoniere/Chemine_lod0.msh",
+						name = "Chemine",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -26.537477493286, 0, 5.9559564590454, 1, },
+					},
+					{
+						materials = { "assets/la_possoniere/possoniere_autre.mtl", },
+						mesh = "assets/la_possoniere/Antenna_lod0.msh",
+						name = "Antenna",
+						transf = { 0.11874837428331, -0.099641725420952, -6.1012957787197e-18, 0, 0, 9.4919314434511e-18, -0.15501500666142, 0, 0.099641725420952, 0.11874837428331, 7.2712410119606e-18, 0, -16.759405136108, -3.3143405914307, 9.1081705093384, 1, },
+					},
+					{
+						materials = { "assets/la_possoniere/possoniere_autre.mtl", },
+						mesh = "assets/la_possoniere/porte_lod0.msh",
+						name = "porte",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4719.5815429688,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
