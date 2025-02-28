@@ -1,8 +1,8 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 21.677791595459, 0, 9.1999998092651, },
-		bbMin = { -21.677795410156, -10.14999961853, 0, },
+		bbMax = { 21.677791595459, 5.3465461730957, 8.9338645935059, },
+		bbMin = { -21.677795410156, -5.3462705612183, -1.0331657307461e-08, },
 	},
 	collider = {
 		params = {
@@ -16,62 +16,56 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "construction/building/rosporden/rosporden.mtl", },
-						mesh = "construction/building/rosporden/batiment_lod0.msh",
-						name = "batiment",
+						materials = { "construction/building/rosporden/crepi_rose.mtl", },
+						mesh = "construction/building/rosporden/crepi_rose_lod0.msh",
+						name = "crepi_rose",
 						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
 					},
 					{
-						materials = { "construction/building/rosporden/rosporden.mtl", },
-						mesh = "construction/building/rosporden/Objet001_lod0.msh",
-						name = "Objet001",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/rosporden/orsporden_props.mtl", },
-						mesh = "construction/building/rosporden/fenetre_lod0.msh",
-						name = "fenetre",
+						materials = { "construction/building/rosporden/plastic.mtl", },
+						mesh = "construction/building/rosporden/plastic_lod0.msh",
+						name = "plastic",
 						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
 					},
 					{
-						materials = { "construction/building/rosporden/orsporden_props.mtl", },
-						mesh = "construction/building/rosporden/porte_a_lod0.msh",
-						name = "porte_a",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
-					},
-					{
-						materials = { "construction/building/rosporden/orsporden_props.mtl", },
-						mesh = "construction/building/rosporden/porte_b_lod0.msh",
-						name = "porte_b",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 4.7683715820313e-07, 1, },
-					},
-					{
-						materials = { "construction/building/rosporden/orsporden_props.mtl", },
-						mesh = "construction/building/rosporden/chemine_lod0.msh",
-						name = "chemine",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 18.730644226074, -0.88607889413834, 5.1934332847595, 1, },
-					},
-					{
-						materials = { "construction/building/rosporden/orsporden_props.mtl", },
-						mesh = "construction/building/rosporden/fenetre_2_lod0.msh",
-						name = "fenetre_2",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/rosporden/orsporden_props.mtl", },
-						mesh = "construction/building/rosporden/tuile_toit_lod0.msh",
-						name = "tuile_toit",
+						materials = { "construction/building/rosporden/terracota.mtl", },
+						mesh = "construction/building/rosporden/terracota_lod0.msh",
+						name = "terracota",
 						transf = { -4.3711387287537e-10, 0.0099999997764826, 6.1232339527331e-19, 0, -0.0099999997764826, -4.3711387287537e-10, 4.3711387287537e-10, 0, 4.3711387287537e-10, 1.8494530960657e-17, 0.0099999997764826, 0, -14.096639633179, -0.0050684483721852, 6.5443639755249, 1, },
 					},
 					{
-						materials = { "assets/panneau/panneau_gare_fr_bre_white/panneau.mtl", },
-						mesh = "assets/panneau/panneau_gare_fr_bre_white/panneau_lod0.msh",
-						name = "panneau",
-						transf = { 1.2000000476837, 0, 0, 0, 0, -5.2453668075714e-08, -1.2000000476837, 0, 0, 1.2000000476837, -5.2453668075714e-08, 0, 5.0700001716614, -5.0599999427795, 3.2300000190735, 1, },
+						materials = { "construction/building/rosporden/crepi.mtl", },
+						mesh = "construction/building/rosporden/crepi_lod0.msh",
+						name = "crepi",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/rosporden/glass.mtl", },
+						mesh = "construction/building/rosporden/glass_lod0.msh",
+						name = "glass",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/rosporden/toit_haut.mtl", },
+						mesh = "construction/building/rosporden/toit_haut_lod0.msh",
+						name = "toit_haut",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/rosporden/toit.mtl", },
+						mesh = "construction/building/rosporden/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+					},
+					{
+						materials = { "construction/building/rosporden/mur_brique.mtl", },
+						mesh = "construction/building/rosporden/mur_lod0.msh",
+						name = "mur",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
 					},
 				},
 				name = "RootNode",
-				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -5, 0, 1, },
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 			},
 			static = false,
 			visibleFrom = 0,
