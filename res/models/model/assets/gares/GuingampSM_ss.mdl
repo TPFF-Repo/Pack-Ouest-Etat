@@ -1,0 +1,60 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 28.89999961853, 0, 10, },
+		bbMin = { -28.700000762939, -10.39999961853, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 28.8, 5.1999998092651, 5, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.10000038146973, -5.1999998092651, 5, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/guingamp/Toit.mtl", "construction/building/guingamp/Toit haut.mtl", "construction/building/guingamp/Toit Bas.mtl", "construction/building/guingamp/Goutierre.mtl", "construction/building/guingamp/Pierre.mtl", "construction/building/guingamp/Crepi.mtl", "construction/building/guingamp/Fenetre Contour.mtl", "construction/building/guingamp/Fenetre .mtl", "construction/building/guingamp/Soutien.mtl", "construction/building/guingamp/Metal.mtl", },
+						mesh = "construction/building/guingamp/GuingampSM_lod0.msh",
+						name = "GuingampSM",
+						transf = { -4.3711388286738e-08, -1, -0, 0, 1, -4.3711388286738e-08, 0, 0, -0, 0, 1, 0, 0, -0.97000002861023, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4840.8935546875,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -15.25, 0.050000000745058, },
+							{ 1.4500000476837, -15.25, 0, },
+							1.5,
+						},
+						{
+							{ -1.4500000476837, 0, 0.050000000745058, },
+							{ 1.4500000476837, -15.25, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

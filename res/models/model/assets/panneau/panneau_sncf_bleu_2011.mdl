@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.9757378101349, 1.9198036227408e-07, 0.4315145611763, },
+		bbMin = { -1.9757378101349, -0.049270149320364, 0.0077901482582092, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.9757378101349, 0.02463517151773, 0.21186220645905, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_gare.mtl", },
+						mesh = "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_bleu_2011_lod0.msh",
+						name = "panneau_sncf_bleu_2011",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 1.5746363146718e-07, 0.21965236961842, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 266.51763916016,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

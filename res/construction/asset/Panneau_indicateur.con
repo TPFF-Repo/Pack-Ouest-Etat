@@ -24,12 +24,12 @@ end
 local degrees = intRange(-180,180, 1)
 
 local model = {
-    "assets/panneau_indicateur_dir_both.mdl",
-    "assets/panneau_indicateur_dir_left.mdl",
-    "assets/panneau_indicateur_dir_right.mdl",
-    "assets/panneau_indicateur_sortie_left.mdl",
-    "assets/panneau_indicateur_sortie_right.mdl",
-    "assets/panneau_indicateur_train.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_dir_both.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_dir_left.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_dir_right.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_sortie_left.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_sortie_right.mdl",
+    "assets/panneau_indicateur/panneau_indicateur_train.mdl",
     "assets/poteau_sncf_new.mdl",
 }
 

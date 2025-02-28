@@ -1,0 +1,72 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.0500001907349, 0, 11.430000305176, },
+		bbMin = { -6.0999999046326, -10.430000305176, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.0749998092651, 5.2150001525879, 5.7150001525879, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.024999856948853, -5.2150001525879, 5.7150001525879, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/montauban/Toit.mtl", "construction/building/montauban/Goutierre.mtl", "construction/building/montauban/Faitage.mtl", "construction/building/montauban/BriqueToit.mtl", "construction/building/montauban/Crepi.mtl", "construction/building/montauban/PierreBlanche.mtl", "construction/building/montauban/PierreBase.mtl", "construction/building/montauban/Metal.mtl", "construction/building/montauban/Ouvertures/Signe.mtl", },
+						mesh = "construction/building/montauban/Batiment.001_lod0.msh",
+						name = "Batiment",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1999998092651, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/montauban/Metal.mtl", "construction/building/montauban/PanneauxGare.mtl", },
+						mesh = "construction/building/montauban/Affichage_lod0.msh",
+						name = "Affichage",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1999998092651, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/montauban/Metal.mtl", "construction/building/montauban/PanneauxGare.mtl", },
+						mesh = "construction/building/montauban/Affichage3_lod0.msh",
+						name = "Affichage3",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 5.1999998092651, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 2719.1762695313,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -14.25, 0.050000000745058, },
+							{ 0, -14.25, 0, },
+							1.5,
+						},
+						{
+							{ 0, 0, 0.050000000745058, },
+							{ 0, -14.25, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

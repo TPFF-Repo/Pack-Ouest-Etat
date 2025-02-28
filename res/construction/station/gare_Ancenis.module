@@ -7,15 +7,15 @@ local constructionutil = require "constructionutil"
 
 function data()
 
-return { 
+return {
 	cost = {
 		price = 36000,
 	},
 	description = {
-		name = _("Gare de Ancenis"),			
-		description = _("Gare de Ancenis"),
+		name = _("Gare de Cholet"),
+		--description = _("Gare de Cholet"),
 		icon = "ui/models_small/construction/building/Ancenis@2x.tga"
-	}, 
+	},
 	availability = {
 		yearFrom = 1850,
 		yearTo = 0
@@ -37,23 +37,41 @@ return {
 		-- Ocupied slots (building width (in slots))
 		span = {1, 2}
 	},
-	
+
 	updateFn = function(result, transform, tag, slotId, addModuleFn, params)
 		local config = {
-			extend = { -23, 23, -16, 3, 7.76, 14, },
+			extend = { -19, 19, 0.4, -13, 17, 0.8, },
 			main = "construction/building/Ancenis.mdl",
 
 			slotIdOffset = 1, --1!
-			translationY = 0, 
+			translationY = 0,
 		}
-	
+
 		local tran = trainstationutil.MakeMainBuildingModule(result, transform, tag, slotId, addModuleFn, params, config)
 
 	end,
-	
-	getModelsFn = function() 
-		local result = { 
+
+	getModelsFn = function()
+		local result = {
 			{  id = "construction/building/Ancenis.mdl", transf = transf.rotZTransl(math.rad(-90), vec3.new(10,0,-12)), }, }
+
+        result.groundFaces = {
+            {
+                face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+                modes = {
+                    {
+                        type = "FILL",
+                        key = "industry_floor.lua"
+                    }
+                },
+                loop = true,
+                alignmentOffsetMode = "OBJECT",
+                alignmentDirMode = "OBJECT",
+                alignmentOffset = { -2.0, -1.0 },
+            },
+        }
+
+        result.terrainAlignmentLists = { { type = "GREATER", faces = {} } }
 		return result
 	end
 }
