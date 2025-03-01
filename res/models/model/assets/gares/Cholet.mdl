@@ -264,6 +264,12 @@ return {
 						name = "era_a_small_clock_grp",
 						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 9.6100006103516, 1, },
 					},
+					{
+						materials = { "construction/building/commun/support.mtl", },
+						mesh = "construction/building/cholet/support_cholet_lod0.msh",
+						name = "support",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
+					},
 				},
 				name = "RootNode",
 				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },

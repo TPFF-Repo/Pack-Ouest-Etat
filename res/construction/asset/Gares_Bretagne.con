@@ -64,18 +64,18 @@ return {
 		{
             key = "variant_gares",
             name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-            uiType = "COMBOBOX",
+            uiType = "ICON_BUTTON",
             values = {
-                _("GUINGAMP AM"),
-                _("GUINGAMP AM Aff"),
-                _("GUINGAMP SM"),
-                _("GUINGAMP SM Aff"),
-                _("LAMBALLE SM"),
-                _("MONTAUBAN"),
-                _("MONTAUBAN 2"),
-                _("MONTAUBAN 3"),
-                _("PLOUARET TREGOR AM"),
-            }
+					_("ui/construction/asset/gares/GuingampAM@2x.tga"),
+					_("ui/construction/asset/gares/GuingampAMAff@2x.tga"),
+					_("ui/construction/asset/gares/GuingampSM@2x.tga"),
+					_("ui/construction/asset/gares/GuingampSMAff@2x.tga"),
+					_("ui/construction/asset/gares/LamballeSM@2x.tga"),
+					_("ui/construction/asset/gares/Montauban@2x.tga"),
+					_("ui/construction/asset/gares/Montauban2@2x.tga"),
+					_("ui/construction/asset/gares/Montauban3@2x.tga"),
+					_("ui/construction/asset/gares/PlouaretTregorAM@2x.tga"),
+            },
 		},
 		{
         	key = "socle",

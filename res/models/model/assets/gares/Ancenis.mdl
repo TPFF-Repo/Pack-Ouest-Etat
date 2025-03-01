@@ -1,14 +1,14 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 18.145589828491, 0.375, 15.616786956787, },
-		bbMin = { -18.118104934692, -11.814999580383, -0, },
+		bbMax = { 21.200000762939, 0.375, 15.616786956787, },
+		bbMin = { -21.200000762939, -25.809999465942, -0, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 18.131847381592, 6.0949997901917, 7.8083934783936, },
+			halfExtents = { 21.200000762939, 13.092499732971, 7.8083934783936, },
 		},
-		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.013742446899414, -5.7199997901917, 7.8083934783936, 1, },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -12.717499732971, 7.8083934783936, 1, },
 		type = "BOX",
 	},
 	lods = {
@@ -19,61 +19,61 @@ return {
 						materials = { "construction/building/ancenis/beton.mtl", "construction/building/ancenis/tuiles.mtl", "construction/building/ancenis/toiture_metal.mtl", },
 						mesh = "construction/building/ancenis/gare_lod0.msh",
 						name = "ancenis",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/orange_jointure_ardoise.mtl", },
 						mesh = "construction/building/ancenis/jointures_ardoises_lod0.msh",
 						name = "jointures_ardoises",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/brique.mtl", "construction/building/ancenis/orange_jointure_ardoise.mtl", },
 						mesh = "construction/building/ancenis/cheminees_lod0.msh",
 						name = "cheminees",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/toiture_metal.mtl", },
 						mesh = "construction/building/ancenis/details_lod0.msh",
 						name = "details",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/beton.mtl", "construction/building/ancenis/toiture_metal.mtl", },
 						mesh = "construction/building/ancenis/moulures_lod0.msh",
 						name = "moulures",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/gris.mtl", },
 						mesh = "construction/building/ancenis/cadres_fenetres_lod0.msh",
 						name = "cadres_fenetres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/details_fenetres.mtl", },
 						mesh = "construction/building/ancenis/fentres_lod0.msh",
 						name = "fentres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/toiture_metal.mtl", },
 						mesh = "construction/building/ancenis/gouttieres_lod0.msh",
 						name = "gouttieres",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/ecrito.mtl", "construction/building/ancenis/logo_sncf_2011.mtl", },
 						mesh = "construction/building/ancenis/ecrito_ancenis_lod0.msh",
 						name = "ecrito_ancenis",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/ancenis/support_ecrito.mtl", },
 						mesh = "construction/building/ancenis/support_ecrito_lod0.msh",
 						name = "support_ecrito",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.7199997901917, 0.80000001192093, 1, },
 					},
 					{
 						children = {
@@ -175,7 +175,7 @@ return {
 							},
 						},
 						name = "GRP_horloge_1",
-						transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 6.5799999237061, 2.4000000953674, 1, },
+						transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0.87000000476837, 3.2000000476837, 1, },
 					},
 					{
 						children = {
@@ -229,11 +229,17 @@ return {
 							},
 						},
 						name = "GRP_horloge_2",
-						transf = { 1.3999999761581, 0, 0, 0, -0, 1.3999999761581, 0, 0, 0, -0, 1.3999999761581, 0, 0, -6.0199999809265, 0.94999998807907, 1, },
+						transf = { 1.3999999761581, 0, 0, 0, -0, 1.3999999761581, 0, 0, 0, -0, 1.3999999761581, 0, 0, -11.770000457764, 1.75, 1, },
+					},
+					{
+						materials = { "construction/building/commun/support.mtl", },
+						mesh = "construction/building/ancenis/support_ancenis_lod0.msh",
+						name = "support",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",
-				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -5.7199997901917, 0, 1, },
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
 			},
 			static = false,
 			visibleFrom = 0,
