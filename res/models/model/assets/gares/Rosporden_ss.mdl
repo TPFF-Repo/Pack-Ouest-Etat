@@ -1,0 +1,108 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 22.428897857666, 0.33941030502319, 9.8873739242554, },
+		bbMin = { -22.428901672363, -10.180000305176, -1.8265744074597e-05, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 22.428899765015, 13.086050987244, 4.9436960220337, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "assets/gares/Rosporden/plastic.mtl", },
+								mesh = "assets/gares/Rosporden/plastic_blanc_lod0.msh",
+								name = "plastic_blanc",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017166137695313, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/terracota.mtl", },
+								mesh = "assets/gares/Rosporden/terracota_lod0.msh",
+								name = "terracota",
+								transf = { -4.3711387287537e-10, -6.8370513025747e-33, 0.0099999997764826, 0, -0.0099999997764826, -4.3711387287537e-10, -4.3711387287537e-10, 0, 4.3711387287537e-10, -0.0099999997764826, 1.9106854717821e-17, 0, -14.096639633179, -7.3943634033203, -0.0052402894943953, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/crepi.mtl", },
+								mesh = "assets/gares/Rosporden/crepi_lod0.msh",
+								name = "crepi",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/glass.mtl", },
+								mesh = "assets/gares/Rosporden/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017166137695313, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/toit_haut.mtl", },
+								mesh = "assets/gares/Rosporden/toit_haut_lod0.msh",
+								name = "toit_haut",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/toit.mtl", },
+								mesh = "assets/gares/Rosporden/Toit_lod0.msh",
+								name = "Toit",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/mur_brique.mtl", },
+								mesh = "assets/gares/Rosporden/mur_lod0.msh",
+								name = "mur",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/metal.mtl", },
+								mesh = "assets/gares/Rosporden/metal_lod0.msh",
+								name = "metal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/metal.mtl", },
+								mesh = "assets/gares/Rosporden/gris_lod0.msh",
+								name = "gris",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/light.mtl", },
+								mesh = "assets/gares/Rosporden/light_lod0.msh",
+								name = "light",
+								transf = { 1.5418000221252, 0, 0, 0, 0, 1.5183765888214, 0.26773089170456, 0, 0, -0.26773089170456, 1.5183765888214, 0, -18.79035949707, -4.3029999732971, -5.010534286499, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/plastic_gris.mtl", },
+								mesh = "assets/gares/Rosporden/plastic_gris_lod0.msh",
+								name = "plastic_gris",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017166137695313, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/crepi_rose.mtl", },
+								mesh = "assets/gares/Rosporden/crepi_rose_lod0.msh",
+								name = "crepi_rose",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+						},
+						name = "Batiment",
+						transf = { 1, 0, 0, 0, 0, -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, -5.0292797088623, -0.80000001192093, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 6830.90625,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
