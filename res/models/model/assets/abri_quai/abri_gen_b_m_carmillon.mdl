@@ -22,18 +22,6 @@ function data()
                             transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
                         },
                         {
-                            materials = { "assets/abri_quai/abri_generique/material.mtl", },
-                            mesh = "assets/abri_quai/abri_generique/banc_court_lod0.msh",
-                            name = "banc_court",
-                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-                        },
-                        {
-                            materials = { "assets/abri_quai/abri_generique/material.mtl", },
-                            mesh = "assets/abri_quai/abri_generique/banc_court_lod0.msh",
-                            name = "banc_court",
-                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-                        },
-                        {
                             materials = { "assets/abri_quai/abri_generique/pan_abri.mtl", },
                             mesh = "assets/abri_quai/abri_generique/pan_carm_lod0.msh",
                             name = "pan_carm",

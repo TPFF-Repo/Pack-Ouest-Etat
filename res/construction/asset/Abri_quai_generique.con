@@ -2,29 +2,35 @@ local vec3 = require "vec3"
 local transf = require "transf"
 
 local function map(a, f)
-	local res = {}
-	if a and type(a) =="table" then
-		for _, v in ipairs(a) do
-			table.insert(res, f(v))
-		end
-	end
-	return res
+    local res = {}
+    if a and type(a) == "table" then
+        for _, v in ipairs(a) do
+            table.insert(res, f(v))
+        end
+    end
+    return res
 end
 
 local function intRange(start, stop, step)
-	local a = {}
-	local i = start
-	while i <= stop do
-		table.insert(a, i)
-		i = i + step
-	end
-	return a
+    local a = {}
+    local i = start
+    while i <= stop do
+        table.insert(a, i)
+        i = i + step
+    end
+    return a
 end
 
-local degrees = intRange(-180,180, 1)
+local degrees = intRange(-180, 180, 1)
 
-local size = {"s","m"}
-local logo = {"nouille", "casquette", "carmillon"}
+local size = { "s", "m" }
+local logo = { "nouille", "casquette", "carmillon" }
+local modelsBanc = {
+    "assets/props/banc/beton_1_cour.mdl",
+    "assets/props/banc/beton_1_long.mdl",
+    "assets/props/banc/beton_2_cour.mdl",
+    "assets/props/banc/beton_2_long.mdl",
+}
 
 function data()
     return {
@@ -34,8 +40,8 @@ function data()
             name = _("Abri de Quai Generique"),
             icon = "ui/construction/asset/abri_quai_generique.tga"
         },
-        categories = {"Gares Ouest-Etat"},
-        skipCollision = true,--false,
+        categories = { "Gares Ouest-Etat" },
+        skipCollision = true, --false,
         autoRemovable = false,
         order = 4406,
         params = {
@@ -50,82 +56,107 @@ function data()
                 defaultIndex = 0,
             },
             {
-            	key = "logo_abri",
-            	name = _("Logo SNCF"), --translate on string.lua
-            	uiType = "BUTTON",
-            	values = { _("Nouille"), _("Casquette"), _("Carmillon"), },
-            	tooltip = _(""),
-            	defaultIndex = 0,
+                key = "logo_abri",
+                name = _("Logo SNCF"), --translate on string.lua
+                uiType = "BUTTON",
+                values = { _("Nouille"), _("Casquette"), _("Carmillon"), },
+                tooltip = _(""),
+                defaultIndex = 0,
             },
             {
-            	key = "banc",
-            	name = _("Avec Banc"), --translate on string.lua
-            	uiType = "BUTTON",
-            	values = { _("Oui"), _("Non"), },
-            	tooltip = _(""),
-            	defaultIndex = 0,
+                key = "banc_abri",
+                name = _("Avec Banc"), --translate on string.lua
+                uiType = "BUTTON",
+                values = { _("Oui"), _("Non"), },
+                tooltip = _(""),
+                defaultIndex = 0,
             },
             {
-            	key = "positiony_abri",
-            	name = _("Position"), --translate on string.lua
-            	uiType = "BUTTON",
-            	values = { _("Gauche"), _("Droite") },
-            	tooltip = _(""),
-            	defaultIndex = 0,
+                key = "model_banc",
+                name = _("Modèle des Bancs"), --translate on string.lua
+                uiType = "COMBOBOX",
+                values = {
+                    _("Beton 1 Cour"),
+                    _("Beton 1 Long"),
+                    _("Beton 2 Cour"),
+                    _("Beton 2 Long"),
+                },
+                tooltip = _(""),
+                defaultIndex = 0,
             },
             {
-            	key = "offsetz",
-            	name = _("Hauteur"),
-            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
-            	uiType = "SLIDER",
-            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+                key = "positiony_abri",
+                name = _("Position"), --translate on string.lua
+                uiType = "BUTTON",
+                values = { _("Gauche"), _("Droite") },
+                tooltip = _(""),
+                defaultIndex = 0,
             },
             {
-            	key = "offsety",
-            	name = _("Distance de la voie"),
-            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
-            	uiType = "SLIDER",
-            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+                key = "offsetz",
+                name = _("Hauteur"),
+                values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
             },
             {
-            	key = "offsetx",
-            	name = _("Espacement"),
-            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
-            	uiType = "SLIDER",
-            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+                key = "offsety",
+                name = _("Distance de la voie"),
+                values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
+            },
+            {
+                key = "offsetx",
+                name = _("Espacement"),
+                values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
             },
             {
                 key = "zRotate",
                 name = _("Rotation Z"),
-                values = map(degrees, function(i) return ""..i.." °"  end),
+                values = map(degrees, function(i) return "" .. i .. " °" end),
                 uiType = "SLIDER",
-                defaultIndex = math.floor(#degrees/2),
+                defaultIndex = math.floor(#degrees / 2),
             },
         },
         updateFn = function(params)
             local result = {}
-            result.models = { }
+            result.models = {}
             local grad = 0
             local height = 0
             local shiftm = 0
             local spacingm = 0
-            local offsetz = intRange(-500, 500, 5)[params.offsetz+1]/100
-            local offsety = intRange(-500, 500, 5)[params.offsety+1]/100
-            local offsetx = intRange(-500, 500, 5)[params.offsetx+1]/100
-            local zRotate = degrees[params.zRotate+1]
-            local sizeAbri = size[params.size_abri+1]
-            local logoAbri = logo[params.logo_abri+1]
+            local offsetz = intRange(-500, 500, 5)[params.offsetz + 1] / 100
+            local offsety = intRange(-500, 500, 5)[params.offsety + 1] / 100
+            local offsetx = intRange(-500, 500, 5)[params.offsetx + 1] / 100
+            local zRotate = degrees[params.zRotate + 1]
+            local sizeAbri = size[params.size_abri + 1]
+            local logoAbri = logo[params.logo_abri + 1]
+            local modelBanc = modelsBanc[params.model_banc + 1]
 
-             -- Règle la valeur d'espacement de l'asset
+            -- Règle la valeur d'espacement de l'asset
             if params.positiony_abri == 0 then shiftm = -5 end
             if params.positiony_abri == 0 then height = 1 end
             if params.positiony_abri == 1 then shiftm = 5 end
             if params.positiony_abri == 1 then height = 1 end
 
             if params.banc_abri == 0 then
-                result.models = {{id = "assets/abri_quai/abri_gen_nb_"..sizeAbri.."_"..logoAbri..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                result.models = { { id = "assets/abri_quai/abri_gen_nb_" .. sizeAbri .. "_" .. logoAbri .. ".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz)) } }
             else
-                result.models = {{id = "assets/abri_quai/abri_gen_b_"..sizeAbri.."_"..logoAbri..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                result.models = {
+                    {
+                        id = "assets/abri_quai/abri_gen_b_" .. sizeAbri .. "_" .. logoAbri .. ".mdl",
+                        transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad),
+                            vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
+                    },
+                    {
+                        id = modelBanc,
+                        transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad),
+                            vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
+                    },
+                }
             end
 
 
@@ -133,22 +164,21 @@ function data()
             result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
 
             result.groundFaces = {
-            	{
-            	face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
-            	modes = {
-            		{
-            		  type = "FILL",
-            		  key = "industry_floor.lua"
-            		}
-            	},
-            	loop = true,
-            	alignmentOffsetMode = "OBJECT",
-            	alignmentDirMode = "OBJECT",
-            	alignmentOffset = { -2.0, -1.0 },
-            	},
+                {
+                    face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+                    modes = {
+                        {
+                            type = "FILL",
+                            key = "industry_floor.lua"
+                        }
+                    },
+                    loop = true,
+                    alignmentOffsetMode = "OBJECT",
+                    alignmentDirMode = "OBJECT",
+                    alignmentOffset = { -2.0, -1.0 },
+                },
             }
             return result
-
         end
     }
 end
