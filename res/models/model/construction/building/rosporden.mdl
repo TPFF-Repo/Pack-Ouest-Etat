@@ -101,13 +101,14 @@ return {
 					},
 				},
 				name = "RootNode",
-				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -5, 0, 1, },
 			},
 			static = false,
 			visibleFrom = 0,
 			visibleTo = 6830.90625,
 		},
 	},
+
 	metadata = {
 		transportNetworkProvider = {
 			laneLists = {
