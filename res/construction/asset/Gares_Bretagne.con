@@ -32,6 +32,8 @@ local models = {
     "Montauban2",
     "Montauban3",
     "PlouaretTregorAM",
+    "Rosporden",
+    "RospordenAff",
 }
 
 function data()
@@ -75,6 +77,8 @@ return {
 					_("ui/construction/asset/gares/Montauban2@2x.tga"),
 					_("ui/construction/asset/gares/Montauban3@2x.tga"),
 					_("ui/construction/asset/gares/PlouaretTregorAM@2x.tga"),
+					_("ui/construction/asset/gares/Rosporden@2x.tga"),
+					_("ui/construction/asset/gares/RospordenAff@2x.tga"),
             },
 		},
 		{

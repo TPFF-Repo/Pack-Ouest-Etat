@@ -1,12 +1,12 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 21.677791595459, 0.10000000149012, 9.0737705230713, },
-		bbMin = { -21.677795410156, -10.10000038147, -0.00056624412536621, },
+		bbMax = { 27.129999160767, 0.33941030502319, 9.8873739242554, },
+		bbMin = { -27.129999160767, -25.832691192627, -1.8265744074597e-05, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 21.677793502808, 5.346408367157, 4.5371685028076, },
+			halfExtents = { 22.428899765015, 13.086050987244, 4.9436960220337, },
 		},
 		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 		type = "BOX",
@@ -16,64 +16,88 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "construction/building/Rosporden/crepi_rose.mtl", },
-						mesh = "construction/building/Rosporden/crepi_rose_lod0.msh",
-						name = "crepi_rose",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+						children = {
+							{
+								materials = { "assets/gares/Rosporden/plastic.mtl", },
+								mesh = "assets/gares/Rosporden/plastic_blanc_lod0.msh",
+								name = "plastic_blanc",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017166137695313, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/terracota.mtl", },
+								mesh = "assets/gares/Rosporden/terracota_lod0.msh",
+								name = "terracota",
+								transf = { -4.3711387287537e-10, -6.8370513025747e-33, 0.0099999997764826, 0, -0.0099999997764826, -4.3711387287537e-10, -4.3711387287537e-10, 0, 4.3711387287537e-10, -0.0099999997764826, 1.9106854717821e-17, 0, -14.096639633179, -7.3943634033203, -0.0052402894943953, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/crepi.mtl", },
+								mesh = "assets/gares/Rosporden/crepi_lod0.msh",
+								name = "crepi",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/glass.mtl", },
+								mesh = "assets/gares/Rosporden/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017166137695313, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/toit_haut.mtl", },
+								mesh = "assets/gares/Rosporden/toit_haut_lod0.msh",
+								name = "toit_haut",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/toit.mtl", },
+								mesh = "assets/gares/Rosporden/Toit_lod0.msh",
+								name = "Toit",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/mur_brique.mtl", },
+								mesh = "assets/gares/Rosporden/mur_lod0.msh",
+								name = "mur",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/metal.mtl", },
+								mesh = "assets/gares/Rosporden/metal_lod0.msh",
+								name = "metal",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/metal.mtl", },
+								mesh = "assets/gares/Rosporden/gris_lod0.msh",
+								name = "gris",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/light.mtl", },
+								mesh = "assets/gares/Rosporden/light_lod0.msh",
+								name = "light",
+								transf = { 1.5418000221252, 0, 0, 0, 0, 1.5183765888214, 0.26773089170456, 0, 0, -0.26773089170456, 1.5183765888214, 0, -18.79035949707, -4.3029999732971, -5.010534286499, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/plastic_gris.mtl", },
+								mesh = "assets/gares/Rosporden/plastic_gris_lod0.msh",
+								name = "plastic_gris",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017166137695313, 1, },
+							},
+							{
+								materials = { "assets/gares/Rosporden/crepi_rose.mtl", },
+								mesh = "assets/gares/Rosporden/crepi_rose_lod0.msh",
+								name = "crepi_rose",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -11.546496391296, -0.84999990463257, -0.00017213821411133, 1, },
+							},
+						},
+						name = "Batiment",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -5.0292797088623, -0.019902700558305, 1, },
 					},
 					{
-						materials = { "construction/building/Rosporden/plastic.mtl", },
-						mesh = "construction/building/Rosporden/plastic_lod0.msh",
-						name = "plastic",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/terracota.mtl", },
-						mesh = "construction/building/Rosporden/terracota_lod0.msh",
-						name = "terracota",
-						transf = { -4.3711387287537e-10, 0.0099999997764826, 6.1232339527331e-19, 0, -0.0099999997764826, -4.3711387287537e-10, 4.3711387287537e-10, 0, 4.3711387287537e-10, 1.8494530960657e-17, 0.0099999997764826, 0, -14.096639633179, -0.0050684483721852, 6.5443639755249, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/crepi.mtl", },
-						mesh = "construction/building/Rosporden/crepi_lod0.msh",
-						name = "crepi",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/glass.mtl", },
-						mesh = "construction/building/Rosporden/glass_lod0.msh",
-						name = "glass",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, 0, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/toit_haut.mtl", },
-						mesh = "construction/building/Rosporden/toit_haut_lod0.msh",
-						name = "toit_haut",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/toit.mtl", },
-						mesh = "construction/building/Rosporden/Toit_lod0.msh",
-						name = "Toit",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/mur_brique.mtl", },
-						mesh = "construction/building/Rosporden/mur_lod0.msh",
-						name = "mur",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/metal.mtl", },
-						mesh = "construction/building/Rosporden/metal_lod0.msh",
-						name = "metal",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
-					},
-					{
-						materials = { "construction/building/Rosporden/metal.mtl", },
-						mesh = "construction/building/Rosporden/gris_lod0.msh",
-						name = "gris",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.546496391296, 0, -8.5549716980748e-21, 1, },
+						materials = { "assets/gares/Rosporden/support.mtl", },
+						mesh = "assets/gares/Rosporden/support_Rosporden_lod0.msh",
+						name = "support_Rosporden",
+						transf = { -4.3711387287537e-10, -0.0099999997764826, -6.1232339527331e-19, 0, 0.010532000102103, -4.6036835454899e-10, 4.6036832679341e-10, 0, -4.3711387287537e-10, 1.8494530960657e-17, 0.0099999997764826, 0, 0, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",
@@ -81,10 +105,125 @@ return {
 			},
 			static = false,
 			visibleFrom = 0,
-			visibleTo = 3987.83203125,
+			visibleTo = 6830.90625,
 		},
 	},
-	metadata = { },
+
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 5.0500001907349, -19.200000762939, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 5.0500001907349, -15.25, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 5.0500001907349, -15.25, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 5.0500001907349, 0, 0.85000002384186, },
+							{ 1.4500000476837, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -5.5, -19.200000762939, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -5.5, -15.25, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -5.5, -15.25, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -7.75, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -7.75, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -25.549999237061, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -25.549999237061, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -25.549999237061, 0, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 9.8999996185303, -19.200000762939, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 11.199999809265, -15.25, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 11.199999809265, -15.25, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 13.64999961853, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 13.64999961853, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 24.89999961853, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 24.89999961853, -10.75, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 24.89999961853, 0, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
 	version = 1,
 }
 end
