@@ -11,14 +11,50 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "unknown_albedo_1k.dds",
+			fileName = "models/assets/abri/crepi_abri.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
 		},
 		map_metal_gloss_ao = {
-			fileName = "default_metal_gloss_ao.dds",
+			fileName = "models/building/era_b/shared/all_wall_plaster_stucco_19_metal_gloss_ao.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_normal = {
+			fileName = "models/building/era_b/shared/all_wall_plaster_stucco_19_normal.dds",
+			redGreen = true,
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_op_1 = {
+			fileName = "buildings/overlay.dds",
+			type = "TWOD",
+			wrapS = "REPEAT",
+			wrapT = "REPEAT",
+		},
+		map_op_2 = {
+			fileName = "unknown_albedo_1k.dds",
+			type = "TWOD",
+		},
+		normal_scale = {
+			normalScale = 0.20000000298023,
+		},
+		operation_1 = {
+			mode = "TEXCOORD",
+			op = "OVERLAY",
+			opacity = 0.40000000596046,
+			scale = { 0.30000001192093, 0.30000001192093, },
+		},
+		operation_2 = {
+			mode = "TEXCOORD",
+			op = "NO_OP",
+			opacity = 1,
+			scale = { 1, 1, },
 		},
 		polygon_offset = {
 			factor = 0,
@@ -30,6 +66,6 @@ return {
 			twoSided = false,
 		},
 	},
-	type = "PHYSICAL",
+	type = "PHYSICAL_NRML_MAP_OP",
 }
 end
