@@ -26,9 +26,9 @@ local degrees = intRange(-180, 180, 1)
 local size = { "s", "m" }
 local logo = { "nouille", "casquette", "carmillon" }
 local modelsBanc = {
-    "assets/props/banc/beton_1_cour.mdl",
+    "assets/props/banc/beton_1_court.mdl",
     "assets/props/banc/beton_1_long.mdl",
-    "assets/props/banc/beton_2_cour.mdl",
+    "assets/props/banc/beton_2_court.mdl",
     "assets/props/banc/beton_2_long.mdl",
 }
 
