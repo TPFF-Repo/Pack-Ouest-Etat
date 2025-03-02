@@ -14,7 +14,7 @@ return {
 	description = {
 		name = _("Gare de Briouze"),			
 		description = _("Gare de Briouze"),
-		icon = "ui/models_small/construction/building/Briouze@2x.tga"
+		icon = "ui/construction/asset/gares/Briouze@2x.tga"
 	}, 
 	availability = {
 		yearFrom = 1850,

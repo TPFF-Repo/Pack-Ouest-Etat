@@ -64,18 +64,6 @@ return {
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
-						materials = { "construction/building/ancenis/ecrito.mtl", "construction/building/ancenis/logo_sncf_2011.mtl", },
-						mesh = "construction/building/ancenis/ecrito_ancenis_lod0.msh",
-						name = "ecrito_ancenis",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-					{
-						materials = { "construction/building/ancenis/support_ecrito.mtl", },
-						mesh = "construction/building/ancenis/support_ecrito_lod0.msh",
-						name = "support_ecrito",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-					{
 						children = {
 							{
 								materials = { "construction/horloges_sncf/horloge_sncf_bodet_casquette.mtl", },

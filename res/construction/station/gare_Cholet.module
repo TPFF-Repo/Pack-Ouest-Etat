@@ -13,7 +13,7 @@ function data()
         description = {
             name = _("Gare de Cholet"),
             description = _("Gare de Cholet"),
-            icon = "ui/models_small/construction/building/Cholet@2x.tga"
+            icon = "ui/construction/asset/gares/Cholet@2x.tga"
         },
         availability = {
             yearFrom = 1850,

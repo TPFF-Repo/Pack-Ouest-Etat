@@ -14,7 +14,7 @@ return {
 	description = {
 		name = _("Gare de Guingamp"),			
 		description = _("Gare de Guingamp"),
-		icon = "ui/models_small/construction/building/GuingampSM@2x.tga"
+		icon = "ui/construction/asset/gares/GuingampSM@2x.tga"
 	}, 
 	availability = {
 		yearFrom = 1850,

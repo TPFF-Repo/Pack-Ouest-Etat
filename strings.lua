@@ -1,29 +1,50 @@
 function data()
-local lb = '\n'		
+    local lb = '\n'
+    local site = '[url=https://discord.transportfeverfrance.fr/][u]Transport Fever France[/u][/url]'
 
 return {
 fr = {
-    ["gare_paris_stras"] = "Pack de Gare de Paris à Strasbourg",
-    ["gare_ouest_etat_description"] = "[h1]Gare de la Compagnie du chemin de fer Ouest Etat[/h1]"..lb..
-    "Dans ce pack vous trouverez un ensemble de batîments de gare de l'ex-CCFPS devenue compagnie de l'Est, Dès la construction de la ligne entre 1849 et 1852, les gares étaient standardisés, dans ce pack vous aurez des versions récentes de gares encore ouvertes ou abandonnées. "..lb..
-    "Les gares présentes dans ce pack sont :"..lb..
-    "- Liverdun, seule gare du pack de type 5 encore d'origine, son batîment est fermé depuis 2016."..lb..
-    "- Réchicourt-le-château, une ancienne gare de type 5 dont les extensions latérales ont été supprimés lorsqu'elle fut transformée en maison."..lb..
-    "- Saverne, seule gare du pack qui n'est pas de type 5"..lb..
-    "- Brumath, gare de type 5 ayant subies de multiples transformations et dont le batîment est fermé depuis 1997."..lb..
-    "- Hochfelden, gare de type 5 ayant la particularité d'avoir une toiture sous bâtière"..lb..
+    ["gare_ouest_etat"] = "Gare Type Ouest-Etat",
+    ["gare_ouest_etat_desc"] = "[h1]Pack de gares Type Ouest-Etat [/h1]"..lb..
+    lb..
+    lb..
+    "Vous retrouverez dans ce pack, plusieurs variétés de gares typées de l'ancienne compagnie de l'Ouest-Etat, représentant ainsi la Normandie, Les Pays de la Loire, et la Bretagne."..lb..
+    lb..
+    lb..
+    "[h2][b]Liste des gares disponibles :[/b][/h2]"..lb..
+    "[list]"..lb..
+    "[*][b]Ancenis [/b]"..lb..
+    "[*][b]Briouze [/b]"..lb..
+    "[*][b]Cholet [/b]"..lb..
+    "[*][b]Guingamp (avec et sans marquise) [/b]"..lb..
+    "[*][b]Montauban (avec lettrages en relief ou à plaque) [/b]"..lb..
+    "[*][b]Plouaret Trégor [/b]"..lb..
+    "[*][b]Resporden [/b]"..lb..
+    "[/list]"..lb..
+    lb..
+    "A savoir qu'une version générique (sans le nom des gares) est disponible pour chaques batiments."..lb..
+    "Vous les trouverez alo, soit dans les modules de gares, soit en assets."..lb..
     lb..
     lb..
     "[h2][b]Auteurs :[/b][/h2]"..lb..
     "[list]"..lb..
-    "[*][b]Modèle 3D : [/b] Baguette, Lorenzo"..lb..
-    "[*][b]Textures : [/b] Baguette, Lorenzo"..lb..
-    "[*][b]Scripts : [/b] Baguette, Lorenzo"..lb..
+    "[*][b]Modèles 3D : [/b] NTH-Z6K4, Syltheron, Yoodel22"..lb..
+    "[*][b]Textures : [/b] NTH-Z6K4, Syltheron, Yoodel22"..lb..
+    "[*][b]Scripts : [/b] NTH-Z6K4, Syltheron"..lb..
     "[/list]"..lb..
     lb..
     lb..
-    "Vous pouvez nous rejoindre sur discord :" ..lb..
-         "https://discord.gg/g5Qamgy2uw",
-},
+    "[h2][b]Update logs[/b][/h2]"..lb..
+    "[list]"..lb..
+    "[*]Main 1.0 : stable"..lb..
+    "[/list]"..lb..
+    lb..
+    lb..
+    "[h2][b]Disclaimer :[/b][/h2]"..lb..
+    "La réutilisation / publication des fichiers, que ce soit sous une forme modifiée ou inchangée (dans des repaints ou autres), nécessite l'autorisation expresse de l'auteur.\n" ..lb..
+    "L'upload de ce mod sur d'autres sites n'est pas autorisé.\n"..lb..
+    lb..
+    "[h2][b]La communauté française :[/b][/h2]"..lb..site.."",
+        },
 }
 end

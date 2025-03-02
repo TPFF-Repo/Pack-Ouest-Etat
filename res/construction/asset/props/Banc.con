@@ -29,7 +29,7 @@ local modelsBanc = {
 }
 
 local tailleBanc = {
-    "cour",
+    "court",
     "long",
 }
 
@@ -61,7 +61,7 @@ function data()
                 name = _("Taille"),
                 uiType = "BUTTON",
                 values = {
-                    _("Cour"),
+                    _("Court"),
                     _("Long"),
                 },
                 defaultIndex = 0,
