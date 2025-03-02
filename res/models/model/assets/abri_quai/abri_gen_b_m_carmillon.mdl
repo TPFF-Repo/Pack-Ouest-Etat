@@ -1,75 +1,42 @@
 function data()
-return {
-	boundingInfo = {
-		bbMax = { 1.8372428417206, 1.1804509162903, 2.3121643066406, },
-		bbMin = { -1.8372423648834, -1.1764235496521, -7.1525573730469e-07, },
-	},
-	collider = {
-		params = {
-			halfExtents = { 1.837242603302, 1.1784372329712, 1.1560825109482, },
-		},
-		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-		type = "BOX",
-	},
-	lods = {
-		{
-			node = {
-				children = {
-					{
-						materials = { "assets/abri_quai/abri_generique/socle_abri.mtl", "assets/abri_quai/abri_generique/abri.mtl", "assets/abri_quai/abri_generique/toit_abri.mtl", },
-						mesh = "assets/abri_quai/abri_generique/abri_base_m_lod0.msh",
-						name = "abri_base_m",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-					{
-						materials = { "assets/abri_quai/abri_generique/banc.mtl", },
-						mesh = "assets/abri_quai/abri_generique/banc_court_lod0.msh",
-						name = "banc_court",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-					{
-						materials = { "assets/abri_quai/abri_generique/banc.mtl", },
-						mesh = "assets/abri_quai/abri_generique/banc_court_lod0.msh",
-						name = "banc_court",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-					{
-						materials = { "assets/abri_quai/abri_generique/pan_abri.mtl", },
-						mesh = "assets/abri_quai/abri_generique/pan_carm_lod0.msh",
-						name = "pan_carm",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-				},
-				name = "RootNode",
-				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-			},
-			static = false,
-			visibleFrom = 0,
-			visibleTo = 624.09588623047,
-		},
-	},
-	metadata = {
-		labelList = {
-			labels = {
-				{
-					alignment = "CENTER",
-					alpha = 1,
-					alphaMode = "CUTOUT",
-					childId = "",
-					color = { 1, 1, 1, },
-					filter = "NONE",
-					fitting = "SCALE",
-					nLines = 1,
-					params = { },
-					renderMode = "STD",
-					size = { 11.949999809265, 1.5, },
-					transf = { 0.10000000149012, 0, -0, 0, 0, -0.0029666167683899, 0.09995599091053, 0, 0, -0.09995599091053, -0.0029666167683899, 0, -0.81999999284744, -0.89999997615814, 1.9900000095367, 1, },
-					type = "NAME",
-					verticalAlignment = "CENTER",
-				},
-			},
-		},
-	},
-	version = 1,
-}
+    return {
+        boundingInfo = {
+            bbMax = { 1.8372428417206, 1.1804509162903, 2.3121643066406, },
+            bbMin = { -1.8372423648834, -1.1764235496521, -7.1525573730469e-07, },
+        },
+        collider = {
+            params = {
+                halfExtents = { 1.837242603302, 1.1784372329712, 1.1560825109482, },
+            },
+            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+            type = "BOX",
+        },
+        lods = {
+            {
+                node = {
+                    children = {
+                        {
+                            materials = { "assets/abri_quai/abri_generique/socle_abri.mtl", "assets/abri_quai/abri_generique/abri.mtl", "assets/abri_quai/abri_generique/toit_abri.mtl", },
+                            mesh = "assets/abri_quai/abri_generique/abri_base_m_lod0.msh",
+                            name = "abri_base_m",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                        {
+                            materials = { "assets/abri_quai/abri_generique/pan_abri.mtl", },
+                            mesh = "assets/abri_quai/abri_generique/pan_carm_lod0.msh",
+                            name = "pan_carm",
+                            transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                        },
+                    },
+                    name = "RootNode",
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+                },
+                static = false,
+                visibleFrom = 0,
+                visibleTo = 624.09588623047,
+            },
+        },
+        metadata = {},
+        version = 1,
+    }
 end

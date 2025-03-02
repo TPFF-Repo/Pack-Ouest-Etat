@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.88876813650131, 0.70936369895935, 0.6243337392807, },
+		bbMin = { -0.88876873254776, 0.33445847034454, 0.095056317746639, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.88876843452454, 0.1874526143074, 0.2646387219429, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/banc/beton_2_long/material.mtl", },
+						mesh = "assets/props/banc/beton_2_long/banc_beton_2_long_lod0.msh",
+						name = "banc_beton_2_long",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 4.3711387287537e-10, 0, 0, -4.3711387287537e-10, 0.0099999997764826, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 179.29312133789,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
