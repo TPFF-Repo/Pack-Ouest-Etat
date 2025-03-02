@@ -1,0 +1,129 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 27.160001754761, 10.330959320068, 11.82568359375, },
+		bbMin = { -27.160001754761, -0.02904748916626, -5.1935895584165e-09, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 27.160001754761, 5.1800031661987, 5.912841796875, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "construction/building/Possoniere/mur.mtl", },
+								mesh = "construction/building/Possoniere/mur_lod0.msh",
+								name = "mur",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, 8.1956386566162e-08, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/chemine.mtl", },
+								mesh = "construction/building/Possoniere/chemine_lod0.msh",
+								name = "chemine",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, -26.537477493286, -5.9559564590454, -4.7683715820313e-06, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/bois.mtl", },
+								mesh = "construction/building/Possoniere/bois_lod0.msh",
+								name = "bois",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, -1.9073486328125e-06, -2.3841857910156e-07, 2.8610229492188e-06, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/toit.mtl", },
+								mesh = "construction/building/Possoniere/toit_lod0.msh",
+								name = "toit",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, 8.1956386566162e-08, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/glass.mtl", },
+								mesh = "construction/building/Possoniere/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, 8.1956386566162e-08, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/metal.mtl", },
+								mesh = "construction/building/Possoniere/metal_lod0.msh",
+								name = "metal",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, -1.9073486328125e-06, -2.3841857910156e-07, 2.8610229492188e-06, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/pierre.mtl", },
+								mesh = "construction/building/Possoniere/pierre_lod0.msh",
+								name = "pierre",
+								transf = { 1, 2.8789628709372e-32, 2.3841857910156e-07, 0, -2.4651903288157e-32, 1, 0, 0, -2.3841857910156e-07, 0, 1, 0, 8.1956386566162e-08, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/tuile.mtl", },
+								mesh = "construction/building/Possoniere/tuile_lod0.msh",
+								name = "tuile",
+								transf = { 0.25, 7.1974071773429e-33, 5.9604644775391e-08, 0, -6.1629758220392e-33, 0.25, 0, 0, -5.9604644775391e-08, 0, 0.25, 0, -7.5210332870483, -8.5447292327881, -1.6118069652293e-06, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/bois.mtl", },
+								mesh = "construction/building/Possoniere/volet_lod0.msh",
+								name = "volet",
+								transf = { 0.90413302183151, -2.7288740242475e-30, 2.1556213880558e-07, 0, -2.3841860752327e-07, -1.6292068494295e-07, 1, 0, 3.8843324986614e-14, -1, -1.6292068494295e-07, 0, -9.7499942779541, -5.7979440689087, -4.7746553421021, 1, },
+							},
+							{
+								materials = { "construction/building/Possoniere/pancarte_info_possoniere.mtl", },
+								mesh = "construction/building/Possoniere/pancarte_gare_lod0.msh",
+								name = "pancarte_gare",
+								transf = { 1, -1.3140645636331e-32, 0, 0, 1.3234889800848e-23, -1.6292068494295e-07, 1, 0, 0, -1, -1.6292068494295e-07, 0, -1.4071878194809, -1.870433807373, -5.0004768371582, 1, },
+							},
+						},
+						name = "Batiment",
+						transf = { -1, -8.7422776573476e-08, -5.3531012400249e-24, 0, 0, 6.1232342629258e-17, -1, 0, 8.7422776573476e-08, -1, -6.1232342629258e-17, 0, 0, 5.1384077072144, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/Possoniere/support.mtl", },
+						mesh = "construction/building/Possoniere/support_Possoniere_lod0.msh",
+						name = "support_Possoniere",
+						transf = { -4.3711387287537e-10, 0.0099999997764826, 6.1232339527331e-19, 0, -0.0099999997764826, -4.3711387287537e-10, 4.3711387287537e-10, 0, 4.3711387287537e-10, 1.8494530960657e-17, 0.0099999997764826, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_gare.mtl", },
+						mesh = "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_bleu_2011_lod0.msh",
+						name = "panneau_sncf_bleu_2011",
+						transf = { -1, -8.6625152562192e-07, 0, 0, 8.6625152562192e-07, -1, 1.6292062809953e-07, 0, -1.4113024442673e-13, 1.6292062809953e-07, 1, 0, 0, 10.130000114441, 4.5900001525879, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4719.5815429688,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 34.049999237061, 3.2999999523163, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, 1.8999999761581, 10.189999580383, 4.4200000762939, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
