@@ -14,7 +14,7 @@ return {
 	description = {
 		name = _("Gare de Rosporden"),
 		--description = _("Gare de Cholet"),
-		icon = "ui/models_small/construction/building/RospordenAff@2x.tga"
+		icon = "ui/construction/asset/gares/RospordenAff@2x.tga"
 	},
 	availability = {
 		yearFrom = 1850,

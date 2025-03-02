@@ -16,7 +16,7 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "assets/props/banc/beton_2_long/material.mtl", },
+						materials = { "assets/props/banc/beton_2_long/beton2.mtl", },
 						mesh = "assets/props/banc/beton_2_long/banc_beton_2_long_lod0.msh",
 						name = "banc_beton_2_long",
 						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 4.3711387287537e-10, 0, 0, -4.3711387287537e-10, 0.0099999997764826, 0, 0, 0, 0, 1, },
