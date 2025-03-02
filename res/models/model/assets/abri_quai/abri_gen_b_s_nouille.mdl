@@ -1,0 +1,48 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.8372428417206, 1.1804509162903, 2.3121643066406, },
+		bbMin = { -1.8372423648834, -1.1764235496521, -7.1525573730469e-07, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.837242603302, 1.1784372329712, 1.1560825109482, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/abri_generique/socle_abri.mtl", "assets/abri_quai/abri_generique/abri.mtl", "assets/abri_quai/abri_generique/toit_abri.mtl", },
+						mesh = "assets/abri_quai/abri_generique/abri_base_s_lod0.msh",
+						name = "abri_base_s",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_generique/material.mtl", },
+						mesh = "assets/abri_quai/abri_generique/banc_long_lod0.msh",
+						name = "banc_long",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_generique/pan_abri.mtl", },
+						mesh = "assets/abri_quai/abri_generique/pan_nouille_lod0.msh",
+						name = "pan_nouille",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 624.09588623047,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
