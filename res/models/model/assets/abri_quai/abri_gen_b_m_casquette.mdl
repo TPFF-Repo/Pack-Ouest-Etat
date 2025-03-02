@@ -22,13 +22,13 @@ function data()
                             transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
                         },
                         {
-                            materials = { "assets/abri_quai/abri_generique/material.mtl", },
+                            materials = { "assets/abri_quai/abri_generique/banc.mtl", },
                             mesh = "assets/abri_quai/abri_generique/banc_court_lod0.msh",
                             name = "banc_court",
                             transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
                         },
                         {
-                            materials = { "assets/abri_quai/abri_generique/material.mtl", },
+                            materials = { "assets/abri_quai/abri_generique/banc.mtl", },
                             mesh = "assets/abri_quai/abri_generique/banc_court_lod0.msh",
                             name = "banc_court",
                             transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
@@ -48,7 +48,28 @@ function data()
                 visibleTo = 624.09588623047,
             },
         },
-        metadata = {},
-        version = 1,
-    }
+        metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 11.949999809265, 1.5, },
+					transf = { 0.10000000149012, 0, -0, 0, 0, -0.0029666167683899, 0.09995599091053, 0, 0, -0.09995599091053, -0.0029666167683899, 0, -0.81999999284744, -0.89999997615814, 1.9900000095367, 1, },
+					type = "NAME",
+					verticalAlignment = "CENTER",
+				},
+			},
+		},
+	},
+	version = 1,
+}
 end
