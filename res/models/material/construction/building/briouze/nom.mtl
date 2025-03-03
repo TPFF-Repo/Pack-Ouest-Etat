@@ -12,7 +12,7 @@ return {
 		},
 		map_albedo = {
 			compressionAllowed = false,
-			fileName = "models/buildings/briouze/balcon.dds",
+			fileName = "models/buildings/briouze/plaque.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 		},
