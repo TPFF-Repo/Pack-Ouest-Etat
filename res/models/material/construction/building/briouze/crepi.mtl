@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/building/era_b/shared/all_wall_plaster_stucco_19_albedo.dds",
+			fileName = "models/buildings/briouze/all_wall_plaster_stucco_19_albedo.dds",
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",

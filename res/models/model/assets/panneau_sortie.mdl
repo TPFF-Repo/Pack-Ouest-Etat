@@ -16,8 +16,8 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "assets/panneau_sortie.mtl", },
-						mesh = "assets/panneau_sortie_lod0.msh",
+						materials = { "assets/panneau/panneau_sortie.mtl", },
+						mesh = "assets/panneau/panneau_sortie_lod0.msh",
 						name = "panneau_sortie",
 						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, -3.7063578872676e-08, 1.7000000476837, 1, },
 					},

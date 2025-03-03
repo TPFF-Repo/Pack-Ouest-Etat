@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/guingamp/Bricks064_2K_Color.dds",
+			fileName = "models/buildings/guingamp/Bricks064_2K_Color.tga",
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
@@ -23,7 +23,7 @@ return {
 			wrapT = "REPEAT",
 		},
 		map_normal = {
-			fileName = "models/buildings/guingamp/Bricks064_2K_NormalGL.dds",
+			fileName = "models/buildings/guingamp/Bricks064_2K_NormalGL.tga",
 			redGreen = true,
 			type = "TWOD",
 			wrapS = "REPEAT",

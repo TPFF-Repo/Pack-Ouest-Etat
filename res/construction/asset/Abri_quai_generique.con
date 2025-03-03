@@ -67,7 +67,7 @@ function data()
                 key = "banc_abri",
                 name = _("Avec Banc"), --translate on string.lua
                 uiType = "BUTTON",
-                values = { _("Oui"), _("Non"), },
+                values = { _("Non"), _("Oui"), },
                 tooltip = _(""),
                 defaultIndex = 0,
             },
@@ -76,9 +76,9 @@ function data()
                 name = _("Modèle des Bancs"), --translate on string.lua
                 uiType = "COMBOBOX",
                 values = {
-                    _("Beton 1 Cour"),
+                    _("Beton 1 Court"),
                     _("Beton 1 Long"),
-                    _("Beton 2 Cour"),
+                    _("Beton 2 Court"),
                     _("Beton 2 Long"),
                 },
                 tooltip = _(""),
