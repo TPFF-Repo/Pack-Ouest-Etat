@@ -145,7 +145,6 @@ return {
 					},
 					speedLimit = 20,
 					transportModes = { "PERSON", },
-					linkable = true,
 				},
 			},
 			runways = { },

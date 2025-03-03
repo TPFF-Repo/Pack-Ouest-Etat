@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/guingamp/Plaster001_1K_Color.tga",
+			fileName = "models/buildings/guingamp/Plaster001_1K_Color.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 			wrapS = "REPEAT",
@@ -25,7 +25,7 @@ return {
 			wrapT = "REPEAT",
 		},
 		map_normal = {
-			fileName = "models/buildings/guingamp/Plaster001_1K_NormalGL.tga",
+			fileName = "models/buildings/guingamp/Plaster001_1K_NormalGL.dds",
 			redGreen = true,
 			type = "TWOD",
 			wrapS = "REPEAT",
