@@ -35,8 +35,14 @@ return {
 					},
 					{
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
-						mesh = "construction/building/cholet/details_lod0.msh",
+						mesh = "construction/building/cholet/details_lod1.msh",
 						name = "details",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/ecrito.mtl", },
+						mesh = "construction/building/cholet/ecrito_cholet_lod1.msh",
+						name = "ecrito",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -164,7 +170,13 @@ return {
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
 						mesh = "construction/building/cholet/details_lod1.msh",
 						name = "details",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/ecrito.mtl", },
+						mesh = "construction/building/cholet/ecrito_cholet_lod1.msh",
+						name = "ecrito",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
 					},
 					{
 						materials = { "construction/building/cholet/moulures_gres.mtl", "construction/building/cholet/moulures_pierre.mtl", "construction/building/cholet/pierre.mtl", },
@@ -263,11 +275,36 @@ return {
 				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 			},
 			static = false,
+			-- .
 			visibleFrom = 75,
 			visibleTo = 2000,
 		},
 	},
-	metadata = { },
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -15.25, 0.050000000745058, },
+							{ 0, -15.25, 0, },
+							1.5,
+						},
+						{
+							{ 0, 0, 0.050000000745058, },
+							{ 0, -15.25, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
 	version = 1,
 }
 end
