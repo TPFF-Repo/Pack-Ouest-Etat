@@ -40,7 +40,7 @@ return {
 
 	updateFn = function(result, transform, tag, slotId, addModuleFn, params)
 		local config = {
-			extend = { -23, 23, 0.4, -26, 10, 0, },
+			extend = { -27, 27, -26, 0.33, -2, 10 },
 			main = "construction/building/Rosporden.mdl",
 
 			slotIdOffset = 1, --1!
