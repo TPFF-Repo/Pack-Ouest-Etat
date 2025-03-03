@@ -4,8 +4,8 @@ return {
 		minorVersion = 0,
 		severityAdd = "NONE",
 		severityRemove = "WARNING",
-		name = _("Pack Gare Ouest Etat"),
-		description = _("Pack Gare Ouest Etat"),
+		name = _("gare_ouest_etat"),
+		description = _("gare_ouest_etat_desc"),
 		tags = {"europe", "france", "station", "SNCF" ,"TPFF", "Ouest", "Gare", "Pays de la Loire", "Bretagne"},
 		authors = {
 			{
