@@ -25,7 +25,9 @@ local degrees = intRange(-180,180, 1)
 
 local models = {
     "Ancenis",
+    "AncenisAff",
     "Cholet",
+    "CholetAff",
 }
 
 function data()
@@ -58,11 +60,16 @@ return {
 			defaultIndex = 0,
 		},
 		{
-        	key = "variant_gares",
-        	name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-        	uiType = "COMBOBOX",
-        	values = { _("Ancenis"), _("Cholet")}
-        },
+            key = "variant_gares",
+            name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+            uiType = "ICON_BUTTON",
+            values = {
+					_("ui/construction/asset/gares/Ancenis@2x.tga"),
+					_("ui/construction/asset/gares/AncenisAff@2x.tga"),
+					_("ui/construction/asset/gares/Cholet@2x.tga"),
+					_("ui/construction/asset/gares/CholetAff@2x.tga"),
+			},
+		},
         {
         	key = "socle",
         	name = _("Socle de Base"),

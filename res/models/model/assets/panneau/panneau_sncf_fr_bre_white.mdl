@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.0452680587769, 0.022526223212481, 0.76890051364899, },
+		bbMin = { -2.0452680587769, -0.022526223212481, 0.03476870059967, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.0452680587769, 0.022526223212481, 0.36706590652466, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau/panneau_sncf_fr_bre_white/panneau_sncf_fr_bre_white.mtl", },
+						mesh = "assets/panneau/panneau_sncf_fr_bre_white/panneau_sncf_fr_bre_white_lod0.msh",
+						name = "panneau_sncf_fr_bre_white",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0.022526163607836, 0.40183460712433, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 325.26788330078,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

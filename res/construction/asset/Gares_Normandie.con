@@ -55,10 +55,12 @@ return {
 			defaultIndex = 0,
 		},
 		{
-			key = "variant_gares", 
-			name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-			uiType = "COMBOBOX",
-			values = { _("Briouze"),}
+            key = "variant_gares",
+            name = _("Variantes"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+            uiType = "ICON_BUTTON",
+            values = {
+					_("ui/construction/asset/gares/Briouze@2x.tga"),
+					},
 		},
 		{
         	key = "socle",

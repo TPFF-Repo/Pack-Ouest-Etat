@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/montauban/Fenetre et panneaux.tga",
+			fileName = "models/buildings/montauban/Fenetre et panneaux.dds",
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
@@ -23,7 +23,7 @@ return {
 			wrapT = "REPEAT",
 		},
 		map_normal = {
-			fileName = "models/buildings/montauban/Fenetre et panneaux Normal.tga",
+			fileName = "models/buildings/montauban/Fenetre et panneaux Normal.dds",
 			redGreen = true,
 			type = "TWOD",
 			wrapS = "REPEAT",

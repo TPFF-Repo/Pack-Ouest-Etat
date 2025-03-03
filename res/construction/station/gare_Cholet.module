@@ -13,7 +13,7 @@ function data()
         description = {
             name = _("Gare de Cholet"),
             description = _("Gare de Cholet"),
-            icon = "ui/models_small/construction/building/Cholet@2x.tga"
+            icon = "ui/construction/asset/gares/Cholet@2x.tga"
         },
         availability = {
             yearFrom = 1850,
@@ -39,7 +39,7 @@ function data()
 
         updateFn = function(result, transform, tag, slotId, addModuleFn, params)
             local config = {
-                extend = { -19, 19, 0.4, -13, 17, 13, },
+                extend = { -39, 39, -39, 0.1, 0, 13, },
                 main = "construction/building/Cholet.mdl",
 
                 slotIdOffset = 1, --1!

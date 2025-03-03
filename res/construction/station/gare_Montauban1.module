@@ -14,7 +14,7 @@ return {
 	description = {
 		name = _("Gare de Montauban de Bretagne"),			
 		description = _("Gare de Montauban de Bretagne"),
-		icon = "ui/models_small/construction/building/Montauban@2x.tga"
+		icon = "ui/construction/asset/gares/Montauban@2x.tga"
 	}, 
 	availability = {
 		yearFrom = 1850,

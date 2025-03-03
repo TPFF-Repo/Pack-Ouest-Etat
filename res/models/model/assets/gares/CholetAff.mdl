@@ -1,0 +1,412 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 38.770000457764, 0.10000000149012, 13.60000038147, },
+		bbMin = { -38.770000457764, -38.840000152588, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 38.770000457764, 19.469999313354, 6.8000001907349, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -19.370000839233, 6.8000001907349, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/cholet/portes+fenetres.mtl", },
+						mesh = "construction/building/cholet/portes+fenetres_lod0.msh",
+						name = "portes+fenetres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/mur.mtl", },
+						mesh = "construction/building/cholet/cheminees_lod0.msh",
+						name = "cheminees",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/mur.mtl", "construction/building/cholet/toit.mtl", "construction/building/cholet/hall_verre.mtl", },
+						mesh = "construction/building/cholet/batiment_lod0.msh",
+						name = "batiment",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
+						mesh = "construction/building/cholet/details_lod0.msh",
+						name = "details",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/ecrito.mtl", },
+						mesh = "construction/building/cholet/ecrito_cholet_lod0.msh",
+						name = "ecrito",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/moulures_gres.mtl", "construction/building/cholet/moulures_pierre.mtl", "construction/building/cholet/pierre.mtl", },
+						mesh = "construction/building/cholet/moulures_lod0.msh",
+						name = "moulures",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/metal.mtl", },
+						mesh = "construction/building/cholet/goutierres_lod0.msh",
+						name = "goutierres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_body_lod0.msh",
+								name = "era_a_small_clock_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/minutes/era_a_small_clock_minutes.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_minutes_lod0.msh",
+								name = "era_a_small_clock_minutes",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/hours/era_a_small_clock_hours.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_hours_lod0.msh",
+								name = "era_a_small_clock_hours",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_backplate_lod0.msh",
+								name = "era_a_small_clock_backplate",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/minutes/era_a_small_clock_minutes_2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_minutes_2_lod0.msh",
+								name = "era_a_small_clock_minutes_2",
+								transf = { -1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/hours/era_a_small_clock_hours_2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_hours_2_lod0.msh",
+								name = "era_a_small_clock_hours_2",
+								transf = { -1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_backplate_2_lod0.msh",
+								name = "era_a_small_clock_backplate_2",
+								transf = { -1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "era_a_small_clock_grp",
+						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 9.6100006103516, 1, },
+					},
+					{
+						materials = { "construction/building/commun/support.mtl", },
+						mesh = "construction/building/cholet/support_cholet_lod0.msh",
+						name = "support",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 75,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/cholet/portes+fenetres.mtl", },
+						mesh = "construction/building/cholet/portes+fenetres_lod0.msh",
+						name = "portes+fenetres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/mur.mtl", },
+						mesh = "construction/building/cholet/cheminees_lod1.msh",
+						name = "cheminees",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/mur.mtl", "construction/building/cholet/toit.mtl", "construction/building/cholet/hall_verre.mtl", },
+						mesh = "construction/building/cholet/batiment_lod0.msh",
+						name = "batiment",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
+						mesh = "construction/building/cholet/details_lod1.msh",
+						name = "details",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/ecrito.mtl", },
+						mesh = "construction/building/cholet/ecrito_cholet_lod1.msh",
+						name = "ecrito",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/moulures_gres.mtl", "construction/building/cholet/moulures_pierre.mtl", "construction/building/cholet/pierre.mtl", },
+						mesh = "construction/building/cholet/moulures_lod0.msh",
+						name = "moulures",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/cholet/metal.mtl", },
+						mesh = "construction/building/cholet/goutierres_lod0.msh",
+						name = "goutierres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_body_lod0.msh",
+								name = "era_a_small_clock_body",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/minutes/era_a_small_clock_minutes.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_minutes_lod0.msh",
+								name = "era_a_small_clock_minutes",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/hours/era_a_small_clock_hours.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_hours_lod0.msh",
+								name = "era_a_small_clock_hours",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_backplate_lod0.msh",
+								name = "era_a_small_clock_backplate",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/minutes/era_a_small_clock_minutes_2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_minutes_2_lod0.msh",
+								name = "era_a_small_clock_minutes_2",
+								transf = { -1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_a_small_clock/hours/era_a_small_clock_hours_2.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_hours_2_lod0.msh",
+								name = "era_a_small_clock_hours_2",
+								transf = { -1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "station/rail/era_a/era_a_trainstation_assets.mtl", },
+								mesh = "station/rail/asset/era_a_small_clock/era_a_small_clock_backplate_2_lod0.msh",
+								name = "era_a_small_clock_backplate_2",
+								transf = { -1, 1.2246468525852e-16, 0, 0, -1.2246468525852e-16, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+						},
+						name = "era_a_small_clock_grp",
+						transf = { 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, 0, -0, 2.5999999046326, 0, 0, -9.8999996185303, 9.6100006103516, 1, },
+					},
+					{
+						materials = { "construction/building/commun/support.mtl", },
+						mesh = "construction/building/cholet/support_cholet_lod0.msh",
+						name = "support",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			-- .
+			visibleFrom = 75,
+			visibleTo = 2000,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -38.849998474121, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -27.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -27.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, 0, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -5.4000000953674, -38.849998474121, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -5.5, -27.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -5.5, -27.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -7.8000001907349, -16.5, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -7.8499999046326, -16.5, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -33.5, -12.699999809265, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -33.5, -12.64999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -33.5, 0, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 5.4000000953674, -38.849998474121, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 5.5, -27.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 5.5, -27.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 7.8000001907349, -16.5, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 7.8499999046326, -16.5, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 33.5, -12.699999809265, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 33.5, -12.64999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 33.5, 0, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

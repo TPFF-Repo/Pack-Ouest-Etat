@@ -1,0 +1,73 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.20000004768372, 0.20000001788139, 2.5536158084869, },
+		bbMin = { -1.0059534311295, -0.20000000298023, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.60297673940659, 0.20000001788139, 1.2768079042435, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_fin_quai/panneau_fin_quai.mtl", },
+						mesh = "assets/panneau_fin_quai/panneau_lod0.msh",
+						name = "panneau",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, -0.50147646665573, -5.8021100812766e-08, 1.3273681402206, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -5.6824802641131e-08, 1.2999999523163, 0, 0, -1.2999999523163, -5.6824802641131e-08, 0, 0, 0, 0, 1.2999999523163, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 335.56460571289,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 8.1000003814697, 1.5900000333786, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.98000001907349, -0.012000000104308, 2.3299999237061, 1, },
+					type = "NAME",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 8.1000003814697, 1.5900000333786, },
+					transf = { -0.10000000149012, -3.8941436741879e-08, 0, 0, -1.7021841759124e-15, 4.3711390063095e-09, 0.10000000149012, 0, -3.8941436741879e-08, 0.10000000149012, -4.3711390063095e-09, 0, -0.17000000178814, 0.012000000104308, 2.3299999237061, 1, },
+					type = "NAME",
+					verticalAlignment = "CENTER",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
