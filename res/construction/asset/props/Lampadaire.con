@@ -23,9 +23,9 @@ end
 local degrees = intRange(-180,180, 1)
 
 local lampModel = {
-    "assets/props//lampadaires/lampadaire_generique_ouest.mdl",
-    "assets/props//lampadaires/lampadaire_double_generique_ouest.mdl",
-    "assets/props//lampadaires/lampadaire_la_forest.mdl",
+    "assets/props/lampadaires/lampadaire_generique_ouest.mdl",
+    "assets/props/lampadaires/lampadaire_double_generique_ouest.mdl",
+    "assets/props/lampadaires/lampadaire_la_forest.mdl",
 }
 
 local panneauOneModel = {
