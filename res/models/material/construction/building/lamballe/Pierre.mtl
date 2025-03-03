@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/lamballe/Bricks038_1K_Color.tga",
+			fileName = "models/buildings/lamballe/Bricks038_1K_Color.dds",
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
@@ -23,7 +23,7 @@ return {
 			wrapT = "REPEAT",
 		},
 		map_normal = {
-			fileName = "models/buildings/lamballe/Bricks038_1K_Normal.tga",
+			fileName = "models/buildings/lamballe/Bricks038_1K_Normal.dds",
 			redGreen = true,
 			type = "TWOD",
 			wrapS = "REPEAT",

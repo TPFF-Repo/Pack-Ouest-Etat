@@ -11,13 +11,13 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/guingamp/Pipe002_1K_Color.tga",
+			fileName = "models/buildings/guingamp/Pipe002_1K_Color.dds",
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
 		},
 		map_metal_gloss_ao = {
-			fileName = "models/buildings/guingamp/Pipe002_1K_Roughness.tga",
+			fileName = "models/buildings/guingamp/Pipe002_1K_Roughness.dds",
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
