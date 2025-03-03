@@ -30,7 +30,7 @@ local lampModel = {
 
 local panneauOneModel = {
     "assets/empty.mdl",
-    "assets/panneau_sortie.mdl",
+    "assets/panneau/panneau_sortie.mdl",
 }
 
 local panneauTwoModel = {

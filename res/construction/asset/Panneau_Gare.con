@@ -22,8 +22,8 @@ local function intRange(start, stop, step)
 end
 
 local model = {
-    "assets/panneau_gare_support_double.mdl",
-    "assets/panneau_fin_quai.mdl",
+    "assets/panneau/panneau_gare_support_double.mdl",
+    "assets/panneau/panneau_fin_quai.mdl",
 }
 
 function data()
