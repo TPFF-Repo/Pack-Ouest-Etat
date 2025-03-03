@@ -14,7 +14,7 @@ return {
 	description = {
 		name = _("Gare de Lamballe"),			
 		description = _("Gare de Lamballe"),
-		icon = "ui/models_small/construction/building/LamballeSM@2x.tga"
+		icon = "ui/construction/asset/gares/LamballeSM@2x.tga"
 	}, 
 	availability = {
 		yearFrom = 1850,

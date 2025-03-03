@@ -25,7 +25,9 @@ local degrees = intRange(-180,180, 1)
 
 local models = {
     "Ancenis",
+    "AncenisAff",
     "Cholet",
+    "CholetAff",
 }
 
 function data()
@@ -63,7 +65,9 @@ return {
             uiType = "ICON_BUTTON",
             values = {
 					_("ui/construction/asset/gares/Ancenis@2x.tga"),
+					_("ui/construction/asset/gares/AncenisAff@2x.tga"),
 					_("ui/construction/asset/gares/Cholet@2x.tga"),
+					_("ui/construction/asset/gares/CholetAff@2x.tga"),
 			},
 		},
         {

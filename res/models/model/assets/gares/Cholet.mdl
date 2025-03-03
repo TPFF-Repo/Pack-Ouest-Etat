@@ -34,7 +34,7 @@ return {
 						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.80000001192093, 1, },
 					},
 					{
-						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", "construction/building/cholet/ecrito.mtl", },
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
 						mesh = "construction/building/cholet/details_lod0.msh",
 						name = "details",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
@@ -167,7 +167,7 @@ return {
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
 					},
 					{
-						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", "construction/building/cholet/ecrito.mtl", },
+						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
 						mesh = "construction/building/cholet/details_lod1.msh",
 						name = "details",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
