@@ -16,7 +16,7 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "assets/panneau_gare.mtl", },
+						materials = { "assets/panneau/panneau_gare.mtl", },
 						mesh = "assets/panneau_gare_support_double/panneau_lod0.msh",
 						name = "panneau",
 						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.75, -0.064890280365944, 0, 1, },
