@@ -52,6 +52,48 @@ return {
 			static = false,
 			-- .
 			visibleFrom = 0,
+			visibleTo = 50,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/briouze/crepi.mtl", "construction/building/briouze/toit.mtl", "construction/building/briouze/fenetres.mtl", "construction/building/briouze/vitres.mtl", },
+						mesh = "construction/building/briouze/batiment_lod0.msh",
+						name = "batiment",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -3.8299999237061, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/briouze/brique.mtl", "construction/building/briouze/autre.mtl", "construction/building/briouze/gouttiere.mtl", "construction/building/briouze/nom.mtl", },
+						mesh = "construction/building/briouze/details_lod0.msh",
+						name = "details",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -3.8299999237061, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/briouze/ex-horloge.mtl", },
+						mesh = "construction/building/briouze/ex-horloge_lod0.msh",
+						name = "ex-horloge",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -3.8299999237061, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/briouze/balcons.mtl", },
+						mesh = "construction/building/briouze/balcons_lod1.msh",
+						name = "balcons",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, -3.8299999237061, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/commun/support.mtl", "construction/building/briouze/support_paves.mtl", },
+						mesh = "construction/building/briouze/support_briouze_lod0.msh",
+						name = "support",
+						transf = { -4.3711388286738e-08, -1, -2.8925767999865e-31, 0, 1, -4.3711388286738e-08, 0, 0, -1.264385438647e-38, -2.8925767999865e-31, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			-- .
+			visibleFrom = 50,
 			visibleTo = 2814.6923828125,
 		},
 	},

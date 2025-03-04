@@ -48,11 +48,11 @@ fr = {
 },
 		
 en = {
-    ["gare_ouest_etat"] = "West-State Type Station",
-    ["gare_ouest_etat_desc"] = "[h1]West-State Type Stations Pack[/h1]"..lb..
+    ["gare_ouest_etat"] = "West-Nation Type Station",
+    ["gare_ouest_etat_desc"] = "[h1]West-Nation Type Stations Pack[/h1]"..lb..
     lb..
     lb..
-    "In this pack, you will find several varieties of stations inspired by the former West-State company, representing Normandy, Pays de la Loire, and Brittany."..lb..
+    "In this pack, you will find several varieties of stations inspired by the former West-Nation company, representing Normandy, Pays de la Loire, and Brittany."..lb..
     lb..
     lb..
     "[h2][b]List of available stations:[/b][/h2]"..lb..
