@@ -1,4 +1,4 @@
-function data()
+function data()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   -- .
 return {
 	boundingInfo = {
 		bbMax = { 30.120000839233, 0.10000000149012, 13.60000038147, },
@@ -37,12 +37,6 @@ return {
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
 						mesh = "construction/building/cholet/details_lod1.msh",
 						name = "details",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-					},
-					{
-						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/ecrito.mtl", },
-						mesh = "construction/building/cholet/ecrito_cholet_lod1.msh",
-						name = "ecrito",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 					},
 					{
@@ -170,12 +164,6 @@ return {
 						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/vitres.mtl", },
 						mesh = "construction/building/cholet/details_lod1.msh",
 						name = "details",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
-					},
-					{
-						materials = { "construction/building/cholet/details.mtl", "construction/building/cholet/ecrito.mtl", },
-						mesh = "construction/building/cholet/ecrito_cholet_lod1.msh",
-						name = "ecrito",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.80000001192093, 1, },
 					},
 					{
