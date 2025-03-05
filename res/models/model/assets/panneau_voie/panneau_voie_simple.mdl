@@ -1,0 +1,73 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { -0.037553872913122, 0.013000216335058, 0.32499998807907, },
+		bbMin = { -0.62753850221634, -0.012999878264964, -0.32500001788139, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.29499232769012, 0.01300004683435, 0.32499998807907, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_voie/panneau_voie_simple/panneau_voie.mtl", },
+						mesh = "assets/panneau_voie/panneau_voie_simple/panneau_voie_lod0.msh",
+						name = "panneau_voie",
+						transf = { -1.6292068494295e-07, -1, -6.1232342629258e-17, 0, 1, -1.6292068494295e-07, 4.3711388286738e-08, 0, -4.3711388286738e-08, 7.0602567845898e-15, 1, 0, -0.037553887814283, 1.2087039635844e-07, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 138.30819702148,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.63437139987946, 0.88595736026764, 0.98039215803146, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 2.3499999046326, 2.3499999046326, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.46000000834465, -0.019999999552965, -0.070000000298023, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.63437139987946, 0.88595736026764, 0.98039215803146, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 2.3499999046326, 2.3499999046326, },
+					transf = { -0.10000000149012, -3.8941436741879e-08, 0, 0, -1.7021841759124e-15, 4.3711390063095e-09, 0.10000000149012, 0, -3.8941436741879e-08, 0.10000000149012, -4.3711390063095e-09, 0, -0.21999999880791, 0.019999999552965, -0.070000000298023, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
