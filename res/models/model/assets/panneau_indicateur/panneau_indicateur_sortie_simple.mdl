@@ -19,7 +19,7 @@ return {
 						materials = { "assets/panneau_indicateur_sortie/panneau_indicateur.mtl", },
 						mesh = "assets/panneau_indicateur_sortie/panneau_indicateur_sortie_lod0.msh",
 						name = "panneau_indicateur_sortie",
-						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, -0.79051780700684, 0.020716238766909, 3.0848183631897, 1, },
+						transf = { 1, 0, 0, 0, -0, 1, 1.6292065652124e-07, 0, 0, -1.6292065652124e-07, 1, 0, -0.75999999046326, 0.019999999552965, 3.0848183631897, 1, },
 					},
 				},
 				name = "RootNode",
