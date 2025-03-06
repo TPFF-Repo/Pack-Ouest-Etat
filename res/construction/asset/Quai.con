@@ -26,6 +26,7 @@ local degrees = intRange(-180,180, 5)
 local tradTypeQuai = {
     "25_simple",
     "25_simple_end",
+    "20_simple_20m",
     "base",
     "base_bordure",
     "double",
@@ -61,6 +62,8 @@ function data()
             	    _("ui/parameters/quai/quai_4.tga"),
             	    _("ui/parameters/quai/quai_5.tga"),
             	    _("ui/parameters/quai/quai_6.tga"),
+            	    _("ui/parameters/quai/quai_7.tga"),
+                    _("ui/parameters/quai/quai_8.tga"),
             	 },
             	tooltip = _("Choisissez le model de quai"),
             	defaultIndex = 0,
@@ -72,6 +75,7 @@ function data()
             	values = {
             	    _("2,5m simple"),
             	    _("2,5m simple fin de quai"),
+            	    _("2,5m simple 20m"),
             	    _("base"),
             	    _("base + bordure"),
             	    _("double"),
