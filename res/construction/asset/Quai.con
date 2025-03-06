@@ -26,7 +26,7 @@ local degrees = intRange(-180,180, 5)
 local tradTypeQuai = {
     "25_simple",
     "25_simple_end",
-    "20_simple_20m",
+    "25_simple_20m",
     "base",
     "base_bordure",
     "double",
