@@ -1,0 +1,202 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+local utils = require "dynamic_screens_base/utils"
+
+local function map(a, f)
+    local res = {}
+    if a and type(a) == "table" then
+        for _, v in ipairs(a) do
+            table.insert(res, f(v))
+        end
+    end
+    return res
+end
+
+local function intRange(start, stop, step)
+    local a = {}
+    local i = start
+    while i <= stop do
+        table.insert(a, i)
+        i = i + step
+    end
+    return a
+end
+local degrees = intRange(-180, 180, 1)
+local function configKey(name)
+    return "lcd_liste_depart_" .. name
+end
+
+local function makeParams()
+    local params = {}
+
+    utils.makeTerminalOverrideParam(params, configKey)
+
+    params[#params + 1] = {
+        key = "horloges",
+        name = _("Horloges"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+        uiType = "BUTTON",
+        values = { _("Non"), _("Oui") },
+        defaultIndex = 0
+    }
+
+    params[#params + 1] = {
+        key = "panneau_voie",
+        name = _("Panneau de Voie"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+        uiType = "BUTTON",
+        values = { _("Non"), _("Oui") },
+        defaultIndex = 0
+    }
+
+    params[#params + 1] = {
+        key = "ecran_infogare",
+        name = _("Ecran Infogare"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+        uiType = "BUTTON",
+        values = { _("Non"), _("Oui") },
+        defaultIndex = 0
+    }
+
+    params[#params + 1] = {
+        key = "positiony_gare",
+        name = _("Position"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+        uiType = "BUTTON",
+        values = { _("Gauche"), _("Droite") },
+        defaultIndex = 0
+    }
+
+    params[#params + 1] = {
+        key = "offsetz",
+        name = _("Hauteur"),
+        values = map(intRange(-200, 200, 5), function(i) return "" .. i .. " cm" end),
+        uiType = "SLIDER",
+        defaultIndex = math.floor(#intRange(-200, 200, 5) / 2)
+    }
+
+    params[#params + 1] = {
+        key = "offsety",
+        name = _("distance de la voie"),
+        values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+        uiType = "SLIDER",
+        defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
+    }
+
+    params[#params + 1] = {
+        key = "offsetx",
+        name = _("Espacement"),
+        values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
+        uiType = "SLIDER",
+        defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
+    }
+
+    -- since the terminal placement logic is not perfect, provide a param to override the terminal this sign is linked to
+
+
+    return params
+end
+
+function data()
+    return {
+        type = "ASSET_TRACK",
+        buildMode = "MULTI",
+        description = {
+            name = _("Poteau Modulaire"),
+            icon = "ui/construction/asset/poteau_modulable.tga"
+        },
+        categories = { "Gares Ouest-Etat" },
+        skipCollision = true, --false,
+        autoRemovable = false,
+        order = 4404 + 100,
+        params = makeParams(),
+        updateFn = function(params)
+            local result = {}
+            result.models = {}
+
+            local grad = 0
+            local height = 0
+            local shiftm = 0
+            local spacingm = 0
+            local offsetz = intRange(-500, 500, 5)[params.offsetz + 1] / 100
+            local offsety = intRange(-500, 500, 5)[params.offsety + 1] / 100
+            local offsetx = intRange(-500, 500, 5)[params.offsetx + 1] / 100
+
+
+            -- Règle la valeur d'espacement de l'asset
+            if params.positiony_gare == 0 then shiftm = -5 end
+            if params.positiony_gare == 0 then height = 3.5 end
+            if params.positiony_gare == 1 then shiftm = 5 end
+            if params.positiony_gare == 1 then height = 3.5 end
+
+            result.models[#result.models + 1] = {
+                id = "assets/poteau_sncf_new.mdl",
+                transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),
+                    vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
+            }
+
+            if params.horloges == 1 then
+                result.models[#result.models + 1] = {
+                    id = "assets/props/horloges/horloge_murale_sncf_bodet_carmillon.mdl",
+                    transf = transf.rotZYXTransl(transf.degToRad(degrees[180], 0, 0),
+                        vec3.new(spacingm + offsetx, shiftm + 0.60 + offsety, height + offsetz + 1))
+                }
+            end
+
+            if params.panneau_voie == 1 then
+                result.models[#result.models + 1] = {
+                    id = "assets/panneau_voie/panneau_voie_simple.mdl",
+                    transf = transf.rotZYXTransl(transf.degToRad(degrees[90], 0, 0),
+                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz + 2.7))
+                }
+            end
+            if params.ecran_infogare == 1 then
+                result.models[#result.models + 1] = {
+                    id = "assets/props/support_ecran_left.mdl",
+                    transf = transf.rotZYXTransl(transf.degToRad(degrees[270], 0, 0),
+                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
+                }
+                result.models[#result.models + 1] = {
+                    id = "assets/ecran/ecran_depart_liste.mdl",
+                    transf = transf.rotZYXTransl(transf.degToRad(degrees[270], 0, 0),
+                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
+                }
+            end
+
+            result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+
+            result.groundFaces = {
+                {
+                    face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+                    modes = {
+                        {
+                            type = "FILL",
+                            key = "industry_floor.lua"
+                        }
+                    },
+                    loop = true,
+                    alignmentOffsetMode = "OBJECT",
+                    alignmentDirMode = "OBJECT",
+                    alignmentOffset = { -2.0, -1.0 },
+                },
+            }
+
+            local labelValues = {}
+            for i = 1, 18 do
+                labelValues[i] = ""
+            end
+
+            local numArrivals = params[configKey("num_arrivals")] or 0
+            if numArrivals > 0 then
+                for i = 1, numArrivals do
+                    local labelIndexStart = (i - 1) * 2 + 1   -- Début à l'index approprié
+                    labelValues[labelIndexStart] = params[configKey("arrival_" .. i .. "_dest")] or ""
+                    labelValues[labelIndexStart + 1] = params[configKey("arrival_" .. i .. "_terminal")] or ""
+                end
+            end
+
+            result.labelText = {
+                [#result.models - 1] = labelValues
+            }
+
+
+            return result
+        end
+    }
+end
