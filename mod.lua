@@ -1,29 +1,47 @@
+local construction = require "dynamic_screens_base/construction_hooks"
 function data()
-return {
-  info = {
-		minorVersion = 0,
-		severityAdd = "NONE",
-		severityRemove = "WARNING",
-		name = _("gare_ouest_etat"),
-		description = _("gare_ouest_etat_desc"),
-		tags = {"europe", "france", "station", "SNCF" ,"TPFF", "Ouest", "Gare", "Pays de la Loire", "Bretagne"},
-		authors = {
-			{
-				name = "NTH-Z6K4",
-				role = "CREATOR",
-				text = "3D, Texture, Script",
-			},
-			{
-				name = "SYLTHERON",
-				role = "Creator",
-				text = "3D, Texture, Script",
-			},
-			{
-            	name = "YOODEL22",
-            	role = "Creator",
-            	text = "3D, Texture, Script",
+    return {
+        info = {
+            minorVersion = 0,
+            severityAdd = "NONE",
+            severityRemove = "WARNING",
+            name = _("gare_ouest_etat"),
+            description = _("gare_ouest_etat_desc"),
+            tags = { "europe", "france", "station", "SNCF", "TPFF", "Ouest", "Gare", "Pays de la Loire", "Bretagne" },
+            authors = {
+                {
+                    name = "NTH-Z6K4",
+                    role = "CREATOR",
+                    text = "3D, Texture, Script",
+                },
+                {
+                    name = "SYLTHERON",
+                    role = "Creator",
+                    text = "3D, Texture, Script",
+                },
+                {
+                    name = "YOODEL22",
+                    role = "Creator",
+                    text = "3D, Texture, Script",
+                },
             },
-		},
-	}
-}
+            requiredMods = { -- optional, Informationen über geladene Mods
+                {
+                    modId = "dynamic_Screens_base_1",
+                    steamId = 3327342273,
+                    minMinorVersion = 0
+                },
+            },
+        },
+        runFn = function()
+            construction.registerConstruction("asset/poteau_modulable.con", {
+                singleTerminal = true,
+                clock = true,
+                maxArrivals = 1,
+                absoluteArrivalTime = false,
+                labelParamPrefix = "lcd_liste_depart_",
+                includeCalling = true,
+            })
+        end
+    }
 end

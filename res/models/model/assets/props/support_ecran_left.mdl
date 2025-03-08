@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.097710885107517, 0.099218219518661, 2.4542610645294, },
+		bbMin = { -0.63663619756699, -0.099218234419823, 2.1492896080017, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.36717355251312, 0.099218226969242, 0.15248572826385, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/support_ecran_left/poteau_sncf_new.mtl", },
+						mesh = "assets/props/support_ecran_left/support_ecran_left_lod0.msh",
+						name = "support_ecran_left",
+						transf = { 0.84821498394012, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 0.84821498394012, 5.1938187588727e-17, 0, 0, -4.8145238906727e-09, 2.1492896080017, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 89.772567749023,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
