@@ -1,5 +1,6 @@
 local vec3 = require "vec3"
 local transf = require "transf"
+local utils = require "dynamic_screens_base/utils"
 
 local function map(a, f)
     local res = {}
@@ -21,31 +22,26 @@ local function intRange(start, stop, step)
     return a
 end
 local degrees = intRange(-180, 180, 1)
+local function configKey(name)
+    return "lcd_liste_depart_" .. name
+end
+
+local models = {
+    "assets/ecran/ecran_depart_liste.mdl",
+}
 
 local function makeParams()
     local params = {}
 
-    params[#params + 1] = {
-        key = "horloges",
-        name = _("Horloges"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-        uiType = "BUTTON",
-        values = { _("Non"), _("Oui") },
-        defaultIndex = 0
-    }
+    utils.makeTerminalOverrideParam(params, configKey)
 
     params[#params + 1] = {
-        key = "ecran_infogare",
-        name = _("Support Ecran Infogare"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-        uiType = "BUTTON",
-        values = { _("Non"), _("Simple"), _("Double") },
-        defaultIndex = 0
-    }
-
-    params[#params + 1] = {
-        key = "panneau_voie",
-        name = _("Panneau Voie/Direction/Repère"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
-        uiType = "BUTTON",
-        values = { _("Non"), _("Voie"), _("Destination"), _("Repère") },
+        key = "type_ecran",
+        name = _("Type d'écran"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
+        uiType = "ICON_BUTTON",
+        values = {
+            _("ui/parameters/ecran/lcd_liste_depart.tga"),
+        },
         defaultIndex = 0
     }
 
@@ -82,6 +78,8 @@ local function makeParams()
     }
 
     -- since the terminal placement logic is not perfect, provide a param to override the terminal this sign is linked to
+
+
     return params
 end
 
@@ -90,8 +88,8 @@ function data()
         type = "ASSET_TRACK",
         buildMode = "MULTI",
         description = {
-            name = _("Poteau Modulaire"),
-            icon = "ui/construction/asset/poteau_modulable.tga"
+            name = _("Ecran Infogare"),
+            icon = "ui/construction/asset/ecran_infogare.tga"
         },
         categories = { "Gares Ouest-Etat" },
         skipCollision = true, --false,
@@ -101,6 +99,7 @@ function data()
         updateFn = function(params)
             local result = {}
             result.models = {}
+            local model = models[params.type_ecran + 1]
 
             local grad = 0
             local height = 0
@@ -118,54 +117,10 @@ function data()
             if params.positiony_gare == 1 then height = 3.5 end
 
             result.models[#result.models + 1] = {
-                id = "assets/poteau_sncf_new.mdl",
-                transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0),
+                id = model,
+                transf = transf.rotZYXTransl(transf.degToRad(degrees[270], 0, 0),
                     vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
             }
-
-            if params.horloges == 1 then
-                result.models[#result.models + 1] = {
-                    id = "assets/props/horloges/horloge_murale_sncf_bodet_carmillon.mdl",
-                    transf = transf.rotZYXTransl(transf.degToRad(degrees[180], 0, 0),
-                        vec3.new(spacingm + offsetx, shiftm + 0.60 + offsety, height + offsetz + 1))
-                }
-            end
-
-            if params.ecran_infogare == 1 then
-                result.models[#result.models + 1] = {
-                    id = "assets/props/support_ecran_left.mdl",
-                    transf = transf.rotZYXTransl(transf.degToRad(degrees[270], 0, 0),
-                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
-                }
-            end
-
-            if params.ecran_infogare == 2 then
-                result.models[#result.models + 1] = {
-                    id = "assets/props/support_ecran_left.mdl",
-                    transf = transf.rotZYXTransl(transf.degToRad(degrees[270], 0, 0),
-                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
-                }
-
-                result.models[#result.models + 1] = {
-                    id = "assets/props/support_ecran_right.mdl",
-                    transf = transf.rotZYXTransl(transf.degToRad(degrees[270], 0, 0),
-                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz))
-                }
-            end
-
-            if params.panneau_voie == 1 then
-                result.models[#result.models + 1] = {
-                    id = "assets/panneau_voie/panneau_voie_simple.mdl",
-                    transf = transf.rotZYXTransl(transf.degToRad(degrees[90], 0, 0),
-                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz + 2.65))
-                }
-            elseif params.panneau_voie == 2 then
-
-            elseif params.panneau_voie == 3 then
-
-            end
-
-
 
             result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
 
@@ -184,6 +139,28 @@ function data()
                     alignmentOffset = { -2.0, -1.0 },
                 },
             }
+
+            local labelValues = {}
+
+            if params.type_ecran == 1 then
+                for i = 1, 18 do
+                    labelValues[i] = ""
+                end
+
+                local numArrivals = params[configKey("num_arrivals")] or 0
+                if numArrivals > 0 then
+                    for i = 1, numArrivals do
+                        local labelIndexStart = (i - 1) * 2 + 1             -- Début à l'index approprié
+                        labelValues[labelIndexStart] = params[configKey("arrival_" .. i .. "_dest")] or ""
+                        labelValues[labelIndexStart + 1] = params[configKey("arrival_" .. i .. "_terminal")] or ""
+                    end
+                end
+            end
+
+            result.labelText = {
+                [#result.models - 1] = labelValues
+            }
+
 
             return result
         end

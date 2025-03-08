@@ -34,13 +34,12 @@ function data()
             },
         },
         runFn = function()
-            construction.registerConstruction("asset/poteau_modulable.con", {
-                singleTerminal = true,
-                clock = true,
-                maxArrivals = 1,
-                absoluteArrivalTime = false,
+            construction.registerConstruction("asset/ecran.con", {
+                singleTerminal = false,
+                clock = false,
+                maxArrivals = 9,
+                absoluteArrivalTime = true,
                 labelParamPrefix = "lcd_liste_depart_",
-                includeCalling = true,
             })
         end
     }
