@@ -1,0 +1,148 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 15.550000190735, 0.28153562545776, 12.060000419617, },
+		bbMin = { -15.549998283386, -9.5200004577637, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 15.55, -4.9, 6.0300002098083, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/pontchateau/crepi.mtl", "construction/building/pontchateau/portes.mtl", "construction/building/pontchateau/orange_jointure_ardoise.mtl", },
+						mesh = "construction/building/pontchateau/batiment_lod0.msh",
+						name = "batiment",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/autre.mtl", "construction/building/pontchateau/ardoises.mtl", },
+						mesh = "construction/building/pontchateau/toit_lod0.msh",
+						name = "toit",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/orange_jointure_ardoise.mtl", },
+						mesh = "construction/building/pontchateau/jointures_ardoises_lod0.msh",
+						name = "jointures_ardoises",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/moulures_blanches.mtl", "construction/building/pontchateau/moulures_pierres.mtl", "construction/building/pontchateau/moulures_pierres_2.mtl", },
+						mesh = "construction/building/pontchateau/moulures_lod0.msh",
+						name = "moulures",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/plaques_pontchateau.mtl", },
+						mesh = "construction/building/pontchateau/plaque_gare_lod0.msh",
+						name = "plaque_gare",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/affiches_pontchateau.mtl", },
+						mesh = "construction/building/pontchateau/affiches_lod0.msh",
+						name = "affiches",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/affiches_pontchateau.mtl", },
+						mesh = "construction/building/pontchateau/affiches_lod0.msh",
+						name = "affiches",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/pontchateau/goutierres.mtl", },
+						mesh = "construction/building/pontchateau/goutierres_lod0.msh",
+						name = "goutierres",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/horloge_pontchateau_lod0.msh",
+								name = "horloge_pontchateau",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/pontchateau/vitre.mtl", },
+								mesh = "construction/building/pontchateau/vitre_horloge_pontchateau_lod0.msh",
+								name = "vitre_horloge_pontchateau",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/aig_minutes_lod0.msh",
+								name = "aig_minutes",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5475573539734, -9.1950273513794, 4.0816102027893, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/aig_heures_lod0.msh",
+								name = "aig_heures",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5475573539734, -9.1950273513794, 4.0816102027893, 1, },
+							},
+						},
+						name = "GRP_horloge",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3525.6442871094,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 6.1999998092651, -15.949999809265, 0.050000000745058, },
+							{ 0, -7.98, 0, },
+							1.5,
+						},
+						{
+							{ 6.1999998092651, 0, 0.050000000745058, },
+							{ 0, -7.98, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

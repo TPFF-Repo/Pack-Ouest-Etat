@@ -28,6 +28,8 @@ local models = {
     "AncenisAff",
     "Cholet",
     "CholetAff",
+    "Pontchateau",
+    "PontchateauAff",
 }
 
 function data()
@@ -68,6 +70,8 @@ return {
 					_("ui/construction/asset/gares/AncenisAff@2x.tga"),
 					_("ui/construction/asset/gares/Cholet@2x.tga"),
 					_("ui/construction/asset/gares/CholetAff@2x.tga"),
+					_("ui/construction/asset/gares/Pontchateau@2x.tga"),
+					_("ui/construction/asset/gares/PontchateauAff@2x.tga"),
 			},
 		},
         {

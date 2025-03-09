@@ -13,7 +13,7 @@ return {
 	},
 	description = {
 		name = _("Gare d'Ancenis"),
-		--description = _("Gare de Cholet"),
+		--description = _("Gare d'Ancenis"),
 		icon = "ui/construction/asset/gares/AncenisAff@2x.tga"
 	},
 	availability = {

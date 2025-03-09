@@ -33,7 +33,9 @@ local models = {
     "Montauban3",
     "PlouaretTregorAM",
     "Rosporden",
-    "RospordenAff",
+    "RospordenAff",	
+	"Yffiniac",
+    "YffiniacAff",
 }
 
 function data()
@@ -79,6 +81,8 @@ return {
 					_("ui/construction/asset/gares/PlouaretTregorAM@2x.tga"),
 					_("ui/construction/asset/gares/Rosporden@2x.tga"),
 					_("ui/construction/asset/gares/RospordenAff@2x.tga"),
+					_("ui/construction/asset/gares/Yffiniac@2x.tga"),
+					_("ui/construction/asset/gares/YffiniacAff@2x.tga"),
             },
 		},
 		{
@@ -151,7 +155,7 @@ return {
 	
 		 if params.AlignTerrain == 1 then
 			result.groundFaces = { { face = {  {0.001, -0.001, 0}, {-0.001, -0.001, 0}, {-0.001, 0.001, 0}, {0.001, 0.001, 0}, }, modes = { { type = "FILL", key = "ballast.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
-				result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+				result.terrainAlignmentLists = { { type = "GREATER", faces = {} } }
 			else
 				result.groundFaces = { { face = {  {0.001, -0.001, 0}, {-0.001, -0.001, 0}, {-0.001, 0.001, 0}, {0.001, 0.001, 0}, }, modes = { { type = "FILL", key = "ballast.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
 			end
