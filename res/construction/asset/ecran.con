@@ -187,8 +187,8 @@ function data()
 
                 if calling then
                     local list = utils.splitString(calling, "@")
-                    for i = 1, math.min(7, #list) do
-                        labelValues[i + 3] = list[i]
+                    for i = 1, math.min(2, #list) do
+                        labelValues[i + 6] = list[i]
                     end
                 else
                     labelValues[7] = "Direct"
