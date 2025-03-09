@@ -28,12 +28,11 @@ end
 
 local models = {
     "assets/ecran/ecran_depart_liste.mdl",
+    "assets/ecran/ecran_depart_3t.mdl",
 }
 
 local function makeParams()
     local params = {}
-
-    utils.makeTerminalOverrideParam(params, configKey)
 
     params[#params + 1] = {
         key = "type_ecran",
@@ -41,9 +40,12 @@ local function makeParams()
         uiType = "ICON_BUTTON",
         values = {
             _("ui/parameters/ecran/lcd_liste_depart.tga"),
+            _("ui/parameters/ecran/lcd_liste_3t.tga"),
         },
         defaultIndex = 0
     }
+
+    utils.makeTerminalOverrideParam(params, configKey)
 
     params[#params + 1] = {
         key = "positiony_gare",
@@ -56,9 +58,9 @@ local function makeParams()
     params[#params + 1] = {
         key = "offsetz",
         name = _("Hauteur"),
-        values = map(intRange(-200, 200, 5), function(i) return "" .. i .. " cm" end),
+        values = map(intRange(-500, 500, 5), function(i) return "" .. i .. " cm" end),
         uiType = "SLIDER",
-        defaultIndex = math.floor(#intRange(-200, 200, 5) / 2)
+        defaultIndex = math.floor(#intRange(-500, 500, 5) / 2)
     }
 
     params[#params + 1] = {
@@ -140,9 +142,10 @@ function data()
                 },
             }
 
-            local labelValues = {}
 
-            if params.type_ecran == 1 then
+
+            if params.type_ecran == 0 then
+                local labelValues = {}
                 for i = 1, 18 do
                     labelValues[i] = ""
                 end
@@ -150,17 +153,53 @@ function data()
                 local numArrivals = params[configKey("num_arrivals")] or 0
                 if numArrivals > 0 then
                     for i = 1, numArrivals do
-                        local labelIndexStart = (i - 1) * 2 + 1             -- Début à l'index approprié
+                        local labelIndexStart = (i - 1) * 2 + 1 -- Début à l'index approprié
                         labelValues[labelIndexStart] = params[configKey("arrival_" .. i .. "_dest")] or ""
                         labelValues[labelIndexStart + 1] = params[configKey("arrival_" .. i .. "_terminal")] or ""
                     end
                 end
+                result.labelText = {
+                    [#result.models - 1] = labelValues
+                }
+            elseif params.type_ecran == 1 then
+                local labelValues = {}
+                for i = 1, 17 do
+                    labelValues[i] = ""
+                end
+
+                labelValues[1] = params[configKey("time_string")]
+                labelValues[3] = params[configKey("arrival_1_time")]
+                labelValues[4] = "TER"
+                labelValues[5] = "856960"
+                labelValues[6] = params[configKey("arrival_1_dest")]
+
+                labelValues[8] = params[configKey("arrival_2_time")]
+                labelValues[9] = "TER"
+                labelValues[10] = "856740"
+                labelValues[11] = params[configKey("arrival_2_dest")]
+
+                labelValues[13] = params[configKey("arrival_3_time")]
+                labelValues[14] = "TER"
+                labelValues[15] = "896040"
+                labelValues[16] = params[configKey("arrival_3_dest")]
+
+                local calling = params[configKey("arrival_1_callingAt")]
+
+                if calling then
+                    local list = utils.splitString(calling, "@")
+                    for i = 1, math.min(7, #list) do
+                        labelValues[i + 3] = list[i]
+                    end
+                else
+                    labelValues[7] = "Direct"
+                    labelValues[12] = "Direct"
+                    labelValues[17] = "Direct"
+                end
+
+                result.labelText = {
+                    [#result.models - 1] = labelValues
+                }
             end
-
-            result.labelText = {
-                [#result.models - 1] = labelValues
-            }
-
 
             return result
         end

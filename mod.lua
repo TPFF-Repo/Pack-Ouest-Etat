@@ -35,11 +35,12 @@ function data()
         },
         runFn = function()
             construction.registerConstruction("asset/ecran.con", {
-                singleTerminal = false,
-                clock = false,
+                singleTerminal = true,
+                clock = true,
                 maxArrivals = 9,
                 absoluteArrivalTime = true,
                 labelParamPrefix = "lcd_liste_depart_",
+                includeCalling = true,
             })
         end
     }
