@@ -1,0 +1,116 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { -13.310000419617, -17.909999847412, 10.890000343323, },
+		bbMin = { 11.640000343323, 0.68000000715256, -0.00011325581726851, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 12.47500038147, -9.2950000762939, 5.4450569152832, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/yffiniac/Toit.mtl", "construction/building/yffiniac/Goutierre.mtl", "construction/building/yffiniac/Faitage.mtl", "construction/building/yffiniac/BriqueToit.mtl", "construction/building/yffiniac/Crepi.mtl", "construction/building/yffiniac/PierreBlanche.mtl", "construction/building/yffiniac/PierreBase.mtl", "construction/building/yffiniac/Metal.mtl", "construction/building/yffiniac/Ouvertures/Signe.mtl", "construction/building/yffiniac/BoisPorte.mtl", },
+						mesh = "construction/building/yffiniac/batiment_lod0.msh",
+						name = "batiment",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.80000001192093, 1, },
+					},
+					{
+						materials = { "construction/building/yffiniac/support.mtl", "construction/building/yffiniac/support_pierre.mtl", },
+						mesh = "construction/building/yffiniac/support_yffiniac_lod0.msh",
+						name = "support_yffiniac",
+						transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3120.6630859375,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 2.5, -17.700000762939, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 2.5, -16.10000038147, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 2.5, -16.10000038147, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 2.5, 0, 0.85000002384186, },
+							{ 1.4500000476837, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1, -17.700000762939, 0.050000000745058, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1, -16.10000038147, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1, -16.10000038147, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -1, -13.14999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},						
+						{
+							{ -1, -13.14999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -11.85000038147, -13.14999961853, 0.85000002384186, },
+							{ 1.4500000476837, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -11.85000038147, -13.14999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -11.85000038147, 0, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end
