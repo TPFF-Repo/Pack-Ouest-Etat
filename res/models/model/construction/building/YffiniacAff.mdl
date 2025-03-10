@@ -1,12 +1,12 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { -13.310000419617, -17.909999847412, 10.890000343323, },
-		bbMin = { 11.640000343323, 0.68000000715256, -0.00011325581726851, },
+		bbMax = { 11.659999847412, 0.0099999997764826, 10.890000343323, },
+		bbMin = { -13.340000152588, -17.879999160767, -0.00011325581726851, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 12.47500038147, -9.2950000762939, 5.4450569152832, },
+			halfExtents = { 9.6017551422119, 5.8943977355957, 5.044855594635, },
 		},
 		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 		type = "BOX",
@@ -17,7 +17,7 @@ return {
 				children = {
 					{
 						materials = { "construction/building/yffiniac/Toit.mtl", "construction/building/yffiniac/Goutierre.mtl", "construction/building/yffiniac/Faitage.mtl", "construction/building/yffiniac/BriqueToit.mtl", "construction/building/yffiniac/Crepi.mtl", "construction/building/yffiniac/PierreBlanche.mtl", "construction/building/yffiniac/PierreBase.mtl", "construction/building/yffiniac/Metal.mtl", "construction/building/yffiniac/Ouvertures/Signe.mtl", "construction/building/yffiniac/BoisPorte.mtl", },
-						mesh = "construction/building/yffiniac/batiment_lod0.msh",
+						mesh = "construction/building/yffiniac/yffi2/batiment_lod0.msh",
 						name = "batiment",
 						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.80000001192093, 1, },
 					},
@@ -87,7 +87,7 @@ return {
 							{ -1, -13.14999961853, 0.85000002384186, },
 							{ 0, 0, 0.80000001192093, },
 							1.5,
-						},
+						},						
 						{
 							{ -1, -13.14999961853, 0.85000002384186, },
 							{ 0, 0, 0.80000001192093, },
