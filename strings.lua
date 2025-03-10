@@ -19,7 +19,9 @@ fr = {
     "[*][b]Guingamp (avec et sans marquise) [/b]"..lb..
     "[*][b]Montauban de Bretagne (avec lettrages en relief ou à plaque) [/b]"..lb..
     "[*][b]Plouaret Trégor [/b]"..lb..
+    "[*][b]Pontchâteau [/b]"..lb..
     "[*][b]Rosporden [/b]"..lb..
+    "[*][b]Yffiniac [/b]"..lb..
     "[/list]"..lb..
     lb..
     "A savoir qu'une version générique (sans le nom des gares) est disponible pour chaque batiments, excepté pour Plouaret Trégor."..lb..
@@ -36,7 +38,7 @@ fr = {
     lb..
     "[h2][b]Update logs[/b][/h2]"..lb..
     "[list]"..lb..
-    "[*]Main 1.0 : stable"..lb..
+    "[*]Main 2.0 : stable"..lb..
     "[/list]"..lb..
     lb..
     lb..
@@ -63,7 +65,9 @@ en = {
     "[*][b]Guingamp (with and without canopy) [/b]"..lb..
     "[*][b]Montauban de Bretagne (with embossed lettering or plaque) [/b]"..lb..
     "[*][b]Plouaret Trégor [/b]"..lb..
+    "[*][b]Pontchâteau [/b]"..lb..
     "[*][b]Rosporden [/b]"..lb..
+    "[*][b]Yffiniac [/b]"..lb..
     "[/list]"..lb..
     lb..
     "Note that a generic version (without station names) is available for each building, except for Plouaret Trégor."..lb..
@@ -80,7 +84,7 @@ en = {
     lb..
     "[h2][b]Update logs[/b][/h2]"..lb..
     "[list]"..lb..
-    "[*]Main 1.0: stable"..lb..
+    "[*]Main 2.0: stable"..lb..
     "[/list]"..lb..
     lb..
     lb..

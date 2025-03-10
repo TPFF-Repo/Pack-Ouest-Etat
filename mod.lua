@@ -1,4 +1,3 @@
-local construction = require "dynamic_screens_base/construction_hooks"
 function data()
     return {
         info = {
@@ -25,23 +24,6 @@ function data()
                     text = "3D, Texture, Script",
                 },
             },
-            requiredMods = { -- optional, Informationen über geladene Mods
-                {
-                    modId = "dynamic_Screens_base_1",
-                    steamId = 3327342273,
-                    minMinorVersion = 0
-                },
-            },
         },
-        runFn = function()
-            construction.registerConstruction("asset/ecran.con", {
-                singleTerminal = true,
-                clock = true,
-                maxArrivals = 9,
-                absoluteArrivalTime = true,
-                labelParamPrefix = "lcd_liste_depart_",
-                includeCalling = true,
-            })
-        end
-    }
+	}
 end

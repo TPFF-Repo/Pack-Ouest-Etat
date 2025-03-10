@@ -12,7 +12,7 @@ return {
 		price = 36000,
 	},
 	description = {
-		name = _("Gare de Guingamp (avec abris de quai"),
+		name = _("Gare de Guingamp (avec abris de quai)"),
 		description = _("Gare de Guingamp"),
 		icon = "ui/construction/asset/gares/GuingampAMAff@2x.tga"
 	}, 
