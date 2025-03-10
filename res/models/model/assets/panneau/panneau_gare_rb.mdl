@@ -1,0 +1,123 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.54453068971634, 0.097861044108868, 3.1171333789825, },
+		bbMin = { -0.54372650384903, -0.10213896632195, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.54412859678268, 0.1000000089407, 1.5585666894913, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau/panneau_gare_rb/panneau_gare_rb.mtl", },
+						mesh = "assets/panneau/panneau_gare_rb/poteau_lod0.msh",
+						name = "poteau",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0.040274273604155, 3.0010392665863, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_gare_rb/panneau_gare_rb.mtl", },
+						mesh = "assets/panneau/panneau_gare_rb/panneau_lod0.msh",
+						name = "panneau",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0.0004020984924864, 0.040274273604155, 2.9914429187775, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 339.50573730469,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "CUSTOM",
+					fitting = "CUT",
+					nLines = 1,
+					params = {
+						expr = "([A-Za-z0-9]+)?( ([A-Za-z0-9]+))?",
+						replace = "\\1",
+					},
+					renderMode = "STD",
+					size = { 10.60000038147, 1.3500000238419, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.52999997138977, -0.03999999910593, 2.9700000286102, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "CUSTOM",
+					fitting = "CUT",
+					nLines = 1,
+					params = {
+						expr = "([A-Za-z0-9]+)?( ([A-Za-z0-9]+))?",
+						replace = "\\2",
+					},
+					renderMode = "STD",
+					size = { 10.60000038147, 0.89999997615814, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.52999997138977, -0.03999999910593, 2.8800001144409, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "CUSTOM",
+					fitting = "CUT",
+					nLines = 1,
+					params = {
+						expr = "([A-Za-z0-9]+)?( ([A-Za-z0-9]+))?",
+						replace = "\\1",
+					},
+					renderMode = "STD",
+					size = { 10.60000038147, 1.3500000238419, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, 0.52999997138977, 0.03999999910593, 2.9700000286102, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "CUSTOM",
+					fitting = "CUT",
+					nLines = 1,
+					params = {
+						expr = "([A-Za-z0-9]+)?( ([A-Za-z0-9]+))?",
+						replace = "\\2",
+					},
+					renderMode = "STD",
+					size = { 10.60000038147, 0.89999997615814, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, 0.52999997138977, 0.03999999910593, 2.8800001144409, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end

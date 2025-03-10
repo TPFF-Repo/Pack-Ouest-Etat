@@ -5,7 +5,7 @@ local modulesutil = require "modulesutil"
 local trainstationutil = require "modules/trainstationutil"
 local constructionutil = require "constructionutil"
 
-function data()
+function data()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   -- .
     return {
         cost = {
             price = 36000,
@@ -34,12 +34,16 @@ function data()
             -- Building "height"
             level = 2,
             -- Ocupied slots (building width (in slots))
-            span = { 1, 2 }
+            span = { 1, 2 },
+            moreCapacity = {
+                cargo = 0,
+                passenger = 40
+            }
         },
 
         updateFn = function(result, transform, tag, slotId, addModuleFn, params)
             local config = {
-                extend = { -19, 19, 0.4, -13, 17, 13, },
+                extend = { -39, 39, -39, 0.1, 0, 13, },
                 main = "construction/building/CholetAff.mdl",
 
                 slotIdOffset = 1, --1!

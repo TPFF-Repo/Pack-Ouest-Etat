@@ -5,13 +5,13 @@ local modulesutil = require "modulesutil"
 local trainstationutil = require "modules/trainstationutil"
 local constructionutil = require "constructionutil"
 
-function data()
+function data()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   -- .
     return {
         cost = {
             price = 36000,
         },
         description = {
-            name = _("Gare de Cholet"),
+            name = _("Gare de Cholet (générique)"),
             description = _("Gare de Cholet"),
             icon = "ui/construction/asset/gares/Cholet@2x.tga"
         },
@@ -34,7 +34,12 @@ function data()
             -- Building "height"
             level = 2,
             -- Ocupied slots (building width (in slots))
-            span = { 1, 2 }
+            span = { 1, 2 },
+            moreCapacity = {
+                cargo = 0,
+                passenger = 60
+            }
+
         },
 
         updateFn = function(result, transform, tag, slotId, addModuleFn, params)

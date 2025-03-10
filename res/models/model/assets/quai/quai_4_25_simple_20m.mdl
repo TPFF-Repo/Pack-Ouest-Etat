@@ -1,0 +1,54 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 17.85000038147, 3.0099999904633, 1.1722114086151, },
+		bbMin = { -2.5500001907349, 0, 0.020210564136505, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.5500001907349, 1.512500166893, 0.57600045204163, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/quai/quai_4_simple/quai_4_simple.mtl", },
+						mesh = "assets/quai/quai_4_25_simple/quai_lod0.msh",
+						name = "quai",
+						transf = { 1, 0, 0, 0, 0, 7.347881115511e-17, -1.2000000476837, 0, 0, 1.1000000238419, 6.7355576892184e-17, 0, 0, -1.6225001811981, 0.020210564136505, 1, },
+					},
+					{
+						materials = { "assets/quai/quai_4_simple/quai_4_simple.mtl", },
+						mesh = "assets/quai/quai_4_25_simple/quai_lod0.msh",
+						name = "quai",
+						transf = { 1, 0, 0, 0, 0, -5.2453668075714e-08, -1.2000000476837, 0, 0, 1.1000000238419, -4.8082526404869e-08, 0, 5.0799999237061, -1.6225001811981, 0.020210564136505, 1, },
+					},
+					{
+						materials = { "assets/quai/quai_4_simple/quai_4_simple.mtl", },
+						mesh = "assets/quai/quai_4_25_simple/quai_lod0.msh",
+						name = "quai",
+						transf = { 1, 0, 0, 0, 0, -5.2453668075714e-08, -1.2000000476837, 0, 0, 1.1000000238419, -4.8082526404869e-08, 0, 10.159999847412, -1.6225001811981, 0.020210564136505, 1, },
+					},
+					{
+						materials = { "assets/quai/quai_4_simple/quai_4_simple.mtl", },
+						mesh = "assets/quai/quai_4_25_simple/quai_lod0.msh",
+						name = "quai",
+						transf = { 1, 0, 0, 0, 0, -5.2453668075714e-08, -1.2000000476837, 0, 0, 1.1000000238419, -4.8082526404869e-08, 0, 15.229999542236, -1.6225001811981, 0.020210564136505, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 1.5099999904633, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 786.02545166016,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

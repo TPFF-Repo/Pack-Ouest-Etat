@@ -1,0 +1,60 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 8.5100002288818, 0.0099999997764826, 10.090000152588, },
+		bbMin = { -10.189999580383, -10.430000305176, -0.00011325581726851, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 9.6017551422119, 5.8943977355957, 5.044855594635, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/yffiniac/Toit.mtl", "construction/building/yffiniac/Goutierre.mtl", "construction/building/yffiniac/Faitage.mtl", "construction/building/yffiniac/BriqueToit.mtl", "construction/building/yffiniac/Crepi.mtl", "construction/building/yffiniac/PierreBlanche.mtl", "construction/building/yffiniac/PierreBase.mtl", "construction/building/yffiniac/Metal.mtl", "construction/building/yffiniac/Ouvertures/Signe.mtl", "construction/building/yffiniac/BoisPorte.mtl", },
+						mesh = "construction/building/yffiniac/yffi2/batiment_lod0.msh",
+						name = "batiment",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3120.6630859375,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 2.5, -14.25, 0.050000000745058, },
+							{ 0, -14.25, 0, },
+							1.5,
+						},
+						{
+							{ 2.5, 0, 0.050000000745058, },
+							{ 0, -14.25, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end
