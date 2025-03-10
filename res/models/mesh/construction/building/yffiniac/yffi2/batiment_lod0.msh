@@ -4,40 +4,40 @@ return {
 		{
 			indices = {
 				normal = {
-					count = 1776,
-					offset = 908212,
+					count = 1488,
+					offset = 920332,
 				},
 				position = {
-					count = 1776,
-					offset = 904660,
+					count = 1488,
+					offset = 917356,
 				},
 				tangent = {
-					count = 1776,
-					offset = 909988,
+					count = 1488,
+					offset = 921820,
 				},
 				uv0 = {
-					count = 1776,
-					offset = 906436,
+					count = 1488,
+					offset = 918844,
 				},
 			},
 		},
 		{
 			indices = {
 				normal = {
-					count = 19512,
-					offset = 950788,
+					count = 18672,
+					offset = 960652,
 				},
 				position = {
-					count = 19512,
-					offset = 911764,
+					count = 18672,
+					offset = 923308,
 				},
 				tangent = {
-					count = 19512,
-					offset = 970300,
+					count = 18672,
+					offset = 979324,
 				},
 				uv0 = {
-					count = 19512,
-					offset = 931276,
+					count = 18672,
+					offset = 941980,
 				},
 			},
 		},
@@ -45,19 +45,19 @@ return {
 			indices = {
 				normal = {
 					count = 288,
-					offset = 990388,
+					offset = 998572,
 				},
 				position = {
 					count = 288,
-					offset = 989812,
+					offset = 997996,
 				},
 				tangent = {
 					count = 288,
-					offset = 990676,
+					offset = 998860,
 				},
 				uv0 = {
 					count = 288,
-					offset = 990100,
+					offset = 998284,
 				},
 			},
 		},
@@ -65,19 +65,19 @@ return {
 			indices = {
 				normal = {
 					count = 7956,
-					offset = 1006876,
+					offset = 1015060,
 				},
 				position = {
 					count = 7956,
-					offset = 990964,
+					offset = 999148,
 				},
 				tangent = {
 					count = 7956,
-					offset = 1014832,
+					offset = 1023016,
 				},
 				uv0 = {
 					count = 7956,
-					offset = 998920,
+					offset = 1007104,
 				},
 			},
 		},
@@ -85,59 +85,59 @@ return {
 			indices = {
 				normal = {
 					count = 8016,
-					offset = 1038820,
+					offset = 1047004,
 				},
 				position = {
 					count = 8016,
-					offset = 1022788,
+					offset = 1030972,
 				},
 				tangent = {
 					count = 8016,
-					offset = 1046836,
+					offset = 1055020,
 				},
 				uv0 = {
 					count = 8016,
-					offset = 1030804,
+					offset = 1038988,
 				},
 			},
 		},
 		{
 			indices = {
 				normal = {
-					count = 74232,
-					offset = 1203316,
+					count = 74100,
+					offset = 1211236,
 				},
 				position = {
-					count = 74232,
-					offset = 1054852,
+					count = 74100,
+					offset = 1063036,
 				},
 				tangent = {
-					count = 74232,
-					offset = 1277548,
+					count = 74100,
+					offset = 1285336,
 				},
 				uv0 = {
-					count = 74232,
-					offset = 1129084,
+					count = 74100,
+					offset = 1137136,
 				},
 			},
 		},
 		{
 			indices = {
 				normal = {
-					count = 4248,
-					offset = 1360276,
+					count = 4344,
+					offset = 1368124,
 				},
 				position = {
-					count = 4248,
-					offset = 1351780,
+					count = 4344,
+					offset = 1359436,
 				},
 				tangent = {
-					count = 4248,
-					offset = 1364524,
+					count = 4344,
+					offset = 1372468,
 				},
 				uv0 = {
-					count = 4248,
-					offset = 1356028,
+					count = 4344,
+					offset = 1363780,
 				},
 			},
 		},
@@ -145,19 +145,19 @@ return {
 			indices = {
 				normal = {
 					count = 9696,
-					offset = 1388164,
+					offset = 1396204,
 				},
 				position = {
 					count = 9696,
-					offset = 1368772,
+					offset = 1376812,
 				},
 				tangent = {
 					count = 9696,
-					offset = 1397860,
+					offset = 1405900,
 				},
 				uv0 = {
 					count = 9696,
-					offset = 1378468,
+					offset = 1386508,
 				},
 			},
 		},
@@ -165,19 +165,19 @@ return {
 			indices = {
 				normal = {
 					count = 2808,
-					offset = 1413172,
+					offset = 1421212,
 				},
 				position = {
 					count = 2808,
-					offset = 1407556,
+					offset = 1415596,
 				},
 				tangent = {
 					count = 2808,
-					offset = 1415980,
+					offset = 1424020,
 				},
 				uv0 = {
 					count = 2808,
-					offset = 1410364,
+					offset = 1418404,
 				},
 			},
 		},
@@ -185,43 +185,43 @@ return {
 			indices = {
 				normal = {
 					count = 109056,
-					offset = 1636900,
+					offset = 1644940,
 				},
 				position = {
 					count = 109056,
-					offset = 1418788,
+					offset = 1426828,
 				},
 				tangent = {
 					count = 109056,
-					offset = 1745956,
+					offset = 1753996,
 				},
 				uv0 = {
 					count = 109056,
-					offset = 1527844,
+					offset = 1535884,
 				},
 			},
 		},
 	},
 	vertexAttr = {
 		normal = {
-			count = 51504,
+			count = 88500,
 			numComp = 3,
-			offset = 333924,
+			offset = 332376,
 		},
 		position = {
-			count = 126684,
+			count = 125856,
 			numComp = 3,
 			offset = 0,
 		},
 		tangent = {
-			count = 519232,
+			count = 496480,
 			numComp = 4,
-			offset = 385428,
+			offset = 420876,
 		},
 		uv0 = {
-			count = 207240,
+			count = 206520,
 			numComp = 2,
-			offset = 126684,
+			offset = 125856,
 		},
 	},
 }
