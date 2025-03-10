@@ -1,0 +1,90 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 11.5, 6, 13.224036216736, },
+		bbMin = { -11.5, -6, -0.018389105796814, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 11.5, 6, 6.6212124824524, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/nord_sur_erdre/Mur.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Mur_lod0.msh",
+						name = "Mur",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Chemine.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Chemine_lod0.msh",
+						name = "Chemine",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -8.998496055603, -1.6205703020096, 11.234051704407, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Toit.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Moulure.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Moulure_lod0.msh",
+						name = "Moulure",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Pierre.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Pierre_lod0.msh",
+						name = "Pierre",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/plastic.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Plastic_lod0.msh",
+						name = "Plastic",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Glass.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Glass_lod0.msh",
+						name = "Glass",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -7.0148987770081, -0.02495002746582, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Bois.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Bois_lod0.msh",
+						name = "Bois",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Metal.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Metal_lod0.msh",
+						name = "Metal",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "construction/building/nord_sur_erdre/Sol.mtl", },
+						mesh = "construction/building/nord_sur_erdre/Sol_lod0.msh",
+						name = "Sol",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3575.1206054688,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
