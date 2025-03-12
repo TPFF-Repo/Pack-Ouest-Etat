@@ -127,11 +127,34 @@ return {
 		},
 	},
 	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ -60, -27.67799949646, 0.5, },
+							{ 142.71000671387, 0, 0, },
+							3,
+						},
+						{
+							{ 82.709999084473, -27.67799949646, 0.5, },
+							{ 142.71000671387, 0, 0, },
+							3,
+						},
+					},
+					speedLimit = 14,
+					transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
 		vehicleDepot = {
 			capacity = 0,
 			carrier = "RAIL",
-			inNodes = { },
-			outNodes = { },
+			inNodes = { 0, },
+			outNodes = { 0, },
 		},
 	},
 	version = 1,
