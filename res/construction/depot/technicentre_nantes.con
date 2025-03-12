@@ -1,0 +1,121 @@
+local paramsutil = require "paramsutil"
+local constructionutil = require "constructionutil"
+local vec3 = require "vec3"
+local transf = require "transf"
+
+
+local config = {
+	trackTypes = {"standard.lua", "high_speed.lua",},
+	trackNames = { _("standard"), _("high_speed") },
+}
+
+local function getTrackCatenaryYearFrom()
+	local result = 1910
+	if ((type(game) == "table") and (type(game.config) == "table") and (type(game.config.trackCatenaryYearFrom) == "number")) then
+		result = game.config.trackCatenaryYearFrom
+	end
+	return result
+end
+
+local function makeParams()
+    local params = {}
+    params[#params + 1] = {
+		key = "model_depot",
+		name = _("Dépot"),
+        uiType = "ICON_BUTTON",
+		values = {
+                    "ui/parameters/depot/rail/technicentre_nantes.tga",
+                },
+        tooltip = _("Choix du modèle de dépot"),
+        defaultIndex = 0,
+	}
+
+    params[#params + 1] = {
+		key = "trackType",
+		name = _("Track type"),
+		values = config.trackNames,
+		uiType = "COMBOBOX",
+		yearFrom = 1925,
+	}
+
+	params[#params + 1] = {
+		key = "catenary",
+		name = _("Catenary"),
+		values = { _("No"), _("Yes") },
+		uiType = "COMBOBOX",
+		defaultIndex = 0,
+		yearFrom = getTrackCatenaryYearFrom(),
+		yearTo = 0
+	}
+    
+
+    return params
+end
+
+function data()    
+    return {
+        type = "RAIL_DEPOT",
+        description = {
+            name = _("Dépot Ouest-etat"),			
+            description = _("Used to buy/sell trains."),
+            icon = "ui/construction/depot_ferroviaire.tga"
+        },
+        availability = {},
+        params = makeParams(),
+        updateFn = function (params)
+            local result = {}
+            result.models = {}
+            
+
+            
+
+            if params.model_depot == 0 then
+                local face
+                local height = 0.2
+                result.models = {{id = "depot/rail/technicentre_nantes.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(0, 0, height))}}        
+
+                local xEnd = -77.184
+                local xEnd1 = -9.3
+                local yTrack0 = -27.678
+                local yTrack1 = -20.822
+                local yTrack2 = -13.876
+                local yTrack3 = -3.048
+                local yTrack4 = 4.895
+                local yTrack5 = 13.008
+                local yTrack6 = 20.842
+                local xBeforeDoor = 82.71
+
+                local xTrackStartOption2 = xEnd - 15
+                local xTrackStartOption3 = xEnd - 65
+
+                result.edgeLists = {
+                    {
+                        type = "TRACK",
+                        params = {
+                            type = config.trackTypes[params.trackType and params.trackType + 1 or 0],
+                            catenary = params.catenary == 1
+                        },
+                        edges = {
+                            { { xEnd, yTrack0, -height }, 		{ xBeforeDoor - xEnd, 0, 0 } }, { { xBeforeDoor, yTrack0, -height }, 	{ xBeforeDoor - xEnd, 0, 0 } },                            
+                            { { xEnd, yTrack1, -height }, 		{ xBeforeDoor - xEnd, 0, 0 } }, { { xBeforeDoor, yTrack1, -height }, 	{ xBeforeDoor - xEnd, 0, 0 } },                            
+                            { { xEnd, yTrack2, -height }, 		{ xBeforeDoor - xEnd, 0, 0 } }, { { xBeforeDoor, yTrack2, -height }, 	{ xBeforeDoor - xEnd, 0, 0 } },                            
+                            { { xEnd1, yTrack3, -height }, 		{ xBeforeDoor - xEnd1, 0, 0 } }, { { xBeforeDoor, yTrack3, -height }, 	{ xBeforeDoor - xEnd1, 0, 0 } },                            
+                            { { xEnd1, yTrack4, -height }, 		{ xBeforeDoor - xEnd1, 0, 0 } }, { { xBeforeDoor, yTrack4, -height }, 	{ xBeforeDoor - xEnd1, 0, 0 } },                            
+                            { { xEnd1, yTrack5, -height }, 		{ xBeforeDoor - xEnd1, 0, 0 } }, { { xBeforeDoor, yTrack5, -height }, 	{ xBeforeDoor - xEnd1, 0, 0 } },                            
+                            { { xEnd1, yTrack6, -height }, 		{ xBeforeDoor - xEnd1, 0, 0 } }, { { xBeforeDoor, yTrack6, -height }, 	{ xBeforeDoor - xEnd1, 0, 0 } },                            
+                        },
+                        snapNodes = { 1, 3, 5, 7, 9, 11, 13 }
+                    }
+                }
+                face = {{xTrackStartOption2, -25, 0}, { xTrackStartOption2, 22, 0}, { xEnd, 22, 0}, { xEnd, -25, 0}}
+                result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+
+                result.groundFaces = { { face = face, modes = { { type = "FILL", key = "town_concrete.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+                result.groundFaces = { { face = face, modes = { { type = "STROKE_OUTER", key = "building_paving.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+            end
+
+            result.cost = 18000
+            return result
+        end
+    }
+end
