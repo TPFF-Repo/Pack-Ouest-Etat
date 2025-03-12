@@ -73,7 +73,7 @@ return {
 						materials = { "construction/building/NortSurErdre/Moulure.mtl", },
 						mesh = "construction/building/NortSurErdre/name_gare_lod0.msh",
 						name = "name_gare",
-						transf = { -1.6292068494295e-07, -1, -6.1232342629258e-17, 0, 1, -1.6292068494295e-07, 1.6292068494295e-07, 0, -1.6292068494295e-07, 2.6481917583831e-14, 1, 0, -10.644388198853, -5.5071315765381, 9.5873184204102, 1, },
+						transf = { -1.6292068494295e-07, -1, -6.1232336011813e-17, 0, 1, -1.6292068494295e-07, 1.6292067073209e-07, 0, -1.6292067073209e-07, 2.6481915889765e-14, 1, 0, -10.489999771118, -5.5071315765381, 9.5873184204102, 1, },
 					},
 					{
 						materials = { "construction/building/NortSurErdre/Pierre.mtl", },
