@@ -21,7 +21,7 @@ return {
 		yearTo = 0
 	},
 	category = {
-		categories = { "passenger buildings", },
+		categories = { "Gares Type Ouest-Etat", },
 	},
 	type = "rail_main_building_size3",
 	order = {

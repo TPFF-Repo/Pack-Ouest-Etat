@@ -18,6 +18,7 @@ fr = {
     "[*][b]Cholet [/b]"..lb..
     "[*][b]Guingamp (avec et sans marquise) [/b]"..lb..
     "[*][b]Montauban de Bretagne (avec lettrages en relief ou à plaque) [/b]"..lb..
+    "[*][b]Nort-Sur-Erdre [/b]"..lb..
     "[*][b]Plouaret Trégor [/b]"..lb..
     "[*][b]Pontchâteau [/b]"..lb..
     "[*][b]Rosporden [/b]"..lb..
@@ -38,7 +39,7 @@ fr = {
     lb..
     "[h2][b]Update logs[/b][/h2]"..lb..
     "[list]"..lb..
-    "[*]Main 2.0 : stable"..lb..
+    "[*]Main 3.0 : stable"..lb..
     "[/list]"..lb..
     lb..
     lb..
@@ -64,6 +65,7 @@ en = {
     "[*][b]Cholet [/b]"..lb..
     "[*][b]Guingamp (with and without canopy) [/b]"..lb..
     "[*][b]Montauban de Bretagne (with embossed lettering or plaque) [/b]"..lb..
+	"[*][b]Nort-Sur-Erdre [/b]"..lb..
     "[*][b]Plouaret Trégor [/b]"..lb..
     "[*][b]Pontchâteau [/b]"..lb..
     "[*][b]Rosporden [/b]"..lb..
@@ -84,7 +86,7 @@ en = {
     lb..
     "[h2][b]Update logs[/b][/h2]"..lb..
     "[list]"..lb..
-    "[*]Main 2.0: stable"..lb..
+    "[*]Main 3.0: stable"..lb..
     "[/list]"..lb..
     lb..
     lb..
