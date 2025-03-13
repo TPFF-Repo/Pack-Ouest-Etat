@@ -96,7 +96,31 @@ return {
 			visibleTo = 3575.1206054688,
 		},
 	},
-	metadata = { },
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -11, 0.050000000745058, },
+							{ 0, 11.44, 0, },
+							1.5,
+						},
+						{
+							{ 0, 0.44999998807907, 0.050000000745058, },
+							{ 0, 11.44, 0, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
 	version = 1,
 }
 end
