@@ -1,0 +1,54 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 21, 3.1800000667572, 1.3000000715256, },
+		bbMin = { -3, -3.1800000667572, -1.5381565103744e-16, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 12, 3.1800000667572, 0.65000003576279, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9, 0, 0.65000003576279, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/quai/quai_9_double/quai_9_double.mtl", },
+						mesh = "assets/quai/quai_9_double/base_lod0.msh",
+						name = "base",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/quai/quai_9_double/quai_9_double.mtl", },
+						mesh = "assets/quai/quai_9_double/base_lod0.msh",
+						name = "base",
+						transf = { 1, 0, 0, 0, 0, -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 6, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/quai/quai_9_double/quai_9_double.mtl", },
+						mesh = "assets/quai/quai_9_double/base_lod0.msh",
+						name = "base",
+						transf = { 1, 0, 0, 0, 0, -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 12, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/quai/quai_9_double/quai_9_double.mtl", },
+						mesh = "assets/quai/quai_9_double/base_lod0.msh",
+						name = "base",
+						transf = { 1, 0, 0, 0, 0, -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 18, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1.25, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1204.4951171875,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

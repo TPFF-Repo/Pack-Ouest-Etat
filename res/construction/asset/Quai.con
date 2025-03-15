@@ -64,6 +64,7 @@ function data()
             	    _("ui/parameters/quai/quai_6.tga"),
             	    _("ui/parameters/quai/quai_7.tga"),
                     _("ui/parameters/quai/quai_8.tga"),
+                    _("ui/parameters/quai/quai_9.tga"),
             	 },
             	tooltip = _("Choisissez le model de quai"),
             	defaultIndex = 0,
