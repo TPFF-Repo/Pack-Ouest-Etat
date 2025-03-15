@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.5, 1.25, 1.2999999523163, },
+		bbMin = { -5.5, -1.25, -7.6540424977851e-17, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.5, 1.25, 0.64999997615814, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/quai/quai_9_simple_end/quai_9_simple_end.mtl", },
+						mesh = "assets/quai/quai_9_25_simple_end/base_lod0.msh",
+						name = "base",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -2.5, -1.25, -7.6540424977851e-17, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 967.75872802734,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
