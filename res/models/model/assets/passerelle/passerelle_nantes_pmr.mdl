@@ -1,0 +1,66 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 17.928197860718, 4.12646484375, 19.031967163086, },
+		bbMin = { -17.928197860718, -4.1264638900757, -1.5308085657315e-17, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 17.928197860718, 4.1264643669128, 9.515983581543, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/passerelle/passerelle_nantes_pmr/metal_gris.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes_pmr/metal_gris_lod0.msh",
+						name = "metal_gris",
+						transf = { -1.6292068494295e-07, -1, -6.1232342629258e-17, 0, 1.4693679385279e-39, 6.1232342629258e-17, -1, 0, 1, -1.6292068494295e-07, -9.9760146823763e-24, 0, 1.1681995391846, 3.4101715087891, 5.0165100097656, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_nantes_pmr/escalator.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes_pmr/escalator_lod0.msh",
+						name = "escalator",
+						transf = { -7.5221390716251e-07, -4.6170558929443, -2.8271315448366e-16, 0, 7.0431110530938e-39, 2.9350453952014e-16, -4.7932929992676, 0, 3.4441239833832, -5.6111900903488e-07, -3.4358631623066e-23, 0, -2.9790301322937, -0.18140172958374, -0.25202789902687, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_nantes_pmr/metal_noir.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes_pmr/metal_noir_lod0.msh",
+						name = "metal_noir",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 2.3970184326172, 0.22544860839844, 0, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_nantes_pmr/hauvent.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes_pmr/hauvent_lod0.msh",
+						name = "hauvent",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 16.426940917969, 0.22544860839844, 18.849309921265, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_nantes_pmr/panneau_pmr.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes_pmr/panneau_pmr_lod0.msh",
+						name = "panneau_pmr",
+						transf = { 1.1924880638503e-08, -1, -6.1232342629258e-17, 0, 1, 1.1924880638503e-08, 4.3711388286738e-08, 0, -4.3711388286738e-08, -5.8248544664591e-16, 1, 0, -3.2285118103027, 2.1738862991333, 6.103223323822, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_nantes_pmr/light.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes_pmr/light_lod0.msh",
+						name = "light",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -1, -4.3711388286738e-08, 4.3711388286738e-08, 0, 4.3711388286738e-08, 1.8494530298912e-15, 1, 0, -3.8175325393677, -3.2120530605316, 5.2473621368408, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 5116.3510742188,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
