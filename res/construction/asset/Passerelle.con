@@ -26,6 +26,8 @@ local degrees = intRange(-180,180, 1)
 local models = {
     "assets/empty.mdl",
     "assets/passerelle/passerelle_nantes.mdl",
+    "assets/passerelle/passerelle_nantes_pmr.mdl",
+    "assets/passerelle/passerelle_nantes_pmr_1.mdl",
 }
 
 
@@ -49,6 +51,8 @@ function data()
                 values = {
                     _("Aucune"),
                     _("Passerelle Nantes"),
+                    _("Passerelle Nantes Accès PMR"),
+                    _("Passerelle Nantes Accès PMR simple"),
                 },
                 defaultIndex = 0,
             },
