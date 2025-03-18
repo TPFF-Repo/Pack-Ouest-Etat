@@ -1,0 +1,153 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 72.5, -0.20489501953125, 10.162753105164, },
+		bbMin = { -72.5, -25, 0.0024228096008301, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 72.5, 30.005065917969, 5.0801649093628, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/NantesSud/toit.mtl", },
+						mesh = "construction/building/NantesSud/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+					{
+						materials = { "construction/building/NantesSud/metel_noir.mtl", },
+						mesh = "construction/building/NantesSud/metal_noir_lod0.msh",
+						name = "metal_noir",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+					{
+						materials = { "construction/building/NantesSud/metal_gris.mtl", },
+						mesh = "construction/building/NantesSud/metal_gris_lod0.msh",
+						name = "metal_gris",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+					{
+						materials = { "construction/building/NantesSud/glass_porte.mtl", },
+						mesh = "construction/building/NantesSud/glass_porte_lod0.msh",
+						name = "glass_porte",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+					{
+						materials = { "construction/building/NantesSud/glass_art.mtl", },
+						mesh = "construction/building/NantesSud/glass_art_lod0.msh",
+						name = "glass_art",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+					{
+						materials = { "construction/building/NantesSud/glass.mtl", },
+						mesh = "construction/building/NantesSud/glass_lod0.msh",
+						name = "glass",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+					{
+						materials = { "construction/building/NantesSud/concrete.mtl", },
+						mesh = "construction/building/NantesSud/concrete_lod0.msh",
+						name = "concrete",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, -0.80000001192093, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 17464.421875,
+		},
+	},
+	metadata = {
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ -2.5, -14.85000038147, 13.550000190735, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -2.5, -14.85000038147, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -2.5, -14.85000038147, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -11.449999809265, -14.85000038147, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -11.449999809265, -14.85000038147, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -11.449999809265, -30, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 1.6499999761581, -14.89999961853, 0.80000001192093, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 1.6499999761581, -14.89999961853, 13.5, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.3499999046326, -14.89999961853, 0.80000001192093, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 1.6499999761581, -14.89999961853, 0.80000001192093, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.3499999046326, -30, 0.80000001192093, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.3499999046326, -14.89999961853, 0.80000001192093, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

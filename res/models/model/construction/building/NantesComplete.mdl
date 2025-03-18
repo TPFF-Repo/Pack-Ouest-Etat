@@ -1,0 +1,240 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 110.48000335693, 125.76999664307, 25, },
+		bbMin = { -95.339996337891, -95.449996948242, -7.62939453125e-06, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 15.140999794006, 30.319999694824, 17.371000289917, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 42.719993591309, 63.861930847168, 10.872951507568, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "assets/passerelle/passerelle_nantes/concrete.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/concrete_lod0.msh",
+								name = "concrete",
+								transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/Corole.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/Corole_lod0.msh",
+								name = "Corole",
+								transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/metal.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/metal_lod0.msh",
+								name = "metal",
+								transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/toit.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/Toit_lod0.msh",
+								name = "Toit",
+								transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+							},
+						},
+						name = "Passerelle",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/building/Nantes_nord/socle_nantes.mtl", },
+								mesh = "construction/building/Nantes_nord/socle_nantes_lod0.msh",
+								name = "socle_nantes",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 1.3750801086426, -1.1571040153503, 0, 1, },
+							},
+							{
+								children = {
+									{
+										materials = { "construction/building/Nantes_nord/concrete.mtl", },
+										mesh = "construction/building/Nantes_nord/concrete_lod0.msh",
+										name = "concrete",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/glass_facade.mtl", },
+										mesh = "construction/building/Nantes_nord/glass_facade_lod0.msh",
+										name = "glass_facade",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/glass_fnac.mtl", },
+										mesh = "construction/building/Nantes_nord/glass_fnac_lod0.msh",
+										name = "glass_fnac",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/glass_simple.mtl", },
+										mesh = "construction/building/Nantes_nord/glass_simple_lod0.msh",
+										name = "glass_simple",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/glass_vigi.mtl", },
+										mesh = "construction/building/Nantes_nord/glass_vigi_lod0.msh",
+										name = "glass_vigi",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/marquise.mtl", },
+										mesh = "construction/building/Nantes_nord/marquise_lod0.msh",
+										name = "marquise",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/metal.mtl", },
+										mesh = "construction/building/Nantes_nord/metal_gris_lod0.msh",
+										name = "metal_gris",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/mosaique_spec.mtl", },
+										mesh = "construction/building/Nantes_nord/mosaique_vert_spec_lod0.msh",
+										name = "mosaique_vert_spec",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/mosaique.mtl", },
+										mesh = "construction/building/Nantes_nord/mosaique_verte_lod0.msh",
+										name = "mosaique_verte",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/panneau.mtl", },
+										mesh = "construction/building/Nantes_nord/panneau_lod0.msh",
+										name = "panneau",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/stuco_gris.mtl", },
+										mesh = "construction/building/Nantes_nord/stuco_gris_lod0.msh",
+										name = "stuco_gris",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/stuco_gris_clair.mtl", },
+										mesh = "construction/building/Nantes_nord/stuco_gris_clair_lod0.msh",
+										name = "stuco_gris_clair",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/stuco_noir.mtl", },
+										mesh = "construction/building/Nantes_nord/stuco_noir_lod0.msh",
+										name = "stuco_noir",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+									{
+										materials = { "construction/building/Nantes_nord/toit.mtl", },
+										mesh = "construction/building/Nantes_nord/toit_lod0.msh",
+										name = "toit",
+										transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.252113342285, 12.649997711182, -9.5068683624268, 1, },
+									},
+								},
+								name = "Batiment",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 1.2541885375977, 6.2706623077393, 13.449998855591, 1, },
+							},
+							{
+								materials = { "assets/props/logos_sncf.mtl", },
+								mesh = "assets/props/SNCF_2011_lod0.msh",
+								name = "SNCF_2011",
+								transf = { -1.5298985189816e-08, 0.34999999403954, -0, 0, -0.34999999403954, -1.5298985189816e-08, 0, 0, 0, 0, 0.34999999403954, 0, -36.799999237061, 10.380000114441, 5.4099998474121, 1, },
+							},
+							{
+								materials = { "assets/props/logos_sncf.mtl", },
+								mesh = "assets/props/SNCF_2011_lod0.msh",
+								name = "SNCF_2011",
+								transf = { -1.25, -1.0828143786057e-06, -0, 0, 1.0828143786057e-06, -1.25, 0, 0, -0, 0, 1.25, 0, 36.490001678467, 26.049999237061, 23.780000686646, 1, },
+							},
+							{
+								materials = { "assets/props/logos_sncf.mtl", },
+								mesh = "assets/props/SNCF_2011_lod0.msh",
+								name = "SNCF_2011",
+								transf = { 1.25, 0, -0, 0, 0, 1.25, 0, 0, 0, 0, 1.25, 0, 50.200000762939, 26.049999237061, 23.780000686646, 1, },
+							},
+						},
+						name = "Nantes Nord",
+						transf = { -1, -3.8941436741879e-07, 0, 0, 3.8941436741879e-07, -1, 0, 0, 0, 0, 1, 0, 0, -11.720000267029, 0, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/building/NantesSud/toit.mtl", },
+								mesh = "construction/building/NantesSud/Toit_lod0.msh",
+								name = "Toit",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/socle.mtl", },
+								mesh = "construction/building/NantesSud/socle_nts_sud_lod0.msh",
+								name = "socle_nts_sud",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -30.21502494812, 0.0024228096008301, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/metel_noir.mtl", },
+								mesh = "construction/building/NantesSud/metal_noir_lod0.msh",
+								name = "metal_noir",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/metal_gris.mtl", },
+								mesh = "construction/building/NantesSud/metal_gris_lod0.msh",
+								name = "metal_gris",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/glass_porte.mtl", },
+								mesh = "construction/building/NantesSud/glass_porte_lod0.msh",
+								name = "glass_porte",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/glass_art.mtl", },
+								mesh = "construction/building/NantesSud/glass_art_lod0.msh",
+								name = "glass_art",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/glass.mtl", },
+								mesh = "construction/building/NantesSud/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+							{
+								materials = { "construction/building/NantesSud/concrete.mtl", },
+								mesh = "construction/building/NantesSud/concrete_lod0.msh",
+								name = "concrete",
+								transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -126.70079040527, -12.205387115479, 0.80000019073486, 1, },
+							},
+						},
+						name = "Nantes Sud",
+						transf = { -1, -6.2783294652036e-07, 0, 0, 6.2783294652036e-07, -1, 0, 0, 0, 0, 1, 0, 37.979999542236, 117.04000091553, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -51.5, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 18285.3828125,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

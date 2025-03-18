@@ -32,7 +32,8 @@ local models = {
     "NortSurErdreAff",
     "Pontchateau",
     "PontchateauAff",
-	"NantesNord"
+	"NantesNord",
+	"NantesSud"
 }
 
 function data()
@@ -78,6 +79,7 @@ return {
 					_("ui/construction/asset/gares/Pontchateau@2x.tga"),
 					_("ui/construction/asset/gares/PontchateauAff@2x.tga"),
 					_("ui/construction/asset/gares/NantesNord@2x.tga"),
+					_("ui/construction/asset/gares/NantesSud@2x.tga"),
 			},
 		},
         {
