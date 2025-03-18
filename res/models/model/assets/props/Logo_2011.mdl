@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.10000011324883, 1.9127684831619, 1.9998773336411, },
+		bbMin = { -1.3074246396627e-07, -1.9150468111038, -0.00023945135762915, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.050000123679638, 1.9139076471329, 1.0000584125519, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/logos_sncf.mtl", },
+						mesh = "assets/props/SNCF_2011_lod0.msh",
+						name = "SNCF_2011",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 536.02001953125,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

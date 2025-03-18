@@ -1,12 +1,12 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 17.928197860718, 4.12646484375, 19.031967163086, },
-		bbMin = { -17.928197860718, -4.1264638900757, -1.5308085657315e-17, },
+		bbMax = { 13.804711341858, 3.1773774623871, 15.547876358032, },
+		bbMin = { -13.804712295532, -3.1773774623871, 0.89326214790344, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 17.928197860718, 4.1264643669128, 9.515983581543, },
+			halfExtents = { 13.804712295532, 3.1773774623871, 7.3273072242737, },
 		},
 		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 		type = "BOX",
@@ -16,28 +16,40 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "assets/passerelle/passerelle_nantes_pmr/metal_gris.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes_pmr_1/metal_gris_lod0.msh",
-						name = "metal_gris",
-						transf = { -1.6292068494295e-07, -1, -6.1232342629258e-17, 0, 1.4693679385279e-39, 6.1232342629258e-17, -1, 0, 1, -1.6292068494295e-07, -9.9760146823763e-24, 0, 1.1681995391846, 3.4101715087891, 5.0165100097656, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes_pmr/escalator.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes_pmr_1/escalator_lod0.msh",
-						name = "escalator",
-						transf = { -7.5221390716251e-07, -4.6170558929443, -2.8271315448366e-16, 0, 7.0277738414018e-39, 2.9286540022188e-16, -4.7828550338745, 0, 5.5345358848572, -9.0169038458043e-07, -5.5212608259247e-23, 0, -13.89617729187, -0.18140006065369, -0.22374439239502, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes_pmr/metal_noir.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes_pmr_1/metal_noir_lod0.msh",
-						name = "metal_noir",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 2.3970184326172, 0.22544860839844, 0, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes_pmr/hauvent.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes_pmr_1/hauvent_lod0.msh",
-						name = "hauvent",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 16.426940917969, 0.22544860839844, 18.849309921265, 1, },
+						children = {
+							{
+								materials = { "assets/passerelle/passerelle_nantes_pmr/metal_gris.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes_pmr_1/metal_gris_lod0.msh",
+								name = "metal_gris",
+								transf = { -1.6292068494295e-07, -1.2325951644078e-32, -1, 0, 0, 1, -1.2325951644078e-32, 0, 1, -2.9387358770557e-39, -1.6292068494295e-07, 0, 1.1681994199753, 4.4994740486145, 3.4101707935333, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes_pmr/escalator.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes_pmr_1/escalator001_lod0.msh",
+								name = "escalator001",
+								transf = { -7.5221390716251e-07, 0, -4.6170558929443, 0, 0, 4.7828550338745, -0, 0, 5.5345349311829, -1.1754943508223e-38, -9.0169021405018e-07, 0, -13.896171569824, 9.7397270202637, -0.18140053749084, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes_pmr/metal_noir.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes_pmr_1/metal_noir001_lod0.msh",
+								name = "metal_noir001",
+								transf = { 1, 0, 0, 0, 0, 1, -1.2325951644078e-32, 0, 0, 1.2325951644078e-32, 1, 0, 2.3970184326172, 9.515983581543, 0.22544811666012, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes_pmr/hauvent.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes_pmr_1/hauvent001_lod0.msh",
+								name = "hauvent001",
+								transf = { 1, 0, 0, 0, 0, 1, -1.2325951644078e-32, 0, 0, 1.2325951644078e-32, 1, 0, 16.426940917969, -9.3333253860474, 0.22544811666012, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes_pmr/light.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes_pmr_1/light001_lod0.msh",
+								name = "light001",
+								transf = { -4.3711391839452e-08, -2.4651903288157e-31, 1, 0, -1, -4.3711391839452e-08, -4.3711391839452e-08, 0, 4.3711391839452e-08, -1, 1.9106856769229e-15, 0, -3.8175325393677, 4.2686214447021, -3.2120532989502, 1, },
+							},
+						},
+						name = "Groupe001",
+						transf = { 0.76999998092651, 0, 0, 0, 0, 4.7148901177551e-17, -0.76999998092651, 0, 0, 0.76999998092651, 4.7148901177551e-17, 0, 0, 0, 8.2205696105957, 1, },
 					},
 				},
 				name = "RootNode",
