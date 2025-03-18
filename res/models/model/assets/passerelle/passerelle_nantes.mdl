@@ -1,12 +1,12 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 64.276275634766, 154.77342224121, 25.177070617676, },
+		bbMax = { 64.276275634766, 154.77342224121, 21.745910644531, },
 		bbMin = { 21.1637134552, -27.049560546875, -7.62939453125e-06, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 21.556282043457, 90.911491394043, 12.588539123535, },
+			halfExtents = { 21.556282043457, 90.911491394043, 10.872959136963, },
 		},
 		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 		type = "BOX",
@@ -22,15 +22,15 @@ return {
 						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
 					},
 					{
-						materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
-						name = "glass",
-						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
-					},
-					{
 						materials = { "assets/passerelle/passerelle_nantes/Corole.mtl", },
 						mesh = "assets/passerelle/passerelle_nantes/Corole_lod0.msh",
 						name = "Corole",
+						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
+						mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
+						name = "glass",
 						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
 					},
 					{
