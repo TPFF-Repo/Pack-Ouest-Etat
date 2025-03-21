@@ -116,7 +116,7 @@ function data()
             {
             	key = "model_panneau_3_rotation",
             	name = _("Panneau 3 Rotation"),
-            	values = { _("0°"), _("90°") },
+            	values = { _("0°"), _("90°"), _("180°") },
             	uiType = "BUTTON",
             	defaultIndex = 0
             },
@@ -198,8 +198,12 @@ function data()
                 rotTreePanneau = degrees[180]
                 shiftmTreePanneau = -0.05
                 spacinggmTreePanneau = 0
-            else
+            elseif(params.model_panneau_3_rotation == 1) then
                 rotTreePanneau = degrees[90]
+                spacinggmTreePanneau = -0.05
+                shiftmTreePanneau = 0
+            else 
+                rotTreePanneau = degrees[0]
                 spacinggmTreePanneau = -0.05
                 shiftmTreePanneau = 0
             end
