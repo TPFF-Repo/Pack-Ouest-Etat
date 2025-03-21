@@ -4,44 +4,44 @@ return {
 		{
 			indices = {
 				normal = {
-					count = 49296,
-					offset = 520220,
+					count = 17688,
+					offset = 192508,
 				},
 				position = {
-					count = 49296,
-					offset = 421628,
+					count = 17688,
+					offset = 157132,
 				},
 				tangent = {
-					count = 49296,
-					offset = 569516,
+					count = 17688,
+					offset = 210196,
 				},
 				uv0 = {
-					count = 49296,
-					offset = 470924,
+					count = 17688,
+					offset = 174820,
 				},
 			},
 		},
 	},
 	vertexAttr = {
 		normal = {
-			count = 147888,
+			count = 53064,
 			numComp = 3,
-			offset = 76556,
+			offset = 33316,
 		},
 		position = {
-			count = 28956,
+			count = 11604,
 			numComp = 3,
 			offset = 0,
 		},
 		tangent = {
-			count = 197184,
+			count = 70752,
 			numComp = 4,
-			offset = 224444,
+			offset = 86380,
 		},
 		uv0 = {
-			count = 47600,
+			count = 21712,
 			numComp = 2,
-			offset = 28956,
+			offset = 11604,
 		},
 	},
 }
