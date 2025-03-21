@@ -69,3 +69,11 @@ res/textures/models/assets/ecran/affichage_metal_gloss_ao.dds
 res/textures/models/assets/ecran/ecran_albedo_opacity.dds
 res/textures/models/assets/ecran/ecran_metal_gloss_ao.dds
 res/models/model/construction/building/NantesComplete.mdl
+res/models/mesh/assets/ecran/ecran_depart_3t/affichage_lod0.msh
+res/models/mesh/assets/ecran/ecran_depart_3t/affichage_lod0.msh.blob
+res/models/mesh/assets/ecran/ecran_depart_3t/ecran B_lod0.msh
+res/models/mesh/assets/ecran/ecran_depart_3t/ecran B_lod0.msh.blob
+res/models/model/assets/ecran/ecran_depart_3t.mdl
+res/models/model/assets/ecran/ecran_depart_liste.mdl
+res/models/model/assets/ecran/ecran_depart_3t.mdl
+res/models/model/assets/ecran/ecran_depart_liste.mdl

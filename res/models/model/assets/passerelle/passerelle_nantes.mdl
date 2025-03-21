@@ -1,12 +1,12 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 64.276275634766, 154.77342224121, 21.745910644531, },
-		bbMin = { 21.1637134552, -27.049560546875, -7.62939453125e-06, },
+		bbMax = { 21.556282043457, 90.911476135254, 21.745910644531, },
+		bbMin = { -21.556280136108, -90.911499023438, -9.5367431640625e-07, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 21.556282043457, 90.911491394043, 10.872959136963, },
+			halfExtents = { 21.556282043457, 90.911483764648, 10.872955322266, },
 		},
 		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 		type = "BOX",
@@ -16,34 +16,40 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "assets/passerelle/passerelle_nantes/concrete.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes/concrete_lod0.msh",
-						name = "concrete",
-						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes/Corole.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes/Corole_lod0.msh",
-						name = "Corole",
-						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
-						name = "glass",
-						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes/metal.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes/metal_lod0.msh",
-						name = "metal",
-						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
-					},
-					{
-						materials = { "assets/passerelle/passerelle_nantes/toit.mtl", },
-						mesh = "assets/passerelle/passerelle_nantes/Toit_lod0.msh",
-						name = "Toit",
-						transf = { 1, 0, 0, 0, 0, -1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, -1, 0, 27.719802856445, 139.09906005859, 13.753290176392, 1, },
+						children = {
+							{
+								materials = { "assets/passerelle/passerelle_nantes/concrete.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/concrete_lod0.msh",
+								name = "concrete",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/Corole.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/Corole_lod0.msh",
+								name = "Corole",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/metal.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/metal_lod0.msh",
+								name = "metal",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/toit.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/Toit_lod0.msh",
+								name = "Toit",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+							},
+						},
+						name = "Passerelle",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 9.5367431640625e-07, -1.1444091796875e-05, 10.872955322266, 1, },
 					},
 				},
 				name = "RootNode",
