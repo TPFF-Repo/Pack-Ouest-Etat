@@ -56,3 +56,16 @@ res/models/material/assets/passerelle/passerelle_nantes_pmr_1/Material \#165.mtl
 res/models/material/assets/passerelle/passerelle_nantes_pmr_1/Material \#166.mtl
 res/models/material/assets/passerelle/passerelle_nantes_pmr_1/Material \#167.mtl
 res/models/material/assets/passerelle/passerelle_nantes_pmr_1/Material \#168.mtl
+res/models/material/assets/ecran/ecran_depart_3t/affichage.mtl
+res/models/material/assets/ecran/ecran_depart_3t/ecran.mtl
+res/models/material/assets/ecran/ecran_depart_liste/affichage.mtl
+res/models/material/assets/ecran/ecran_depart_liste/ecran.mtl
+res/models/material/station/rail/era_a/era_a_trainstation_assets.mtl
+res/models/model/construction/building/NantesComplete.mdl
+res/models/model/construction/building/NantesComplete.mdl
+res/textures/models/assets/ecran/affichage_3t_albedo_opacity.dds
+res/textures/models/assets/ecran/affichage_liste_albedo_opacity.dds
+res/textures/models/assets/ecran/affichage_metal_gloss_ao.dds
+res/textures/models/assets/ecran/ecran_albedo_opacity.dds
+res/textures/models/assets/ecran/ecran_metal_gloss_ao.dds
+res/models/model/construction/building/NantesComplete.mdl

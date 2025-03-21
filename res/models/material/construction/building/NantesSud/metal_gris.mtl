@@ -11,14 +11,14 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/NantesSud/metal_gris_albedo.dds",
+			fileName = "models/buildings/NantesSud/metal_gris_albedo_opacity.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
 		},
 		map_metal_gloss_ao = {
-			fileName = "models/buildings/NantesSud/metal_gris_mga.dds",
+			fileName = "default_metal_gloss_ao.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 		},
