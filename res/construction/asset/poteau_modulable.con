@@ -45,7 +45,7 @@ local function makeParams()
         key = "panneau_voie",
         name = _("Panneau Voie/Direction/Repère"), --Strings: ["asset_variants"] = "Variantes", --les petites images si tu veux les images
         uiType = "BUTTON",
-        values = { _("Non"), _("Voie") },
+        values = { _("Non"), _("Voie"), _("Repère"), _("Direction") },
         defaultIndex = 0
     }
 
@@ -160,6 +160,18 @@ function data()
                         vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz + 2.65))
                 }
           
+            elseif params.panneau_voie == 2 then
+                result.models[#result.models + 1] = {
+                    id = "assets/panneau_voie/panneau_repere_simple.mdl",
+                    transf = transf.rotZYXTransl(transf.degToRad(degrees[90], 0, 0),
+                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz + 2.65))
+                }
+            elseif params.panneau_voie == 3 then
+                result.models[#result.models + 1] = {
+                    id = "assets/panneau_voie/panneau_direction_simple.mdl",
+                    transf = transf.rotZYXTransl(transf.degToRad(degrees[90], 0, 0),
+                        vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz + 2.65))
+                }
             end
 
 

@@ -1,0 +1,117 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { -0.037553872913122, 0.013000219129026, 0.42122364044189, },
+		bbMin = { -1.1073929071426, -0.012999878264964, -0.3058500289917, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.53491950035095, 0.013000048696995, 0.3635368347168, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_voie/panneau_repere_simple/panneau_repere.mtl", },
+						mesh = "assets/panneau_voie/panneau_repere_simple/panneau_repere_lod0.msh",
+						name = "panneau_repere",
+						transf = { -1.6292068494295e-07, -1, -6.1232342629258e-17, 0, 1, -1.6292068494295e-07, 4.3711388286738e-08, 0, -4.3711388286738e-08, 7.0602567845898e-15, 1, 0, -0.037553887814283, 1.2087039635844e-07, 0.096223644912243, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 0.80000001192093, 0, 0, 0, -0, 1, 0, 0, 0, -0, 0.80000001192093, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 181.02081298828,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.63183391094208, 0.88241350650787, 0.97647058963776, },
+					filter = "CUSTOM",
+					fitting = "SCALE",
+					nLines = 1,
+					params = {
+						expr = "^([^-]+)-",
+						replace = "\\1",
+					},
+					renderMode = "STD",
+					size = { 1.7000000476837, 1.5499999523163, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -1.039999961853, -0.019999999552965, 0.17000000178814, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.93333333730698, 0.93333333730698, 0.93333333730698, },
+					filter = "CUSTOM",
+					fitting = "SCALE",
+					nLines = 1,
+					params = {
+						expr = "-([^-]+)$",
+						replace = "\\1",
+					},
+					renderMode = "STD",
+					size = { 6.8499999046326, 5.1999998092651, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.79000002145767, -0.019999999552965, -0.23999999463558, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.63183391094208, 0.88241350650787, 0.97647058963776, },
+					filter = "CUSTOM",
+					fitting = "SCALE",
+					nLines = 1,
+					params = {
+						expr = "^([^-]+)-",
+						replace = "\\1",
+					},
+					renderMode = "STD",
+					size = { 1.7000000476837, 1.5499999523163, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, -0.87000000476837, 0.019999999552965, 0.17000000178814, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.93333333730698, 0.93333333730698, 0.93333333730698, },
+					filter = "CUSTOM",
+					fitting = "SCALE",
+					nLines = 1,
+					params = {
+						expr = "-([^-]+)$",
+						replace = "\\1",
+					},
+					renderMode = "STD",
+					size = { 6.8499999046326, 5.1999998092651, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, -0.10000000149012, 0.019999999552965, -0.23999999463558, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
