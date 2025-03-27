@@ -1,14 +1,14 @@
 function data()
 return {
 	boundingInfo = {
-		bbMax = { -0.11034259200096, -0.036972895264626, 2.6941719055176, },
-		bbMin = { -1.1560387611389, -0.33910709619522, 2.0260448455811, },
+		bbMax = { 0.03999999910593, -0.03999999910593, 2.6941719055176, },
+		bbMin = { 0.38999998569489, -1.2400000095367, 2.0260448455811, },
 	},
 	collider = {
 		params = {
-			halfExtents = { 0.52284806966782, 0.15106710791588, 0.33406352996826, },
+			halfExtents = { -0.17499999701977, 0.60000002384186, 0.33406352996826, },
 		},
-		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.21499998867512, -0.63999998569489, 2.3601083755493, 1, },
 		type = "BOX",
 	},
 	lods = {
@@ -16,20 +16,20 @@ return {
 			node = {
 				children = {
 					{
-						materials = { "assets/ecran/ecran_depart_liste/affichage_3t.mtl", },
-						mesh = "assets/ecran/ecran_depart_liste/affichage_lod0.msh",
+						materials = { "assets/ecran/ecran_depart_3t/affichage.mtl", },
+						mesh = "assets/ecran/ecran_depart_3t/affichage_lod0.msh",
 						name = "affichage",
 						transf = { -0.053704999387264, -2.0913500264896e-08, 1.4244368674419e-24, 0, 1.1005878874926e-08, -0.02826264128089, 0.045665554702282, 0, -1.8871235241136e-08, 0.048460550606251, 0.029992481693625, 0, -0.82945281267166, 0.139264985919, 0.91680508852005, 1, },
 					},
 					{
-						materials = { "assets/ecran/ecran_depart_liste/ecran.mtl", },
-						mesh = "assets/ecran/ecran_depart_liste/ecran B_lod0.msh",
+						materials = { "assets/ecran/ecran_depart_3t/ecran.mtl", },
+						mesh = "assets/ecran/ecran_depart_3t/ecran B_lod0.msh",
 						name = "ecran B",
 						transf = { 0.053704999387264, 0, 0, 0, 0, 3.6909022270881e-18, 0.053704999387264, 0, 0, -0.056990999728441, 3.0872737925225e-18, 0, -0.43254670500755, 0.22472198307514, 0.94107836484909, 1, },
 					},
 				},
 				name = "RootNode",
-				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 			},
 			static = false,
 			visibleFrom = 0,

@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.3294780254364, 0.15327587723732, 0.6279508471489, },
+		bbMin = { -0.45796728134155, -2.4429392814636, -0.0068967938423157, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.39372265338898, 1.298107624054, 0.31742382049561, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/sieges/gris_fonce.mtl", "assets/props/sieges/gris.mtl", },
+						mesh = "assets/props/sieges_transilien_lod0.msh",
+						name = "sieges_transilien_lod0",
+						transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 265.30596923828,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
