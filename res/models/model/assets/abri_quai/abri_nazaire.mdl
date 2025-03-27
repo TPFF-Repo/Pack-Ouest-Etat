@@ -1,0 +1,109 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.4953775405884, 2.4526183605194, 2.7869253158569, },
+		bbMin = { -4.4953775405884, -2.4526183605194, -1.297107576903e-08, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.4953775405884, 2.4526183605194, 1.3934626579285, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1.3934626579285, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/abri_nazaire/metal.mtl", },
+						mesh = "assets/abri_quai/abri_nazaire/metal_lod0.msh",
+						name = "metal",
+						transf = { 1, -4.7561070637414e-09, -2.9122757677355e-25, 0, -2.5382300139624e-17, -5.3367799068837e-09, -1, 0, 4.2386094634139e-09, 0.89119303226471, -4.7561012905817e-09, 0, -0.65000003576279, 1.7396087646484, -9.2839202991968e-09, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_nazaire/toit.mtl", },
+						mesh = "assets/abri_quai/abri_nazaire/toit_lod0.msh",
+						name = "toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -1.0185222265591e-07, 2.3301074504852, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_nazaire/vitre.mtl", },
+						mesh = "assets/abri_quai/abri_nazaire/vitre_lod0.msh",
+						name = "vitre",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 0.89119303226471, 5.4569832929062e-17, 0, -0.65000003576279, 1.7396087646484, -9.2839202991968e-09, 1, },
+					},
+					{
+						materials = { "assets/props/sieges/gris_fonce.mtl", "assets/props/sieges/gris.mtl", },
+						mesh = "assets/props/sieges_transilien_lod0.msh",
+						name = "sieges_transilien_lod0",
+						transf = { 0.80000001192093, 0, 0, 0, -0, 0.80000001192093, 0, 0, 0, -0, 0.80000001192093, 0, -2.7400000095367, 1.3799999952316, 0, 1, },
+					},
+					{
+						materials = { "assets/props/sieges/gris_fonce.mtl", "assets/props/sieges/gris.mtl", },
+						mesh = "assets/props/sieges_transilien_lod0.msh",
+						name = "sieges_transilien_lod0",
+						transf = { 0.80000001192093, 0, 0, 0, -0, 0.80000001192093, 0, 0, 0, -0, 0.80000001192093, 0, 2.7400000095367, -1.3799999952316, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_gare.mtl", },
+						mesh = "assets/panneau/panneau_sncf_fr_fr_bleu/panneau_gare_simple_lod0.msh",
+						name = "panneau_gare_simple",
+						transf = { 1.2000000476837, 0, 0, 0, -0, 1, 1.6292064231038e-07, 0, 0, -1.9550478214114e-07, 1.2000000476837, 0, 0, -2.4400000572205, 2.5299999713898, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_gare.mtl", },
+						mesh = "assets/panneau/panneau_sncf_fr_fr_bleu/panneau_gare_simple_lod0.msh",
+						name = "panneau_gare_simple",
+						transf = { -1.2000000476837, -4.6729726932426e-07, 0, 0, 3.8941436741879e-07, -1, 1.6292062809953e-07, 0, -7.6132364843808e-14, 1.9550476793029e-07, 1.2000000476837, 0, 0, 2.4400000572205, 2.5299999713898, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1315.5495605469,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 12.699999809265, 1.3999999761581, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.72000002861023, -2.4700000286102, 2.4700000286102, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 12.699999809265, 1.3999999761581, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, 0.73000001907349, 2.4700000286102, 2.4700000286102, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end

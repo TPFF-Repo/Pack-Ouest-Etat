@@ -26,6 +26,7 @@ local degrees = intRange(-180,180, 1)
 local models = {
     "assets/empty.mdl",
     "assets/abri_quai/abri_penhoet.mdl",
+    "assets/abri_quai/abri_nazaire.mdl",
 }
 
 function data()
@@ -48,6 +49,7 @@ function data()
                 values = {
                     _("Aucun"),
                     _("Style Penhoët"),
+                    _("Style Saint Nazaire"),
                 },
                 defaultIndex = 0,
             },
