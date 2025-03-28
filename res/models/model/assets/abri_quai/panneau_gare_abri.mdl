@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.69702315330505, 2.6863524738019e-08, 0.16488713026047, },
+		bbMin = { -0.69702315330505, -0.014976107515395, -0.16488713026047, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.69702315330505, 0.0074880672618747, 0.16488713026047, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/panneau_gare_abri/panneau_gare_name.mtl", },
+						mesh = "assets/abri_quai/panneau_gare_abri/panneau_gare_lod0.msh",
+						name = "panneau_gare",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 124.39384460449,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
