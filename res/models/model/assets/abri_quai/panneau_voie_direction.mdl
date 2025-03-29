@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.011943160556257, 0.41599708795547, 0.16092479228973, },
+		bbMin = { -0.011943160556257, -0.41599726676941, -0.16092468798161, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.011943160556257, 0.41599717736244, 0.16092473268509, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/panneau_voie_direction/panneau_voie_direction.mtl", },
+						mesh = "assets/abri_quai/panneau_voie_direction/panneau_voie_direction_lod0.msh",
+						name = "panneau_voie_direction",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0.39599704742432, 1.1920928955078e-07, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 96.115760803223,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

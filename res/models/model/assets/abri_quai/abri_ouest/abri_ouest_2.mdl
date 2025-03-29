@@ -1,0 +1,76 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.5, 1.7600756883621, 2.68989610672, },
+		bbMin = { -2.5, -2.0484733581543, -1.0838124711553e-16, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.5, 1.9042744636536, 1.34494805336, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_2/Stuco_blanc.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_2/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_2/Stuco_bleu.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_2/Stuco_bleu_lod0.msh",
+						name = "Stuco_bleu",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_2/Metal.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_2/Metal_lod0.msh",
+						name = "Metal",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_2/Graviers.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_2/Gravier_lod0.msh",
+						name = "Gravier",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_type_1_sm/abri_type_1_sm.mtl", },
+						mesh = "assets/abri_type_1_sm/panneau_interdit_yellow_lod0.msh",
+						name = "panneau_interdit_yellow",
+						transf = { -0.5, -4.3711388286738e-08, 0, 0, 4.3711388286738e-08, -0.5, 8.1460335366046e-08, 0, -7.1214887963468e-15, 8.1460335366046e-08, 0.5, 0, 1.7000000476837, -1.7699999809265, 1.25, 1, },
+					},
+					{
+						materials = { "assets/abri_type_1_sm/abri_type_1_sm.mtl", },
+						mesh = "assets/abri_type_1_sm/panneau_aver_traverse_lod0.msh",
+						name = "panneau_aver_traverse",
+						transf = { -0.5, -4.3312576281096e-07, 0, 0, 4.3312576281096e-07, -0.5, 8.1460314049764e-08, 0, -7.0565122213366e-14, 8.1460314049764e-08, 0.5, 0, 2.2200000286102, -1.7699999809265, 1.25, 1, },
+					},
+					{
+						materials = { "assets/props/banc/beton_1_long/beton1.mtl", },
+						mesh = "assets/props/banc/beton_1_long/banc_beton_1_long_lod0.msh",
+						name = "banc_beton_1_long",
+						transf = { 0.0099999997764826, 0, 0, 0, -0, 0.0099999997764826, 4.371138451198e-10, 0, 0, -4.371138451198e-10, 0.0099999997764826, 0, 0, -0.98000001907349, -0.10000000149012, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 951.20324707031,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = { },
+		},
+	},
+	version = 1,
+}
+end

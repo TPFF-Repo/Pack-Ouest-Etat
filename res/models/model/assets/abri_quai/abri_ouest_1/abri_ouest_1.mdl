@@ -1,0 +1,84 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.0249996185303, 2.0652158260345, 3.2255535125732, },
+		bbMin = { -4.0249996185303, -2.0975625514984, -1.2056606090725e-16, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.0249996185303, 2.0813891887665, 1.6127767562866, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/abri_ouest_1/Abri.mtl", },
+						mesh = "assets/abri_quai/abri_ouest_1/Abri_lod0.msh",
+						name = "Abri",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -2.7999999523163, 0.015024602413177, 1.9103281297575e-18, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest_1/Metal.mtl", },
+						mesh = "assets/abri_quai/abri_ouest_1/Metal_lod0.msh",
+						name = "Metal",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -2.7999999523163, 0.015024602413177, 1.9103281297575e-18, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest_1/Tuiles.mtl", },
+						mesh = "assets/abri_quai/abri_ouest_1/Tuiles_lod0.msh",
+						name = "Tuiles",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -2.7999999523163, 0.015024602413177, 1.9103281297575e-18, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest_1/Terracota.mtl", },
+						mesh = "assets/abri_quai/abri_ouest_1/Terracota_lod0.msh",
+						name = "Terracota",
+						transf = { -1.4844212969933e-08, 0.33959600329399, 2.0794258499677e-17, 0, -1.2474779318959e-40, 2.0794258499677e-17, -0.33959600329399, 0, -0.33959600329399, -1.4844212969933e-08, -9.0894584816396e-25, 0, 2.7996642589569, 4.0165448188782, 0.11138367652893, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest_1/Glass.mtl", },
+						mesh = "assets/abri_quai/abri_ouest_1/Glass_lod0.msh",
+						name = "Glass",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -8.3999996185303, 0.0081875324249268, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest_1/Bois.mtl", },
+						mesh = "assets/abri_quai/abri_ouest_1/Bois_lod0.msh",
+						name = "Bois",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -8.3999996185303, 0.0081875324249268, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_type_1_sm/abri_type_1_sm.mtl", },
+						mesh = "assets/abri_type_1_sm/panneau_interdit_yellow_lod0.msh",
+						name = "panneau_interdit_yellow",
+						transf = { -0.60000002384186, -2.3364863466213e-07, 0, 0, 2.3364863466213e-07, -0.60000002384186, 9.7752398175999e-08, 0, -3.8066185810036e-14, 9.7752398175999e-08, 0.60000002384186, 0, -1.9700000286102, -1.9900000095367, 1.3300000429153, 1, },
+					},
+					{
+						materials = { "assets/abri_type_1_sm/abri_type_1_sm.mtl", },
+						mesh = "assets/abri_type_1_sm/panneau_interdit_yellow_lod0.msh",
+						name = "panneau_interdit_yellow",
+						transf = { -0.60000002384186, -3.7669977359656e-07, 0, 0, 3.7669977359656e-07, -0.60000002384186, 9.7752391070571e-08, 0, -6.1372171992861e-14, 9.7752391070571e-08, 0.60000002384186, 0, 1.9800000190735, -1.9900000095367, 1.3300000429153, 1, },
+					},
+					{
+						materials = { "assets/props/sieges/gris_fonce.mtl", "assets/props/sieges/gris.mtl", },
+						mesh = "assets/props/sieges_transilien_lod0.msh",
+						name = "sieges_transilien_lod0",
+						transf = { 0.60000002384186, 0, 0, 0, -0, 0.60000002384186, 0, 0, 0, -0, 0.60000002384186, 0, 0, 1.5199999809265, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1147.0212402344,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -1,0 +1,171 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+local function map(a, f)
+	local res = {}
+	if a and type(a) =="table" then
+		for _, v in ipairs(a) do
+			table.insert(res, f(v))
+		end
+	end
+	return res
+end
+
+local function intRange(start, stop, step)
+	local a = {}
+	local i = start
+	while i <= stop do
+		table.insert(a, i)
+		i = i + step
+	end
+	return a
+end
+
+local degrees = intRange(-180,180, 1)
+
+function data()
+    return {
+        type = "ASSET_TRACK",
+        buildMode = "MULTI",
+        description = {
+            name = _("Abri de Quai Ouest"),
+            icon = "ui/construction/asset/abri_quai_ouest.tga",
+            description = _("Abri Configurable. Pour changer les textes format: Gare/Quai/Destination")
+        },
+        categories = {"Gares Ouest-Etat"},
+        skipCollision = true,--false,
+        autoRemovable = false,
+        order = 4406,
+        params = {
+            {
+                key = "model_abri",
+                name = _("Model Abri"),
+                uiType = "ICON_BUTTON",
+                values = {
+                    _("ui/parameters/none.tga"),
+                    _("ui/parameters/abri_ouest/abri_type_1.tga"),
+                    _("ui/parameters/abri_ouest/abri_type_2.tga"),
+                    _("ui/parameters/abri_ouest/abri_type_3.tga"),
+                },
+                defaultIndex = 0,
+            },
+            {
+                key = "model_assets",
+                name = _("Assets"),
+                uiType = "COMBOBOX",
+                values = {
+                    _("Aucun"),
+                    _("Panneau de Gare"),
+                    _("Panneau de Gare + Panneau Voie/Destination"),
+                },
+                defaultIndex = 0,
+            },
+            {
+            	key = "position",
+            	name = _("Position"), --translate on string.lua
+            	uiType = "BUTTON",
+            	values = { _("Gauche"), _("Droite") },
+            	tooltip = _(""),
+            	defaultIndex = 0,
+            },
+            {
+            	key = "offsetz",
+            	name = _("Hauteur"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+            	key = "offsety",
+            	name = _("Distance de la voie"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+            	key = "offsetx",
+            	name = _("Espacement"),
+            	values = map(intRange(-500, 500, 5), function(i) return ""..i.." cm"  end),
+            	uiType = "SLIDER",
+            	defaultIndex = math.floor(#intRange(-500, 500, 5)/2)
+            },
+            {
+                key = "zRotate",
+                name = _("Rotation Z"),
+                values = map(degrees, function(i) return ""..i.." °"  end),
+                uiType = "SLIDER",
+                defaultIndex = math.floor(#degrees/2),
+            },
+        },
+        updateFn = function(params)
+            local result = {}
+            result.models = { }
+            local grad = 0
+            local height = 0
+            local shiftm = 0
+            local spacingm = 0
+            local offsetz = intRange(-500, 500, 5)[params.offsetz+1]/100
+            local offsety = intRange(-500, 500, 5)[params.offsety+1]/100
+            local offsetx = intRange(-500, 500, 5)[params.offsetx+1]/100
+            local zRotate = degrees[params.zRotate+1]            
+
+
+
+             -- Règle la valeur d'espacement de l'asset
+            if params.position == 0 then shiftm = -5 end
+            if params.position == 0 then height = 1.95 end
+            if params.position == 1 then shiftm = 5 end
+            if params.position == 1 then height = 1.95 end
+
+            if params.model_abri == 0 then 
+                result.models = {{id = "assets/empty.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+            elseif params.model_abri == 1 then
+                if params.model_assets == 0 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest_1/abri_ouest_1.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 1 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest_1/abri_ouest_1_p.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 2 then    
+                    result.models = {{id = "assets/abri_quai/abri_ouest_1/abri_ouest_1_pvd.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                end   
+            elseif params.model_abri == 2 then
+                if params.model_assets == 0 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_2.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 1 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_2_p.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 2 then    
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_2_pvd.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                end  
+            elseif params.model_abri == 3 then
+                if params.model_assets == 0 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_3.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 1 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_3_p.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 2 then    
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_3_pvd.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                end  
+            end  
+
+            
+
+            result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+
+            result.groundFaces = {
+            	{
+            	face = { { -0.01, -0.01, 0 }, { 0.01, -0.01, 0 }, { 0.01, 0.01, 0 } },
+            	modes = {
+            		{
+            		  type = "FILL",
+            		  key = "industry_floor.lua"
+            		}
+            	},
+            	loop = true,
+            	alignmentOffsetMode = "OBJECT",
+            	alignmentDirMode = "OBJECT",
+            	alignmentOffset = { -2.0, -1.0 },
+            	},
+            }
+            return result
+
+        end
+    }
+end

@@ -1,0 +1,116 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.14633589982986, 0.37550073862076, 2.9105625152588, },
+		bbMin = { -0.14663729071617, -0.059751883149147, 0.96056246757507, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.14648659527302, 0.21762630343437, 0.97500002384186, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/stop_quai_crossing/Beton.mtl", },
+						mesh = "assets/props/stop_quai_crossing/concrete_lod0.msh",
+						name = "concrete",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0.0011234134435654, 0.96056246757507, 1, },
+					},
+					{
+						materials = { "assets/props/stop_quai_crossing/Metal_brush.mtl", },
+						mesh = "assets/props/stop_quai_crossing/metal_brush_lod0.msh",
+						name = "metal_brush",
+						transf = { -0.76976799964905, 1.1623173179487e-07, 7.1171401633665e-24, 0, -1.1870277916159e-07, -0.78613299131393, 3.4362965806167e-08, 0, 5.5753449240985e-15, 3.6923839985548e-08, 0.84471899271011, 0, 2.2745094696575e-09, 0.053157791495323, 2.6730582714081, 1, },
+					},
+					{
+						materials = { "assets/props/stop_quai_crossing/metal.mtl", },
+						mesh = "assets/props/stop_quai_crossing/metal_lod0.msh",
+						name = "metal",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, -0.14173832535744, 0.14024811983109, 2.7836751937866, 1, },
+					},
+					{
+						materials = { "assets/props/stop_quai_crossing/plastique_blanc.mtl", },
+						mesh = "assets/props/stop_quai_crossing/plastique_lod0.msh",
+						name = "plastique",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0.071401625871658, 0.96056246757507, 1, },
+					},
+					{
+						materials = { "assets/props/stop_quai_crossing/plastique_noir.mtl", },
+						mesh = "assets/props/stop_quai_crossing/cable_lod0.msh",
+						name = "cable",
+						transf = { -1, 1.5099580252809e-07, 9.2458253069811e-24, 0, -1.5099580252809e-07, -1, 4.3711388286738e-08, 0, 6.6002361555513e-15, 4.3711388286738e-08, 1, 0, -0.024826470762491, 0.070008635520935, 2.3571453094482, 1, },
+					},
+					{
+						animations = {
+							close = {
+								params = {
+									id = "pn_iddle_stop_close.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "assets/props/stop_quai_crossing/stop.mtl", },
+						mesh = "assets/props/stop_quai_crossing/stop_alumer_lod0.msh",
+						name = "stop_alumer",
+						transf = { -1, 1.2246467202363e-16, 8.7422776573476e-08, 0, -3.9438358008764e-15, -1, -4.3711388286738e-08, 0, 8.7422776573476e-08, -4.3711388286738e-08, 1, 0, -6.5153951678276e-11, 0.20564702153206, 2.5078399181366, 1, },
+					},
+					{
+						animations = {
+							open = {
+								params = {
+									id = "pn_iddle_men_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "assets/props/stop_quai_crossing/men.mtl", },
+						mesh = "assets/props/stop_quai_crossing/bon_eteint_lod0.msh",
+						name = "bon_eteint",
+						transf = { -0.0076489998027682, 3.0812666307334e-10, -2.3282761829613e-10, 0, -4.3506129254745e-11, -0.001079999958165, 6.7143544058013e-09, 0, -2.3282570316141e-10, 4.7553793791622e-08, 0.0076489998027682, 0, -5.4008404504202e-07, 0.20714141428471, 2.7978625297546, 1, },
+					},
+					{
+						animations = {
+							open = {
+								params = {
+									id = "pn_iddle_men_open.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "assets/props/stop_quai_crossing/men.mtl", },
+						mesh = "assets/props/stop_quai_crossing/bon_alumer_lod0.msh",
+						name = "bon_alumer",
+						transf = { -0.0076489998027682, 3.0812666307334e-10, -2.3282761829613e-10, 0, -4.3506129254745e-11, -0.001079999958165, 6.7143544058013e-09, 0, -2.3282570316141e-10, 4.7553793791622e-08, 0.0076489998027682, 0, -5.4016953754399e-07, 0.20518560707569, 2.7978625297546, 1, },
+					},
+					{
+						animations = {
+							close = {
+								params = {
+									id = "pn_iddle_stop_close.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+						materials = { "assets/props/stop_quai_crossing/stop.mtl", },
+						mesh = "assets/props/stop_quai_crossing/stop_eteint_lod0.msh",
+						name = "stop_eteint",
+						transf = { -0.76976799964905, 1.1623173179487e-07, 7.1171401633665e-24, 0, -1.1870277916159e-07, -0.78613299131393, 3.4362965806167e-08, 0, 5.5753449240985e-15, 3.6923839985548e-08, 0.84471899271011, 0, 2.2745094696575e-09, 0.053157791495323, 2.6730582714081, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 170.60797119141,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
