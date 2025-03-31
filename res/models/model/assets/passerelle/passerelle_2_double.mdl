@@ -1,0 +1,42 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 13.894951820374, 7.6474695205688, 8.5766525268555, },
+		bbMin = { -13.894951820374, -7.6619071960449, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 13.894951820374, 7.6546883583069, 4.2883262634277, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/passerelle/passerelle_type_1/beton.mtl", "assets/passerelle/passerelle_type_1/metal.mtl", },
+						mesh = "assets/passerelle/passerelle_type_1/passerelle_2_voie_double_lod0.msh",
+						name = "passerelle_2_voie_double",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_type_1/grilles_lod0.mtl", },
+						mesh = "assets/passerelle/passerelle_type_1/grilles_lod0.msh",
+						name = "grilles_lod0",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0.029999999329448, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 4092.8310546875,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
