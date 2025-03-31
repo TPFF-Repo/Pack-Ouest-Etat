@@ -1,0 +1,62 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.9418071508408, 1.280903339386, 2.0476071834564, },
+		bbMin = { -1.974839091301, -1.8988189697266, -1.5423359479528e-18, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.9583231210709, 1.5898611545563, 1.0238035917282, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_type_3_sm/metal_noir.mtl", },
+						mesh = "assets/abri_type_3_sm/Armature_lod0.msh",
+						name = "Armature",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -1.8459724187851, -1.1890000104904, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_type_3_sm/glass.mtl", },
+						mesh = "assets/abri_type_3_sm/Vitre_lod0.msh",
+						name = "Vitre",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 1.2099999189377, -1.2650001049042, 0.95844680070877, 1, },
+					},
+					{
+						materials = { "assets/abri_type_3_sm/plastique_blanc.mtl", },
+						mesh = "assets/abri_type_3_sm/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.016515923663974, -0.30895787477493, 1.9976071119308, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "assets/abri_type_3_sm/Affiche.mtl", },
+								mesh = "assets/abri_type_3_sm/Affiche_lod0.msh",
+								name = "Affiche",
+								transf = { 1, 2.6469779601697e-23, 5.5220263365471e-30, 0, 2.6469779601697e-23, 1, 1.1920928955078e-07, 0, 6.3108872417681e-30, -1.1920928955078e-07, 1, 0, 1.9073489454513e-07, 0, 0, 1, },
+							},
+						},
+						materials = { "assets/abri_type_3_sm/metal_bleu.mtl", },
+						mesh = "assets/abri_type_3_sm/Cadre_lod0.msh",
+						name = "Cadre",
+						transf = { -1.6292068494295e-07, -1, -6.1232342629258e-17, 0, 1, -1.6292068494295e-07, 4.3711388286738e-08, 0, -4.3711388286738e-08, 7.0602567845898e-15, 1, 0, -1.9251676797867, 0, 0.86285012960434, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 780.98449707031,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

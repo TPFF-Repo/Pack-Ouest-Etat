@@ -1,0 +1,42 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.0081463819369674, 0.33740797638893, 0.056992504745722, },
+		bbMin = { -0.0081463819369674, -0.33740815520287, -0.056992512196302, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.0081463819369674, 0.3374080657959, 0.056992508471012, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/panneau_direction_ancien/plastique_blanc.mtl", },
+						mesh = "assets/abri_quai/panneau_direction_ancien/panneau_direction_ancien_lod0.msh",
+						name = "panneau_direction_ancien",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -0.037681199610233, -0.056992512196302, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/panneau_direction_ancien/Metal.mtl", },
+						mesh = "assets/abri_quai/panneau_direction_ancien/support_lod0.msh",
+						name = "support",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0.33740797638893, 0.051279734820127, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 52.46605682373,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
