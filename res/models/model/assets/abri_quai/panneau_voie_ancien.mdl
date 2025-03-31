@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.0055749528110027, 0.14500387012959, 0.074160203337669, },
+		bbMin = { -0.0055749528110027, -0.14500387012959, -0.074160203337669, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.0055749528110027, 0.14500387012959, 0.074160203337669, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/panneau_voie_ancien/panneau_sncf.mtl", },
+						mesh = "assets/abri_quai/panneau_voie_ancien/panneau_voie_ancien_lod0.msh",
+						name = "panneau_voie_ancien",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, -0.0045000077225268, -0.074160203337669, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 40.027565002441,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

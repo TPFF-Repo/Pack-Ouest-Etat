@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.42536970973015, 0.092261113226414, 0.25939980149269, },
+		bbMin = { -0.42536970973015, -0.092759989202023, -5.9704966035888e-19, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.42536970973015, 0.092510551214218, 0.12969990074635, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/banc/banc_bleu_1_cour/Banc_bleu.mtl", },
+						mesh = "assets/props/banc/banc_bleu_1_cour/banc_bleu_lod0.msh",
+						name = "banc_bleu",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.41536971926689, 0, 1.5273763994995e-20, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 86.926391601563,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

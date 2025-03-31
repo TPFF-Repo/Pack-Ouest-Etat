@@ -1,0 +1,97 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.050000004470348, 2.4223031997681, 2.0028672218323, },
+		bbMin = { -0.050000004470348, -0.40587598085403, -0.0028672814369202, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.050000004470348, 1.4140895605087, 1.0028672218323, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/porte_lod0.msh",
+						name = "porte",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 1.5514645576477, -0.0028672218322754, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/grillage_lod0.msh",
+						name = "grillage",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.00033187866210938, 1.4898343086243, 0.06054425239563, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/affiche.mtl", },
+						mesh = "assets/props/portail_quai_2m/interdit_lod0.msh",
+						name = "interdit",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -1, -4.3711388286738e-08, 4.3711388286738e-08, 0, 4.3711388286738e-08, 1.8494530298912e-15, 1, 0, 0.021146746352315, 1.0245418548584, 1.1744555234909, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/Objet005_lod0.msh",
+						name = "Objet005",
+						transf = { -1, -1.5099580252809e-07, -9.245826095842e-24, 0, 0, 6.1232342629258e-17, -1, 0, 1.5099580252809e-07, -1, -6.1232342629258e-17, 0, -0.00022130235447548, 0.46496254205704, -0.0028672218322754, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/Objet006_lod0.msh",
+						name = "Objet006",
+						transf = { -1, -1.5099580252809e-07, -9.245826095842e-24, 0, 0, 6.1232342629258e-17, -1, 0, 1.5099580252809e-07, -1, -6.1232342629258e-17, 0, 0.00011057092342526, 0.52659273147583, 0.06054425239563, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/Objet001_lod0.msh",
+						name = "Objet001",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 1.5514645576477, -0.0028672218322754, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/Objet003_lod0.msh",
+						name = "Objet003",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.00033187866210938, 1.4898343086243, 0.06054425239563, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 200,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/portail_quai_2m/metal.mtl", },
+						mesh = "assets/props/portail_quai_2m/porte_lod0.msh",
+						name = "porte",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 1.5514645576477, -0.0028672218322754, 1, },
+					},
+					{
+						materials = { "assets/props/portail_quai_2m/affiche.mtl", },
+						mesh = "assets/props/portail_quai_2m/interdit_lod0.msh",
+						name = "interdit",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -1, -4.3711388286738e-08, 4.3711388286738e-08, 0, 4.3711388286738e-08, 1.8494530298912e-15, 1, 0, 0.021146746352315, 1.0245418548584, 1.1744555234909, 1, },
+					},
+				
+					
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 200,
+			visibleTo = 1000,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

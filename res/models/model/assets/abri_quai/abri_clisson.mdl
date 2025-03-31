@@ -1,0 +1,96 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 6.0999999046326, 2.3500001430511, 4.1970582008362, },
+		bbMin = { -6.0999999046326, -2.3500001430511, -6.9374261890687e-09, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 6.0999999046326, 2.3500001430511, 2.0985291004181, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/abri_clisson/Stuco.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Stuco_purple.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/stuco_purple_lod0.msh",
+						name = "stuco_purple",
+						transf = { -4.3711388286738e-08, -1, -6.1232342629258e-17, 0, 1, -4.3711388286738e-08, 4.3711388286738e-08, 0, -4.3711388286738e-08, 1.8494530298912e-15, 1, 0, -6.0744071006775, 4.7429646876651e-09, 1.6382532119751, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Stuco_brique_vertical.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Stuco_brique_vertical_lod0.msh",
+						name = "Stuco_brique_vertical",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Stuco_brique_hori.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Stuco_brique_hori_lod0.msh",
+						name = "Stuco_brique_hori",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Brique.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Brique_lod0.msh",
+						name = "Brique",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Stuco_brique.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Stuco_brique_lod0.msh",
+						name = "Stuco_brique",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Vitre.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Vitre_lod0.msh",
+						name = "Vitre",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Metal_noir.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Metal_noir_lod0.msh",
+						name = "Metal_noir",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Toit.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Faitage.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Faitage_lod0.msh",
+						name = "Faitage",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_clisson/Stuco_noir_vertical.mtl", },
+						mesh = "assets/abri_quai/abri_clisson/Stuco_noir_vertical_lod0.msh",
+						name = "Stuco_noir_vertical",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1438.5590820313,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

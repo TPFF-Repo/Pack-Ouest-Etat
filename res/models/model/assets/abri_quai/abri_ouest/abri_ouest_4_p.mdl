@@ -1,0 +1,93 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.3877370357513, 1.4072653055191, 3.4176750183105, },
+		bbMin = { -2.405425786972, -1.3927346467972, -8.2663665858221e-17, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.3965814113617, 1.3999999761581, 1.7088375091553, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_4/Stuco.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_4/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { 1.2290159463882, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.0088444715365767, 0.0072653773240745, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_4/Brique.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_4/Brique_lod0.msh",
+						name = "Brique",
+						transf = { 1.2290159463882, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.0088444715365767, 0.0072653773240745, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_4/Faitage.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_4/Faitage_lod0.msh",
+						name = "Faitage",
+						transf = { 1.2290159463882, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.0088444715365767, 0.0072653773240745, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/abri_ouest/abri_ouest_4/Toit.mtl", },
+						mesh = "assets/abri_quai/abri_ouest/abri_ouest_4/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1.2290159463882, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -0.0088444715365767, 0.0072653773240745, 0, 1, },
+					},
+					{
+						materials = { "assets/props/banc/banc_bleu_1/Banc_bleu.mtl", },
+						mesh = "assets/props/banc/banc_bleu_1/banc_bleu_lod0.msh",
+						name = "banc_bleu",
+						transf = { 1.3999999761581, 0, 0, 0, 0, -6.1195940759262e-08, -1.3999999761581, 0, 0, 1.3999999761581, -6.1195940759262e-08, 0, 0.75999999046326, 0.40000000596046, 0, 1, },
+					},
+					{
+						materials = { "assets/abri_type_1_sm/abri_type_1_sm.mtl", },
+						mesh = "assets/abri_type_1_sm/panneau_interdit_yellow_lod0.msh",
+						name = "panneau_interdit_yellow",
+						transf = { -0.54000002145767, -2.10283772617e-07, 0, 0, 2.10283772617e-07, -0.54000002145767, 8.7977156226771e-08, 0, -3.4259568923098e-14, 8.7977156226771e-08, 0.54000002145767, 0, 1.7200000286102, -1.3500000238419, 1.2799999713898, 1, },
+					},
+					{
+						materials = { "assets/abri_quai/panneau_gare_boite/PanneauGareBoite.mtl", },
+						mesh = "assets/abri_quai/panneau_gare_boite/panneau_name_boite_lod0.msh",
+						name = "panneau_name_boite",
+						transf = { 0.85000002384186, 0, 0, 0, -0, 0.85000002384186, 1.3848256230631e-07, 0, 0, -1.3848256230631e-07, 0.85000002384186, 0, 0, -1.3300000429153, 2.1500000953674, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 872.76861572266,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 9.1499996185303, 1.75, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -0.46000000834465, -1.4199999570847, 2.0699999332428, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
