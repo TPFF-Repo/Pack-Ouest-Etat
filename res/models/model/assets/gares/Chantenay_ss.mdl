@@ -1,0 +1,242 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 18.139999389648, 0.15000000596046, 11.619985580444, },
+		bbMin = { -26.319999694824, -21.049999237061, -1.8209812879187e-15, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 21.802900314331, 11.352685928345, 5.8099927902222, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/Chantenay/Bois.mtl", },
+						mesh = "construction/building/Chantenay/Bois_lod0.msh",
+						name = "Bois",
+						transf = { -1, 1.5099580252809e-07, 9.2458253069811e-24, 0, -1.5099580252809e-07, -1, 4.3711388286738e-08, 0, 6.6002361555513e-15, 4.3711388286738e-08, 1, 0, 19.988914489746, 17.433971405029, 5.5749907493591, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Stuco_beige.mtl", },
+						mesh = "construction/building/Chantenay/Stuco_beige_lod0.msh",
+						name = "Stuco_beige",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 10.233117103577, 3.1553885756332e-16, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Metal_gris.mtl", },
+						mesh = "construction/building/Chantenay/Metal_gris_lod0.msh",
+						name = "Metal_gris",
+						transf = { 1, -6.5168273977179e-07, -3.9904058729505e-23, 0, 6.5168273977179e-07, 1, 4.3711388286738e-08, 0, -2.8485958573519e-14, -4.3711388286738e-08, 1, 0, 14.843043327332, 4.2698788642883, 2.5786888599396, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Metal_noir.mtl", },
+						mesh = "construction/building/Chantenay/Metal_noir_lod0.msh",
+						name = "Metal_noir",
+						transf = { 0.5, 0, 0, 0, 0, 3.0616171314629e-17, -0.5, 0, 0, 0.5, 3.0616171314629e-17, 0, 24.815071105957, 7.1560869216919, 2.7410621643066, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Grillage.mtl", },
+						mesh = "construction/building/Chantenay/Grillage_lod0.msh",
+						name = "Grillage",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 19.988914489746, 6.7757844924927, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Toit.mtl", },
+						mesh = "construction/building/Chantenay/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 10.233117103577, 3.1553885756332e-16, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Stuco_blanc.mtl", },
+						mesh = "construction/building/Chantenay/Stuco_blanc_lod0.msh",
+						name = "Stuco_blanc",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 10.233117103577, 3.1553885756332e-16, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Plastic_blanc.mtl", },
+						mesh = "construction/building/Chantenay/Plastic_blanc_lod0.msh",
+						name = "Plastic_blanc",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 10.233117103577, 3.1553885756332e-16, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Vitre.mtl", },
+						mesh = "construction/building/Chantenay/Vitre_lod0.msh",
+						name = "Vitre",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 10.233117103577, 3.1553885756332e-16, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Metal_porte.mtl", },
+						mesh = "construction/building/Chantenay/Metal_porte_lod0.msh",
+						name = "Metal_porte",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 19.988914489746, 6.7007360458374, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Brique.mtl", },
+						mesh = "construction/building/Chantenay/brique_lod0.msh",
+						name = "brique",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -16.65301322937, 2.419897171535e-09, 5.96271276474, 1, },
+					},
+					{
+						materials = { "construction/building/Chantenay/Light.mtl", },
+						mesh = "construction/building/Chantenay/Light_lod0.msh",
+						name = "Light",
+						transf = { -2.1855694853912e-07, 5, 3.061616999114e-16, 0, 5, 2.1855694853912e-07, 8.1460342471473e-07, 0, 8.1460342471473e-07, 3.5913610816783e-14, -5, 0, -1.3621462583542, 4.5926489830017, 2.7094271183014, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Metal_gris.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Metal_gris_lod0.msh",
+								name = "Metal_gris",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Metal_bleu.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Metal_bleu_lod0.msh",
+								name = "Metal_bleu",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Affichage.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Affichage_lod0.msh",
+								name = "Affichage",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+						},
+						name = "Panneau 1",
+						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -3.1700000762939, 4.0900001525879, 0.5799999833107, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Metal_gris.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Metal_gris_lod0.msh",
+								name = "Metal_gris",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Metal_bleu.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Metal_bleu_lod0.msh",
+								name = "Metal_bleu",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Affichage2.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Affichage_lod0.msh",
+								name = "Affichage",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+						},
+						name = "Panneau 2",
+						transf = { 1.1299999952316, 0, 0, 0, -0, 1.1299999952316, 0, 0, 0, -0, 1.1299999952316, 0, 0.58999997377396, 4.1100001335144, 0.81000000238419, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/horloge_pontchateau_lod0.msh",
+								name = "horloge_pontchateau",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/pontchateau/vitre.mtl", },
+								mesh = "construction/building/pontchateau/vitre_horloge_pontchateau_lod0.msh",
+								name = "vitre_horloge_pontchateau",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/aig_minutes_lod0.msh",
+								name = "aig_minutes",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5475573539734, -9.1950273513794, 4.0816102027893, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/aig_heures_lod0.msh",
+								name = "aig_heures",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5475573539734, -9.1950273513794, 4.0816102027893, 1, },
+							},
+						},
+						name = "GRP_horloge",
+						transf = { -4.3711388286738e-08, 1, 0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, -8.5200004577637, -8.8500003814697, -1.3700000047684, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/horloge_pontchateau_lod0.msh",
+								name = "horloge_pontchateau",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "construction/building/pontchateau/vitre.mtl", },
+								mesh = "construction/building/pontchateau/vitre_horloge_pontchateau_lod0.msh",
+								name = "vitre_horloge_pontchateau",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/aig_minutes_lod0.msh",
+								name = "aig_minutes",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5475573539734, -9.1950273513794, 4.0816102027893, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "construction/building/pontchateau/horloge.mtl", },
+								mesh = "construction/building/pontchateau/aig_heures_lod0.msh",
+								name = "aig_heures",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.5475573539734, -9.1950273513794, 4.0816102027893, 1, },
+							},
+						},
+						name = "GRP_horloge",
+						transf = { -4.3711388286738e-08, -1, 0, 0, 1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 9.7600002288818, 0.23999999463558, -1.3700000047684, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { -1, -8.6625152562192e-07, 0, 0, 8.6625152562192e-07, -1, 0, 0, 0, 0, 1, 0, 0, -3.960000038147, 0.5, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 6158.7373046875,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
