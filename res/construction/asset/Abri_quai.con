@@ -51,6 +51,7 @@ function data()
                 values = {
                     _("1"),
                     _("2"),
+                    _("3"),
                 },
                 defaultIndex = 0,
             },
@@ -116,9 +117,9 @@ function data()
 
              -- Règle la valeur d'espacement de l'asset
             if params.positiony_abri == 0 then shiftm = -5 end
-            if params.positiony_abri == 0 then height = 1 end
+            if params.positiony_abri == 0 then height = 1.95 end
             if params.positiony_abri == 1 then shiftm = 5 end
-            if params.positiony_abri == 1 then height = 1 end
+            if params.positiony_abri == 1 then height = 1.95 end
 
             result.models = {{id = "assets/abri_quai/abri_type_"..type.."_"..size[params.size_abri+1]..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
 

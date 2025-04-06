@@ -33,7 +33,11 @@ local models = {
     "Pontchateau",
     "PontchateauAff",
 	"NantesNord",
-	"NantesSud"
+	"NantesSud",
+	"Chantenay",
+	"ChantenayAff",
+	"MontoirDeBretagne",
+	"MontoirDeBretagneAff",
 }
 
 function data()
@@ -80,6 +84,10 @@ return {
 					_("ui/construction/asset/gares/PontchateauAff@2x.tga"),
 					_("ui/construction/asset/gares/NantesNord@2x.tga"),
 					_("ui/construction/asset/gares/NantesSud@2x.tga"),
+					_("ui/construction/asset/gares/Chantenay@2x.tga"),
+					_("ui/construction/asset/gares/ChantenayAff@2x.tga"),
+					_("ui/construction/asset/gares/MontoirDeBretagne@2x.tga"),
+					_("ui/construction/asset/gares/MontoirDeBretagneAff@2x.tga"),
 			},
 		},
         {

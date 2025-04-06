@@ -1,0 +1,42 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.25, 2.4000000953674, 8.2008972167969, },
+		bbMin = { -1.25, -2.4000000953674, 7.0173316001892, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.25, 3.0000002384186, 0.59178280830383, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "station/rail/asset/passerelle/passerelle_1_middle/Stuco.mtl", },
+						mesh = "station/rail/asset/passerelle/passerelle_1_middle/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 1.6292067694934e-09, 0, 0, -1.6292067694934e-09, 0.0099999997764826, 0, 3.2772707939148, 1.1368683772162e-13, 0, 1, },
+					},
+					{
+						materials = { "station/rail/asset/passerelle/passerelle_1_middle/Rambarde.mtl", },
+						mesh = "station/rail/asset/passerelle/passerelle_1_middle/Rambarde_lod0.msh",
+						name = "Rambarde",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 1.6292067694934e-09, 0, 0, -1.6292067694934e-09, 0.0099999997764826, 0, 3.2772707939148, 1.1368683772162e-13, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 0.80000001192093, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 730.34387207031,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

@@ -26,6 +26,8 @@ local models = {
     "assets/props/stop_quai_crossing.mdl",
     "assets/props/support_ecran_left.mdl",
     "assets/props/support_ecran_right.mdl",
+    "assets/props/portail_quai_5m.mdl",
+    "assets/props/portail_quai_2m.mdl",
 }
 
 function data()
@@ -64,6 +66,8 @@ return {
 					_("ui/railroad_crossing/quai_crossing.tga"),
 					_("ui/construction/asset/props/support_ecran_left.tga"),
 					_("ui/construction/asset/props/support_ecran_right.tga"),
+					_("ui/construction/asset/props/portail_quai_5m.tga"),
+					_("ui/construction/asset/props/portail_quai_2m.tga"),
             },
 		},
 		{

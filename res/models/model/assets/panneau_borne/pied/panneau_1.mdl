@@ -1,0 +1,48 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.44131144881248, 0.074535861611366, 1.7764296531677, },
+		bbMin = { -0.44131147861481, -0.074535846710205, -4.5640045985277e-18, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.44131147861481, 0.074535854160786, 0.88821482658386, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau_borne/pied/panneau_1/Metal_bleu.mtl", },
+						mesh = "assets/panneau_borne/pied/panneau_1/Metal_bleu_lod0.msh",
+						name = "Metal_bleu",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 5.4387475999941e-17, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau_borne/pied/panneau_1/Metal_gris.mtl", },
+						mesh = "assets/panneau_borne/pied/panneau_1/Metal_gris_lod0.msh",
+						name = "Metal_gris",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 5.4387475999941e-17, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau_borne/pied/panneau_1/Affichage_1.mtl", },
+						mesh = "assets/panneau_borne/pied/panneau_1/Affichage_lod0.msh",
+						name = "Affichage",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 5.4387475999941e-17, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 240.68005371094,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

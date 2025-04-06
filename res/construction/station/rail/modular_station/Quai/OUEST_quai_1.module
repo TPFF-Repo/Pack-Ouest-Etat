@@ -1,0 +1,52 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+local oppiestationhelper = require "modules/OUESTstationhelper"
+
+local generatedData_era_a = {
+	["era_a_1"] = {
+		models = {
+
+		},
+	},
+	["era_a_2"] = {
+		models = {
+		
+		
+		},
+	},
+	["era_a_name"] = {
+		models = {
+			
+		}
+	},
+	["era_a_perron_assets"] = {
+		models = {
+			
+			
+		},
+	},
+}
+
+function data()
+    local function GetModelsConfig()
+        return {
+            perron = "station/rail/quai_ouest/perron_quai_1_mod_base.mdl",
+            tracksidePerron = "station/rail/quai_ouest/perron_quai_1_mod_trackside.mdl",        
+            endCap2 = "station/rail/quai_ouest/perron_quai_1_endcap2.mdl",
+		    fenceCorner = "assets/empty.mdl",
+		    endCap = "station/rail/quai_ouest/perron_quai_1_endcap.mdl",
+		    endCapSmall = "station/rail/quai_ouest/perron_quai_1_endcap3.mdl",
+		    endCapStair = "station/rail/quai_ouest/perron_quai_1_endcap3.mdl",
+		    endCapHeadStair = "assets/empty.mdl",
+		    tracksidePerronEndCapLeft = "station/rail/quai_ouest/perron_quai_1_trackside_cap_L.mdl",
+		    tracksidePerronEndCapRight = "station/rail/quai_ouest/perron_quai_1_trackside_cap_R.mdl",
+		    propNameBoard = "station/train/Assets_Gare_Lampadaire_SNCF_Panneaux_Name.mdl",
+		    propNameBoard2 = "station/train/Assets_Gare_Lampadaire_SNCF_Panneaux_Name.mdl",
+		    propLamppost = "assets/empty.mdl",
+		    propPlatformnumber = "station/train/Assets_Gare_Lampadaire_SNCF_Panneaux_Voie.mdl",
+		    era = 0,
+        }
+    end
+end

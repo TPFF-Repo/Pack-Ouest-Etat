@@ -1,0 +1,139 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+local modulesutil = require "modulesutil"
+local constructionutil = require "constructionutil"
+local oppiestationhelper = require "modules/oppiestationhelper"
+
+--Begin Generated
+local generatedData = {
+	["era_c"] = {
+		models = {
+			
+		},
+	},
+	["era_c_name"] = {
+		models = {
+			
+		},
+	},
+	["era_c_perron_underpass_assets"] = {
+		models = {
+			
+		},
+	},
+}
+--End Generated
+
+function data()
+
+    local function GetModelsConfig() 
+        return {            
+            bridgeStart = "station/rail/asset/passerelle/passerelle_1_start.mdl",
+            bridgeMiddle = "station/rail/asset/passerelle/passerelle_1_middle.mdl",
+            bridgeConnector = "station/rail/asset/passerelle/passerelle_1_connector.mdl",
+            bridgeEnd = "station/rail/asset/passerelle/passerelle_1_end.mdl",
+            era = 2,
+        }
+    end
+
+    return {
+        availability = {
+            yearFrom = 1980,
+            yearTo = 0
+        },
+        cost = {
+            price = -1,
+        },
+        description = {
+            name = _("Passerelle"),
+            --description = _("Street access for passengers and cargo."),
+            icon = "ui/construction/station/rail/modular_station/stairs.tga"            
+        }, 
+        category = {
+            categories = { "Gares Type Ouest-Etat - Passerelle", },
+        },
+        type = "passenger_platform_addon",
+        order = {
+            value = 1,
+        },
+        metadata = {
+            oppieoverpass = true,
+            oppieoverpassReverse = false,
+            underground = true,
+        },
+        updateFn = function(result, transform, tag, slotId, addModelFn)
+            result.models[#result.models + 1] = { 
+                id = "station/rail/era_a/tn_underground_connection.mdl",
+                transf = transf.mul(transform, transf.transl(vec3.new(0, 0, -2))),
+                tag = tag
+            }
+
+            local coords = result.GetCoord(slotId)
+            local i = coords[1]
+            local j = coords[2]
+
+            local platformInfo = oppiestationhelper.getPlatformInfo(result, i, j)
+
+            local hasStairs = result.GetPlatformAddonAt(i, j) and result.GetPlatformAddonAt(i, j).metadata.underground
+            local hasRoof = result.GetRoofAt(i, j)
+
+            local modelsConfig = GetModelsConfig()
+
+            local tran = transf.mul(transform, transf.rotZTransl(math.rad(90), vec3.new(0, -20, -2)))
+		
+            local num1 = #result.models
+            result.addPlatformCallback(i, j, function(left, n, station)
+                local ns = tostring(n)
+                if result.labelText[num1] == nil then result.labelText[num1] = {"", "", "", ""} end
+                if left then
+                    result.labelText[num1 + 1] = {ns,ns}
+                else
+                    result.labelText[num1 + 2] = {ns,ns}
+                end
+                local stationS = tostring(station)
+                result.labelText[num1 + 3] = {stationS,stationS}
+            end)
+
+            addModelFn(modelsConfig.bridgeStart, transf.rotZTransl(math.rad(90), vec3.new(0, 0, -1.4)))
+            local isBridgeEnd = true
+            for bindex = 1,8 do
+                local hasBridge = result.GetPlatformAddonAt(i + bindex, j) and result.GetPlatformAddonAt(i + bindex, j).metadata.oppieoverpass
+                 if hasBridge then
+                     isBridgeEnd = false
+                     addModelFn(modelsConfig.bridgeConnector, transf.rotZTransl(math.rad(-90), vec3.new(2.15, 0, -1.4)))		
+                     -- create bridge segments over the other thingies
+                     for segmentindex = 1, bindex - 1 do
+                         addModelFn(modelsConfig.bridgeMiddle, transf.rotZTransl(math.rad(90), vec3.new(((segmentindex+0.1) * 4.65), 0, -1.4)))		
+                     end
+                     addModelFn(modelsConfig.bridgeConnector, transf.rotZTransl(math.rad(90), vec3.new((bindex * 5) - 2.25, 0, -1.4)))			
+                     break
+                 end
+             end
+             if isBridgeEnd then
+                 addModelFn(modelsConfig.bridgeEnd, transf.rotZTransl(math.rad(0), vec3.new( 1.35, 0, -1.4)))	
+             end
+             isBridgeEnd = true
+             for bindex = -1,-8, -1 do
+                local hasBridge = result.GetPlatformAddonAt(i + bindex, j) and result.GetPlatformAddonAt(i + bindex, j).metadata.oppieoverpass
+                 if hasBridge then
+                     isBridgeEnd = false
+                     break
+                 end
+             end
+             if isBridgeEnd then
+                 addModelFn(modelsConfig.bridgeEnd, transf.rotZTransl(math.rad(180), vec3.new( -1.57, 0, -1.4)))	
+             end
+        end,
+        getModelFn = function ()
+            local modelsConfig = GetModelsConfig()
+            local result = {
+                { 
+                    id = modelsConfig.bridgeStart,
+                    transf = transf.rotZTransl(math.rad(90), vec3.new(0, 0, -1.4)),
+                },
+            }
+            
+            return result
+        end
+    }
+end

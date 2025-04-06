@@ -23,13 +23,6 @@ end
 
 local degrees = intRange(-180,180, 1)
 
-local models = {
-    "assets/empty.mdl",
-    "assets/passerelle/passerelle_nantes.mdl",
-    "assets/passerelle/passerelle_nantes_pmr.mdl",
-    "assets/passerelle/passerelle_nantes_pmr_1.mdl",
-}
-
 
 function data()
     return {
@@ -42,22 +35,40 @@ function data()
         categories = {"Gares Ouest-Etat"},
         skipCollision = true,--false,
         autoRemovable = false,
-        order = 4406,
+        order = 4406+10,
         params = {
             {
                 key = "passerelle",
-                name = _("Type"),
+                name = _("Type de Passerelle"),
                 uiType = "COMBOBOX",
-                values = {
-                    _("Aucune"),
-                    _("Passerelle Nantes"),
-                    _("Passerelle Nantes Accès PMR"),
-                    _("Passerelle Nantes Accès PMR simple"),
+                values = {                    
+                    _("1"),
+                    _("2"),
                 },
                 defaultIndex = 0,
             },
             {
-            	key = "position_y",
+                key = "catenary",
+                name = _("Protection"),
+                uiType = "BUTTON",
+                values = {
+                    _("Diesel"),
+                    _("Electrique"),
+                },
+                defaultIndex = 0,
+            },
+            {
+                key = "disposition",
+                name = _("Disposition"),
+                uiType = "BUTTON",
+                values = {
+                    _("Simple"),
+                    _("Double"),
+                },
+                defaultIndex = 0,
+            },
+            {
+            	key = "position",
             	name = _("Position"), --translate on string.lua
             	uiType = "BUTTON",
             	values = { _("Gauche"), _("Droite") },
@@ -96,7 +107,6 @@ function data()
         updateFn = function(params)
             local result = {}
             result.models = { }
-            local model = models[params.passerelle+1]
             local grad = 0
             local height = 0
             local shiftm = 0
@@ -105,16 +115,31 @@ function data()
             local offsety = intRange(-500, 500, 5)[params.offsety+1]/100
             local offsetx = intRange(-500, 500, 5)[params.offsetx+1]/100
             local zRotate = degrees[params.zRotate+1]
+            local passType = params.passerelle+1
 
 
 
              -- Règle la valeur d'espacement de l'asset
-            if params.position_y == 0 then shiftm = -5 end
-            if params.position_y == 0 then height = 1 end
-            if params.position_y == 1 then shiftm = 5 end
-            if params.position_y == 1 then height = 1 end
+            if params.position == 0 then shiftm = -5 end
+            if params.position == 0 then height = 1 end
+            if params.position == 1 then shiftm = 5 end
+            if params.position == 1 then height = 1 end
 
-            result.models = {{id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+            if params.catenary == 0 then
+                if params.disposition == 0 then
+                    result.models = {{id = "assets/passerelle/passerelle_"..passType.."_diesel.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                else
+                    result.models = {{id = "assets/passerelle/passerelle_"..passType.."_diesel_double.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                end
+            else
+                if params.disposition == 0 then
+                    result.models = {{id = "assets/passerelle/passerelle_"..passType..".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                else 
+                    result.models = {{id = "assets/passerelle/passerelle_"..passType.."_double.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                end
+            end 
+
+            
 
             result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
 

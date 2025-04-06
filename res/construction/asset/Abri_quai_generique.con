@@ -138,9 +138,9 @@ function data()
 
             -- Règle la valeur d'espacement de l'asset
             if params.positiony_abri == 0 then shiftm = -5 end
-            if params.positiony_abri == 0 then height = 1 end
+            if params.positiony_abri == 0 then height = 1.95 end
             if params.positiony_abri == 1 then shiftm = 5 end
-            if params.positiony_abri == 1 then height = 1 end
+            if params.positiony_abri == 1 then height = 1.95 end
 
             if params.banc_abri == 0 then
                 result.models = { { id = "assets/abri_quai/abri_gen_nb_" .. sizeAbri .. "_" .. logoAbri .. ".mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm + offsetx, shiftm + offsety, height + offsetz)) } }

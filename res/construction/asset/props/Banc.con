@@ -26,6 +26,7 @@ local degrees = intRange(-180,180, 1)
 local modelsBanc = {
     "beton_1",
     "beton_2",
+    "banc_bleu_1",
 }
 
 local tailleBanc = {
@@ -53,6 +54,7 @@ function data()
                 values = {
                     _("Béton 1"),
                     _("Béton 2"),
+                    _("Banc Bleu 1"),
                 },
                 defaultIndex = 0,
             },
