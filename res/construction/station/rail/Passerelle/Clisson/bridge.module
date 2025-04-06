@@ -1,0 +1,31 @@
+local transf = require "transf"
+local vec3 = require "vec3"
+
+function data()
+    return {
+        availability = {
+            yearFrom = 2015,
+            yearTo = 0,
+        },
+        cost = {
+            price = -1,
+        },
+        category = {
+            categories = { _("Gares Type Ouest-Etat - Passerelles")}
+        },
+        description = {
+            name = _("Passerelle Clisson"),
+            icon = "ui/construction/station/rail/passerelle/clisson.tga"
+        },
+        type = "passenger_platform_addon",
+        order = {
+            value = 1,
+        },
+        metadata = {
+			platform = true,
+			passenger_platform = true,
+			Ouestoverpass = true,
+			OuestoverpassB = true,
+		},
+    }
+end

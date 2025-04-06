@@ -2,7 +2,7 @@ function data()
 return {
 	boundingInfo = {
 		bbMax = { 21.556282043457, 90.911476135254, 21.745910644531, },
-		bbMin = { -21.556280136108, -90.911499023438, -9.5367431640625e-07, },
+		bbMin = { -21.556280136108, -90.911499023438, 0, },
 	},
 	collider = {
 		params = {
@@ -21,35 +21,35 @@ return {
 								materials = { "assets/passerelle/passerelle_nantes/concrete.mtl", },
 								mesh = "assets/passerelle/passerelle_nantes/concrete_lod0.msh",
 								name = "concrete",
-								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
 							},
 							{
 								materials = { "assets/passerelle/passerelle_nantes/Corole.mtl", },
 								mesh = "assets/passerelle/passerelle_nantes/Corole_lod0.msh",
 								name = "Corole",
-								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
 							},
 							{
 								materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
 								mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
 								name = "glass",
-								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
 							},
 							{
 								materials = { "assets/passerelle/passerelle_nantes/metal.mtl", },
 								mesh = "assets/passerelle/passerelle_nantes/metal_lod0.msh",
 								name = "metal",
-								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
 							},
 							{
 								materials = { "assets/passerelle/passerelle_nantes/toit.mtl", },
 								mesh = "assets/passerelle/passerelle_nantes/Toit_lod0.msh",
 								name = "Toit",
-								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000191688538, -2.880334854126, 75.23713684082, 1, },
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
 							},
 						},
 						name = "Passerelle",
-						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 9.5367431640625e-07, -1.1444091796875e-05, 10.872955322266, 1, },
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 15.533091545105, 1, },
 					},
 				},
 				name = "RootNode",
@@ -57,7 +57,42 @@ return {
 			},
 			static = false,
 			visibleFrom = 0,
-			visibleTo = 18285.3828125,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						children = {
+							{
+								materials = { "assets/passerelle/passerelle_nantes/concrete.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/concrete_lod0.msh",
+								name = "concrete",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/glass.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/glass_lod0.msh",
+								name = "glass",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
+							},
+							{
+								materials = { "assets/passerelle/passerelle_nantes/toit.mtl", },
+								mesh = "assets/passerelle/passerelle_nantes/Toit_lod0.msh",
+								name = "Toit",
+								transf = { 1, 0, 0, 0, 0, -1.6292068494295e-07, -1, 0, 0, 1, -1.6292068494295e-07, 0, -15.000190734863, 1.7798004150391, 75.237121582031, 1, },
+							},
+						},
+						name = "Passerelle",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 15.533091545105, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 1000,
 		},
 	},
 	metadata = { },

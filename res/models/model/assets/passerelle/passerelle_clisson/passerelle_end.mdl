@@ -1,0 +1,60 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.8002066612244, 2.0833389759064, 3.2400002479553, },
+		bbMin = { -1.80020570755, -2.0833389759064, -0.10050840675831, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.8002061843872, 2.0833389759064, 1.6702543497086, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passerelle_end/stuco.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passerelle_end/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 5.19979429245, 0.42313534021378, 0, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passerelle_end/Metal_noir.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passerelle_end/Metal_Noir_lod0.msh",
+						name = "Metal_Noir",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 5.19979429245, 0.42313534021378, 0, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passerelle_end/Metal_gris_atlas.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passerelle_end/Metal_gris_atlas_lod0.msh",
+						name = "Metal_gris_atlas",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 5.19979429245, 0.42313534021378, 0, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passerelle_end/Toit.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passerelle_end/Toit_lod0.msh",
+						name = "Toit",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 5.19979429245, 0.42313534021378, 0, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passerelle_end/Metal_gris_atlas.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passerelle_end/end_lod0.msh",
+						name = "end",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 5.19979429245, 0.42313534021378, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 898.10314941406,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

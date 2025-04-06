@@ -27,6 +27,8 @@ local models = {
     "assets/empty.mdl",
     "assets/abri_quai/abri_penhoet.mdl",
     "assets/abri_quai/abri_nazaire.mdl",
+    "assets/abri_quai/abri_clisson.mdl",
+    "assets/abri_quai/abri_clisson_no_name.mdl",
 }
 
 function data()
@@ -50,6 +52,8 @@ function data()
                     _("Aucun"),
                     _("Style Penhoët"),
                     _("Style Saint Nazaire"),
+                    _("Style Clisson"),
+                    _("Style Clisson (Sans Nom)"),
                 },
                 defaultIndex = 0,
             },
@@ -107,9 +111,9 @@ function data()
 
              -- Règle la valeur d'espacement de l'asset
             if params.positiony_abri == 0 then shiftm = -5 end
-            if params.positiony_abri == 0 then height = 1 end
+            if params.positiony_abri == 0 then height = 1.95 end
             if params.positiony_abri == 1 then shiftm = 5 end
-            if params.positiony_abri == 1 then height = 1 end
+            if params.positiony_abri == 1 then height = 1.95 end
 
             result.models = {{id = model, transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
 

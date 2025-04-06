@@ -1,0 +1,48 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.25, 0.75, 8.2008953094482, },
+		bbMin = { -1.25, -0.75, 6.0340638160706, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.25, 0.75524818897247, 1.0834157466888, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "station/rail/asset/passerelle/passerelle_1_connector/Marche.mtl", },
+						mesh = "station/rail/asset/passerelle/passerelle_1_connector/Marche_lod0.msh",
+						name = "Marche",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 1.6292067694934e-09, 0, 0, -1.6292067694934e-09, 0.0099999997764826, 0, 3.2772707939148, 3.7529942989349, 0, 1, },
+					},
+					{
+						materials = { "station/rail/asset/passerelle/passerelle_1_connector/Stuco.mtl", },
+						mesh = "station/rail/asset/passerelle/passerelle_1_connector/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 1.6292067694934e-09, 0, 0, -1.6292067694934e-09, 0.0099999997764826, 0, 3.2772707939148, 3.7529942989349, 0, 1, },
+					},
+					{
+						materials = { "station/rail/asset/passerelle/passerelle_1_connector/Metal.mtl", },
+						mesh = "station/rail/asset/passerelle/passerelle_1_connector/Rambarde_lod0.msh",
+						name = "Rambarde",
+						transf = { 0.0099999997764826, 0, 0, 0, 0, 0.0099999997764826, 1.6292067694934e-09, 0, 0, -1.6292067694934e-09, 0.0099999997764826, 0, 3.2772707939148, 3.7529942989349, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 528.5361328125,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

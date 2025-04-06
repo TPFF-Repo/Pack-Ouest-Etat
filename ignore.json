@@ -1,0 +1,19 @@
+{
+  "ignored_files": [
+    ".idea/",
+    ".git/",
+    ".DS_Store",
+    "changelog.md",
+    "res/construction/assets/Ecran.con",
+    "res/construction/station/modular_station",
+    "res/models/material/assets/ecran",
+    "res/models/material/construction/building/Croisic_annexe",
+    "res/models/mesh/assets/ecran",
+    "res/models/mesh/construction/building/Croisic_annexe",
+    "res/models/model/assets/ecran",
+    "res/models/model/construction/building/Croisic_annexe.mdl",
+    "res/models/model/construction/building/Possoniere.mdl",
+    "res/scripts/parambuilder_v1_1.lua",
+    "res/scripts/modules"
+  ]
+}

@@ -1,0 +1,54 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 7, 2.0801019668579, 9.2400007247925, },
+		bbMin = { -7, -2.0801024436951, 5.8994922637939, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 7, 2.0801022052765, 1.6702542304993, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passage_ov/Toit.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passage_ov/Toit_lod0.msh",
+						name = "Toit",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 2.3676288662955e-07, 0.41989785432816, 6.0000004768372, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passage_ov/Material #4.mtl", "assets/passerelle/passerelle_clisson/passage_ov/Stuco.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passage_ov/Stuco_lod0.msh",
+						name = "Stuco",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 2.3676288662955e-07, 0.41989785432816, 6.0000004768372, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passage_ov/Metal_noir.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passage_ov/Metal_noir_lod0.msh",
+						name = "Metal_noir",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 2.3676288662955e-07, 0.41989785432816, 6.0000004768372, 1, },
+					},
+					{
+						materials = { "assets/passerelle/passerelle_clisson/passage_ov/Metal_gris_atlas.mtl", },
+						mesh = "assets/passerelle/passerelle_clisson/passage_ov/Metal_Gris_Altlas_lod0.msh",
+						name = "Metal_Gris_Altlas",
+						transf = { -4.3711388286738e-08, 1, 6.1232342629258e-17, 0, -3.6733637943811e-40, 6.1232342629258e-17, -1, 0, -1, -4.3711388286738e-08, -2.6765506200124e-24, 0, 2.3676288662955e-07, 0.41989785432816, 6.0000004768372, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0.5, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 1414.7426757813,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

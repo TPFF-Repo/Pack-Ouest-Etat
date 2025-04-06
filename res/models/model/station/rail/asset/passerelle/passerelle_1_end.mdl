@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.021898746490479, 1.2854332923889, 7.2042422294617, },
+		bbMin = { -0.021900177001953, -1.2854330539703, 6.1783194541931, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.021899461746216, 1.2854331731796, 0.51296138763428, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "station/rail/asset/passerelle/passerelle_1_end/Metal.mtl", },
+						mesh = "station/rail/asset/passerelle/passerelle_1_end/passerelle_1_end_lod0.msh",
+						name = "passerelle_1_end",
+						transf = { -4.3711387287537e-10, -0.0099999997764826, -6.1232339527331e-19, 0, 0.0099999997764826, -4.3711387287537e-10, 1.6292067694934e-09, 0, -1.6292067694934e-09, 7.060256519892e-17, 0.0099999997764826, 0, 7.4442157745361, -3.2099437713623, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 302.56536865234,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

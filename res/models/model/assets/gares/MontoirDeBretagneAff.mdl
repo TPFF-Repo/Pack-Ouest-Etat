@@ -1,0 +1,264 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 15.261419296265, -0.064028739929199, 11.161171913147, },
+		bbMin = { -15.261419296265, -14.955018997192, -5.9254888627356e-16, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 15.261419296265, 7.4454951286316, 5.5805859565735, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/MontoirDeBretagne/Stuco_jaune.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Stuco_jaune_lod0.msh",
+						name = "Stuco_jaune",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Terracota.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Tuile_lod0.msh",
+						name = "Tuile",
+						transf = { 1, 0, 0, 0, 0, 4.2186631447956e-17, -0.68896001577377, 0, 0, 0.68896001577377, 4.2186631447956e-17, 0, 24.260307312012, -4.6842732429504, 0.73688840866089, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Brique.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Chemine_lod0.msh",
+						name = "Chemine",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, -11.249893188477, -4.6792516708374, 6.4186358451843, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Terracota.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Pot_lod0.msh",
+						name = "Pot",
+						transf = { 0.66620600223541, 0, 0, 0, 0, 0.66620600223541, 1.0853873533279e-07, 0, 0, -1.6292068494295e-07, 1, 0, -2.1150827407837, -2.2892167568207, 7.5042023658752, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Metal_faitage.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Faitage_lod0.msh",
+						name = "Faitage",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Stuco_blanc.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Stuco_blanc_lod0.msh",
+						name = "Stuco_blanc",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Toit.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Toit_lod0.msh",
+						name = "Toit",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Vitre.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Vitre_lod0.msh",
+						name = "Vitre",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Plastic_rouge.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Plastic_rouge_lod0.msh",
+						name = "Plastic_rouge",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/plastic_blanc.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/Plastic_blanc_lod0.msh",
+						name = "Plastic_blanc",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 5.0411359531211e-09, -4.6842732429504, 0.83360624313354, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Metal_gris.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Metal_gris_lod0.msh",
+								name = "Metal_gris",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Metal_bleu.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Metal_bleu_lod0.msh",
+								name = "Metal_bleu",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+							{
+								materials = { "assets/panneau_borne/mural/panneau_1/Affichage2.mtl", },
+								mesh = "assets/panneau_borne/mural/panneau_1/Affichage_lod0.msh",
+								name = "Affichage",
+								transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 2.311721836179e-08, 0.78980821371078, 1, },
+							},
+						},
+						name = "Panneau",
+						transf = { -1, -8.7422776573476e-08, 0, 0, 8.7422776573476e-08, -1, 0, 0, 0, 0, 1, 0, -1.8099999427795, -9.2700004577637, 1.6799999475479, 1, },
+					},
+					{
+						materials = { "construction/building/MontoirDeBretagne/Socle.mtl", },
+						mesh = "construction/building/MontoirDeBretagne/socle_montoir_lod0.msh",
+						name = "socle_montoir",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 8.9791694080077e-09, -5.2779612541199, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_sncf_bleu_2011/panneau_sncf_gare_blanc.mtl", },
+						mesh = "assets/panneau/panneau_sncf_fr_fr_bleu/panneau_gare_simple_lod0.msh",
+						name = "panneau_gare_simple",
+						transf = { 2, 0, 0, 0, -0, 1, 1.6292061388867e-07, 0, 0, -2.9325710215744e-07, 1.7999999523163, 0, -1.7599999904633, -9.1899995803833, 3.9500000476837, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 3072.431640625,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.13725489377975, 0.13725489377975, 0.13725489377975, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 21.5, 2.0499999523163, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -2.9700000286102, -9.2200002670288, 3.8399999141693, 1, },
+					type = "STATION_NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+		transportNetworkProvider = {
+			laneLists = {
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -16.5, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -15.199999809265, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -15.199999809265, 0, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -12.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -12.39999961853, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 0, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.7000000476837, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.7000000476837, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.7000000476837, 0.050000000745058, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 3.7000000476837, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 14, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 14, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ 14, 0.050000000745058, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+				{
+					linkable = true,
+					nodes = {
+						{
+							{ 0, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -14, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -14, -11, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+						{
+							{ -14, 0.050000000745058, 0.85000002384186, },
+							{ 0, 0, 0.80000001192093, },
+							1.5,
+						},
+					},
+					speedLimit = 20,
+					transportModes = { "PERSON", },
+				},
+			},
+			runways = { },
+			terminals = { },
+		},
+	},
+	version = 1,
+}
+end

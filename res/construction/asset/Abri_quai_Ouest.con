@@ -46,6 +46,7 @@ function data()
                     _("ui/parameters/abri_ouest/abri_type_1.tga"),
                     _("ui/parameters/abri_ouest/abri_type_2.tga"),
                     _("ui/parameters/abri_ouest/abri_type_3.tga"),
+                    _("ui/parameters/abri_ouest/abri_type_4.tga"),
                 },
                 defaultIndex = 0,
             },
@@ -59,7 +60,7 @@ function data()
                     _("Panneau de Gare + Panneau Voie/Destination"),
                 },
                 defaultIndex = 0,
-            },
+            },            
             {
             	key = "position",
             	name = _("Position"), --translate on string.lua
@@ -143,7 +144,15 @@ function data()
                 elseif params.model_assets == 2 then    
                     result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_3_pvd.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
                 end  
-            end  
+            elseif params.model_abri == 4 then
+                if params.model_assets == 0 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_4.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 1 then
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_4_p.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                elseif params.model_assets == 2 then    
+                    result.models = {{id = "assets/abri_quai/abri_ouest/abri_ouest_4_pvd.mdl", transf = transf.rotZYXTransl(transf.degToRad(zRotate, 0, grad), vec3.new(spacingm+offsetx, shiftm+offsety, height+offsetz))}}
+                end  
+            end 
 
             
 
