@@ -1,0 +1,48 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.076187014579773, 0.056976903229952, 0.2340332865715, },
+		bbMin = { -0.07618685811758, -0.056976925581694, -5.2154064178467e-08, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.076186940073967, 0.056976914405823, 0.11701667308807, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/poubelle_1/metal_70_30.mtl", },
+						mesh = "assets/props/poubelle_1/metal_70_30_lod0.msh",
+						name = "metal_70_30",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 8.3446501264461e-08, -1.1920929132714e-08, 0.11701661348343, 1, },
+					},
+					{
+						materials = { "assets/props/poubelle_1/metal_30_95_perfo.mtl", },
+						mesh = "assets/props/poubelle_1/metal_30_95_perfo_lod0.msh",
+						name = "metal_30_95_perfo",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 7.7486042471264e-08, 2.9802322831785e-09, 0.074503429234028, 1, },
+					},
+					{
+						materials = { "assets/props/poubelle_1/metal_30_95.mtl", },
+						mesh = "assets/props/poubelle_1/metal_30_95_lod0.msh",
+						name = "metal_30_95",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.00018319487571716, 8.5145238699624e-06, 0.071008995175362, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 39.460842132568,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
