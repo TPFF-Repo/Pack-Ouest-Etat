@@ -45,7 +45,7 @@ function data()
 			tracksidePerronEndCapRight = "assets/empty.mdl",
 			propNameBoard = "assets/panneau/panneau_sncf_2011_poteau_double.mdl",
 			propNameBoard2 = "assets/panneau/panneau_sncf_2011_poteau_double.mdl",
-			propLamppost = "assets/props/lampadaires/lampadaire_generique_ouest.mdl",
+			propLamppost = "station/rail/asset/quai/props/lampadaire_generique_ouest.mdl",
 			propPlatformnumber = "station/rail/asset/quai/props/panneau_voie.mdl",
 		    era = 0,
         }

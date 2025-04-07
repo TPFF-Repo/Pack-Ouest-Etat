@@ -2,7 +2,7 @@ local transf = require "transf"
 local vec3 = require "vec3"
 local modulesutil = require "modulesutil"
 local constructionutil = require "constructionutil"
-local oppiestationhelper = require "modules/oppiestationhelper"
+local oppiestationhelper = require "modules/OUESTstationhelper"
 
 --Begin Generated
 local generatedData = {
@@ -27,7 +27,18 @@ local generatedData = {
 function data()
 
     local function GetModelsConfig() 
-        return {            
+        return {      
+            perron = "station/rail/asset/quai/quai_1/quai_1_perron.mdl",
+			endPerron = "station/rail/asset/quai/quai_1/quai_1_perron_end.mdl",
+			tracksidePerron = "station/rail/asset/quai_1/quai/quai_1_trackside.mdl",
+			endCap2 = "station/rail/asset/quai/quai_1/quai_1_endcap2.mdl",
+			fenceCorner = "station/rail/asset/quai/quai_1/quai_1_endcap4.mdl",
+			endCap = "station/rail/asset/quai/quai_1/quai_1_endcap.mdl",
+			endCapSmall = "station/rail/asset/quai/quai_1/quai_1_endcap3.mdl",
+			endCapStair = "station/rail/asset/quai/quai_1/quai_1_endcapstair.mdl",
+			endCapHeadStair = "station/rail/asset/quai/quai_1/quai_1_head_stair.mdl",
+			tracksidePerronEndCapLeft = "assets/empty.mdl",
+			tracksidePerronEndCapRight = "assets/empty.mdl",
             bridgeStart = "station/rail/asset/passerelle/passerelle_1_start.mdl",
             bridgeMiddle = "station/rail/asset/passerelle/passerelle_1_middle.mdl",
             bridgeConnector = "station/rail/asset/passerelle/passerelle_1_connector.mdl",
@@ -47,7 +58,7 @@ function data()
         description = {
             name = _("Passerelle"),
             --description = _("Street access for passengers and cargo."),
-            icon = "ui/construction/station/rail/modular_station/stairs.tga"            
+            icon = "ui/construction/station/rail/passerelle_1.tga"            
         }, 
         category = {
             categories = { "Gares Type Ouest-Etat - Passerelle", },
@@ -78,6 +89,7 @@ function data()
             local hasRoof = result.GetRoofAt(i, j)
 
             local modelsConfig = GetModelsConfig()
+            addModelFn(modelsConfig.perron, transf.rotZTransl(math.rad(90), vec3.new(0, -20, -2)), "perron" .. i .. "_" .. j)
 
             local tran = transf.mul(transform, transf.rotZTransl(math.rad(90), vec3.new(0, -20, -2)))
 		
@@ -92,7 +104,23 @@ function data()
                 end
                 local stationS = tostring(station)
                 result.labelText[num1 + 3] = {stationS,stationS}
-            end)
+            end)     
+            
+            addModelFn(modelsConfig.tracksidePerron, transf.rotZTransl(math.rad(-90), vec3.new(-2.65, 0, -1.99)))
+			addModelFn(modelsConfig.tracksidePerron, transf.rotZTransl(math.rad(90), vec3.new(2.65, 0, -1.99)))
+
+            local nextM = result.GetModuleAt(i,j-1)
+			local ca =  (nextM and (nextM.metadata.passenger_platform or nextM.metadata.cargo_platform)) or  result.connector[1000 * i + 100 * (j-1) + 7]
+			if not ca then
+				addModelFn(modelsConfig.endPerron, transf.rotZTransl(math.rad(0), vec3.new(0, -20, -1.99)))
+				--addModelFn(modelsConfig.endPerronRoof, transf.rotZTransl(math.rad(-90), vec3.new(0, -20, 0)))
+			end
+			local prevM = result.GetModuleAt(i,j+1)
+			local cb = (prevM and (prevM.metadata.passenger_platform or prevM.metadata.cargo_platform)) or  result.connector[1000 * i + 100 * (j+1) + 0]
+			if not cb then
+			    addModelFn(modelsConfig.endPerron, transf.rotZTransl(math.rad(180), vec3.new(0, 20, -1.99)))
+					--addModelFn(modelsConfig.endPerronRoof, transf.rotZTransl(math.rad(90), vec3.new(0, 20, 0)))
+			end
 
             addModelFn(modelsConfig.bridgeStart, transf.rotZTransl(math.rad(90), vec3.new(0, 0, -1.4)))
             local isBridgeEnd = true
