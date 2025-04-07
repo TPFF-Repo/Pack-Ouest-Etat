@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.5000021457672, 0.0020170211791992, 1.25, },
+		bbMin = { -2.5000007152557, -2.1247048377991, 1.8603364768211e-17, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 2.5000014305115, 1.0633609294891, 0.34999999403954, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/quai/quai_2_simple/quai_2_simple.mtl", },
+						mesh = "station/rail/asset/quai/quai_1_head_stair/endcapstair_lod0.msh",
+						name = "endcapstair",
+						transf = { 1, -2.3841856489071e-07, -1.4598926547006e-23, 0, -1.8758891399333e-14, -7.8680500337214e-08, -1.7999999523163, 0, 2.3841856489071e-07, 1, -4.3711388286738e-08, 0, -2.5000007152557, -2.4285209178925, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 614.19604492188,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

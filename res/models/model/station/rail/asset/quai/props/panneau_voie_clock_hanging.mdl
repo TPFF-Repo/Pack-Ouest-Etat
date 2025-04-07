@@ -1,0 +1,181 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.10226658731699, 0.099849335849285, 3.6666886806488, },
+		bbMin = { -0.10165432840586, -0.10097358375788, -6.1484293572036e-18, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.10196045786142, 0.10041145980358, 1.8333443403244, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/poteau_sncf_new/poteau_sncf_new.mtl", },
+						mesh = "assets/poteau_sncf_new/poteau_lod0.msh",
+						name = "poteau",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.00030612791306339, -0.00056211504852399, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau_voie/panneau_voie_simple/panneau_voie.mtl", },
+						mesh = "assets/panneau_voie/panneau_voie_simple/panneau_voie_lod0.msh",
+						name = "panneau_voie",
+						transf = { -1, -3.8941436741879e-07, -6.1232329394369e-17, 0, 3.8941436741879e-07, -1, 4.3711384734024e-08, 0, -1.708307398264e-14, 4.3711384734024e-08, 1, 0, 0, 0.029999999329448, 2.7400000095367, 1, },
+					},
+					{
+						children = {
+							{
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/cadre_horloge_lod0.msh",
+								name = "horloge",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "assets/props/horloges/accroche_et_mat_horloge_sncf.mtl", },
+								mesh = "assets/props/horloges/accroche_murale_horloge_sncf_lod0.msh",
+								name = "accroche_murale_horloge",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								animations = {
+									seconds = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/seconds/era_c_seconds_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/trotteuse_lod0.msh",
+								name = "trotteuse",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/minutes_lod0.msh",
+								name = "minutes",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/heures_lod0.msh",
+								name = "heures",
+								transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, -0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									seconds = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/seconds/era_c_seconds_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/trotteuse_lod0.msh",
+								name = "trotteuse",
+								transf = { -1, -6.2783294652036e-07, 0, 0, 6.2783294652036e-07, -1, 0, 0, 0, 0, 1, 0, 0, 0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									minutes = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/minutes/era_c_minutes_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/minutes_lod0.msh",
+								name = "minutes",
+								transf = { -1, -6.2783294652036e-07, 0, 0, 6.2783294652036e-07, -1, 0, 0, 0, 0, 1, 0, 0, 0.17000000178814, 2.5, 1, },
+							},
+							{
+								animations = {
+									hours = {
+										params = {
+											id = "station/rail/asset/era_c_small_clock/hours/era_c_hours_small_1.ani",
+										},
+										type = "FILE_REF",
+									},
+								},
+								materials = { "assets/props/horloges/horloge_sncf_bodet_carmillon.mtl", },
+								mesh = "assets/props/horloges/heures_lod0.msh",
+								name = "heures",
+								transf = { -1, -6.2783294652036e-07, 0, 0, 6.2783294652036e-07, -1, 0, 0, 0, 0, 1, 0, 0, 0.17000000178814, 2.5, 1, },
+							},
+						},
+						name = "Horloges",
+						transf = { -4.3711388286738e-08, 1, -0, 0, -1, -4.3711388286738e-08, 0, 0, 0, 0, 1, 0, 0, 0.60000002384186, 0.97000002861023, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 216.51943969727,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.55993849039078, 0.77631908655167, 0.86274510622025, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 2.75, 2.2999999523163, },
+					transf = { -4.3711390063095e-09, -0.10000000149012, 0, 0, -4.3711390063095e-09, 1.9106854386949e-16, 0.10000000149012, 0, -0.10000000149012, 4.3711390063095e-09, -4.3711390063095e-09, 0, -0.019999999552965, 0.49000000953674, 2.7200000286102, 1, },
+					type = "CUSTOM",
+					verticalAlignment = "CENTER",
+				},
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 0.55993849039078, 0.77631908655167, 0.86274510622025, },
+					filter = "NONE",
+					fitting = "CUT",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 2.75, 2.2999999523163, },
+					transf = { -4.3711390063095e-09, 0.10000000149012, 0, 0, 4.3711390063095e-09, 1.9106854386949e-16, 0.10000000149012, 0, 0.10000000149012, 4.3711390063095e-09, -4.3711390063095e-09, 0, 0.019999999552965, 0.21999999880791, 2.7200000286102, 1, },
+					type = "CUSTOM",
+					verticalAlignment = "CENTER",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end

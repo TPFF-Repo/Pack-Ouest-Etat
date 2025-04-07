@@ -1,0 +1,85 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 1.9757378101349, 0.099849335849285, 3.6666886806488, },
+		bbMin = { -1.9757378101349, -0.10097358375788, -6.1484293572036e-18, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 1.9757378101349, 0.10041145980358, 1.8333443403244, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau/panneau_sncf_2011_poteau_double/poteau_sncf_new.mtl", },
+						mesh = "assets/panneau/panneau_sncf_2011_poteau_double/poteau_lod0.msh",
+						name = "poteau",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.00030612791306339, -0.00056211504852399, 0, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_sncf_2011_poteau_double/panneau_sncf_gare.mtl", },
+						mesh = "assets/panneau/panneau_sncf_2011_poteau_double/panneau_sncf_bleu_2011_lod0.msh",
+						name = "panneau_sncf_bleu_2011",
+						transf = { -1, -8.7422776573476e-08, -5.3531012400249e-24, 0, 8.7422776573476e-08, -1, 1.6292068494295e-07, 0, -1.424297928676e-14, 1.6292068494295e-07, 1, 0, 0, 0.040204308927059, 3.2703175544739, 1, },
+					},
+					{
+						materials = { "assets/panneau/panneau_sncf_2011_poteau_double/panneau_sncf_gare.mtl", },
+						mesh = "assets/panneau/panneau_sncf_2011_poteau_double/panneau_sncf_bleu_2012_lod0.msh",
+						name = "panneau_sncf_bleu_2012",
+						transf = { 1, 1.7484555314695e-07, 1.070620248005e-23, 0, -1.7484555314695e-07, 1, 1.6292068494295e-07, 0, 2.8485958573519e-14, -1.6292068494295e-07, 1, 0, 0, -0.036628559231758, 3.2703175544739, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 856.38806152344,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 34.299999237061, 3.4000000953674, },
+					transf = { 0.10000000149012, 0, 0, 0, 0, -4.3711390063095e-09, 0.10000000149012, 0, 0, -0.10000000149012, -4.3711390063095e-09, 0, -1.9099999666214, -0.090000003576279, 3.0999999046326, 1, },
+					type = "STATION_NAME",
+					verticalAlignment = "TOP",
+				},
+				{
+					alignment = "LEFT",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 34.299999237061, 3.4000000953674, },
+					transf = { -0.10000000149012, -8.742278012619e-09, 0, 0, -3.8213708773899e-16, 4.3711390063095e-09, 0.10000000149012, 0, -8.742278012619e-09, 0.10000000149012, -4.3711390063095e-09, 0, 1.9099999666214, 0.090000003576279, 3.0999999046326, 1, },
+					type = "STATION_NAME",
+					verticalAlignment = "TOP",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end
