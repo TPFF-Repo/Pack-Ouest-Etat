@@ -11,28 +11,16 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/montoirdebretagne/Toit_Albedo.dds",
+			fileName = "models/commun/metal/Metal_noir_70_albedo_opacity.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 			wrapS = "REPEAT",
 			wrapT = "REPEAT",
 		},
 		map_metal_gloss_ao = {
-			fileName = "models/buildings/montoirdebretagne/Toit_mga.dds",
+			fileName = "models/commun/metal/Metal_95_mga.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
-			wrapS = "REPEAT",
-			wrapT = "REPEAT",
-		},
-		map_normal = {
-			fileName = "models/buildings/montoirdebretagne/Toit_normal.dds",
-			redGreen = true,
-			type = "TWOD",
-			wrapS = "REPEAT",
-			wrapT = "REPEAT",
-		},
-		normal_scale = {
-			normalScale = 1,
 		},
 		polygon_offset = {
 			factor = 0,
@@ -41,9 +29,9 @@ return {
 		},
 		two_sided = {
 			flipNormal = true,
-			twoSided = true,
+			twoSided = false,
 		},
 	},
-	type = "PHYSICAL_NRML_MAP",
+	type = "PHYSICAL",
 }
 end
