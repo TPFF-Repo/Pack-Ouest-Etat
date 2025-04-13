@@ -123,7 +123,7 @@ return {
 			},
 			static = false,
 			visibleFrom = 0,
-			visibleTo = 18849.1796875,
+			visibleTo = 1000,
 		},
 	},
 	metadata = { },

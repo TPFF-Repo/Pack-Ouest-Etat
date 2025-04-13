@@ -11,7 +11,7 @@ return {
 			fadeOutStartDist = 10000,
 		},
 		map_albedo = {
-			fileName = "models/buildings/montoirdebretagne/Stuco_blanc_albedo_opacity.dds",
+			fileName = "models/commun/stuco/Stuco_blanc_albedo_opacity.dds",
 			scaleDownAllowed = false,
 			type = "TWOD",
 			wrapS = "REPEAT",
@@ -25,7 +25,7 @@ return {
 			wrapT = "REPEAT",
 		},
 		map_normal = {
-			fileName = "models/buildings/montoirdebretagne/Stuco_blanc_normal.dds",
+			fileName = "models/commun/stuco/Stuco_blanc_normal.dds",
 			redGreen = true,
 			type = "TWOD",
 			wrapS = "REPEAT",
@@ -63,7 +63,7 @@ return {
 		},
 		two_sided = {
 			flipNormal = true,
-			twoSided = false,
+			twoSided = true,
 		},
 	},
 	type = "PHYSICAL_NRML_MAP_OP",

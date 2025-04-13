@@ -231,7 +231,7 @@ return {
 			},
 			static = false,
 			visibleFrom = 0,
-			visibleTo = 50,
+			visibleTo = 500,
 		},
 		{
 			node = {
@@ -451,8 +451,8 @@ return {
 				transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 0, 0, 0, 1, },
 			},
 			static = false,
-			visibleFrom = 50,
-			visibleTo = 4569.4287109375,
+			visibleFrom = 500,
+			visibleTo = 1000,
 		},
 	},
 	metadata = {

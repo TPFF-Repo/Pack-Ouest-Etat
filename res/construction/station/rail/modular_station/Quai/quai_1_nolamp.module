@@ -34,7 +34,7 @@ function data()
         return {
             perron = "station/rail/asset/quai/quai_1/quai_1_perron.mdl",
 			endPerron = "station/rail/asset/quai/quai_1/quai_1_perron_end.mdl",
-			tracksidePerron = "station/rail/asset/quai_1/quai/quai_1_trackside.mdl",
+			tracksidePerron = "station/rail/asset/quai_1/quai_1_trackside.mdl",
 			endCap2 = "station/rail/asset/quai/quai_1/quai_1_endcap2.mdl",
 			fenceCorner = "station/rail/asset/quai/quai_1/quai_1_endcap4.mdl",
 			endCap = "station/rail/asset/quai/quai_1/quai_1_endcap.mdl",
