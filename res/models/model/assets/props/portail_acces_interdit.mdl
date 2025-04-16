@@ -1,0 +1,54 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.52745479345322, 0.027454806491733, 0.85000002384186, },
+		bbMin = { -0.52745473384857, -0.027454806491733, -1.6811220688858e-18, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.52745473384857, 0.027454806491733, 0.42500001192093, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/portail_acces_interdit/Metal_blanc.mtl", },
+						mesh = "assets/props/portail_acces_interdit/Metal_blanc_lod0.msh",
+						name = "Metal_blanc",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.5, 2.6023745617435e-17, 0, 1, },
+					},
+					{
+						materials = { "assets/props/portail_acces_interdit/Metal_gris_f.mtl", },
+						mesh = "assets/props/portail_acces_interdit/Metal_gris_f_lod0.msh",
+						name = "Metal_gris_f",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.5, 2.6023745617435e-17, 0, 1, },
+					},
+					{
+						materials = { "assets/props/portail_acces_interdit/Metal_gris.mtl", },
+						mesh = "assets/props/portail_acces_interdit/Metal_gris_lod0.msh",
+						name = "Metal_gris",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.5, 2.6023745617435e-17, 0, 1, },
+					},
+					{
+						materials = { "assets/props/portail_acces_interdit/Panneau.mtl", },
+						mesh = "assets/props/portail_acces_interdit/Panneau_lod0.msh",
+						name = "Panneau",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0.5, 2.6023745617435e-17, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 203.79287719727,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
