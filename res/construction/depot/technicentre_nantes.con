@@ -74,7 +74,7 @@ function data()
                 local height = 0.2
                 result.models = {{id = "depot/rail/technicentre_nantes.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, 0, 0), vec3.new(0, 0, height))}}        
 
-                local xEnd = -77.184
+                local xEnd = 0
                 local xEnd1 = -9.3
                 local yTrack0 = -27.678
                 local yTrack1 = -20.822
@@ -105,13 +105,15 @@ function data()
                             { { xEnd1, yTrack6, -height }, 		{ xBeforeDoor - xEnd1, 0, 0 } }, { { xBeforeDoor, yTrack6, -height }, 	{ xBeforeDoor - xEnd1, 0, 0 } },                            
                         },
                         snapNodes = { 1, 3, 5, 7, 9, 11, 13 }
+
                     }
                 }
                 face = {{xTrackStartOption2, -25, 0}, { xTrackStartOption2, 22, 0}, { xEnd, 22, 0}, { xEnd, -25, 0}}
-                result.terrainAlignmentLists = { { type = "EQUAL", faces = {} } }
+                
 
                 result.groundFaces = { { face = face, modes = { { type = "FILL", key = "town_concrete.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
                 result.groundFaces = { { face = face, modes = { { type = "STROKE_OUTER", key = "building_paving.lua" } }, loop = false, alignmentOffsetMode = "OBJECT", alignmentDirMode = "OBJECT", }, }
+                result.terrainAlignmentLists = { { type = "EQUAL", faces = {result.groundFaces[1].face} } }
             end
 
             result.cost = 18000

@@ -29,6 +29,7 @@ local models = {
     "assets/passerelle/passerelle_nantes_pmr.mdl",
     "assets/passerelle/passerelle_nantes_pmr_1.mdl",
     "assets/passerelle/passerelle_nantes_pillar.mdl",
+    "assets/passerelle/passerelle_clisson/passerelle_complete.mdl",
 }
 
 
@@ -55,6 +56,7 @@ function data()
                     _("Passerelle Nantes Accès PMR"),
                     _("Passerelle Nantes Accès PMR simple"),
                     _("Passerelle Nantes Pillier"),
+                    _("Passerelle Clisson")
                 },
                 defaultIndex = 0,
             },

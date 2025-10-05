@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.21107058227062, 0.0015000567073002, 0.1057606190443, },
+		bbMin = { -0.21107058227062, -0.0014999605482444, 0.00022539868950844, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.21107058227062, 0.0015000086277723, 0.052767612040043, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/pancarte/pancarte_11_190/pancarte_11_190.mtl", },
+						mesh = "assets/props/pancarte/pancarte_11_190/pancarte_11_190_lod0.msh",
+						name = "pancarte_11_190",
+						transf = { 1, 0, 0, 0, 0, 1, 1.6292068494295e-07, 0, 0, -1.6292068494295e-07, 1, 0, 0, 0.0015000480925664, 0.052993010729551, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 38.642807006836,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
