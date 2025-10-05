@@ -38,6 +38,7 @@ local models = {
 	"ChantenayAff",
 	"MontoirDeBretagne",
 	"MontoirDeBretagneAff",
+	"Haluchere"
 }
 
 function data()
@@ -88,6 +89,7 @@ return {
 					_("ui/construction/asset/gares/ChantenayAff@2x.tga"),
 					_("ui/construction/asset/gares/MontoirDeBretagne@2x.tga"),
 					_("ui/construction/asset/gares/MontoirDeBretagneAff@2x.tga"),
+					_("ui/construction/asset/gares/Haluchere@2x.tga"),
 			},
 		},
         {

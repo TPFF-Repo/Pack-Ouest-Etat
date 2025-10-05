@@ -1,0 +1,78 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 57.513305664063, 17.961114883423, 10.341220855713, },
+		bbMin = { -57.51330947876, -17.961091995239, -2.0351338751159e-15, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 57.513305664063, 17.961103439331, 5.1706104278564, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "construction/building/Haluchere/quai.mtl", },
+						mesh = "construction/building/Haluchere/quai_lod0.msh",
+						name = "quai",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.368256568909, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Quai_bande.mtl", },
+						mesh = "construction/building/Haluchere/quai_bande_lod0.msh",
+						name = "quai_bande",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.368256568909, 0, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Metal_gris.mtl", },
+						mesh = "construction/building/Haluchere/Metal_gris_lod0.msh",
+						name = "Metal_gris",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.85000038147, 8.1379413604736, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Glass.mtl", },
+						mesh = "construction/building/Haluchere/Glass_lod0.msh",
+						name = "Glass",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.85000038147, 8.1379413604736, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Solar_panel.mtl", },
+						mesh = "construction/building/Haluchere/Solar_panel_lod0.msh",
+						name = "Solar_panel",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.85000038147, 8.1379413604736, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Glass_window.mtl", },
+						mesh = "construction/building/Haluchere/Glass_window_lod0.msh",
+						name = "Glass_window",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.85000038147, 8.1379413604736, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Toit_panel.mtl", },
+						mesh = "construction/building/Haluchere/Toit_panel_lod0.msh",
+						name = "Toit_panel",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.85000038147, 8.1379413604736, 1, },
+					},
+					{
+						materials = { "construction/building/Haluchere/Bois.mtl", },
+						mesh = "construction/building/Haluchere/Bois_lod0.msh",
+						name = "Bois",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 15.85000038147, 8.1379413604736, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 11794.962890625,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end

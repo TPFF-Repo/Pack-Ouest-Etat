@@ -130,20 +130,20 @@ return {
 		transportNetworkProvider = {
 			laneLists = {
 				{
-					linkable = true,
+					linkable = false,
 					nodes = {
 						{
-							{ -60, -27.67799949646, 0.5, },
+							{ -60, -27.67799949646, 0.15000000596046, },
 							{ 142.71000671387, 0, 0, },
 							3,
 						},
 						{
-							{ 82.709999084473, -27.67799949646, 0.5, },
+							{ 0, -27.67799949646, 0.15000000596046, },
 							{ 142.71000671387, 0, 0, },
 							3,
 						},
 					},
-					speedLimit = 14,
+					speedLimit = 20,
 					transportModes = { "TRAIN", "ELECTRIC_TRAIN", },
 				},
 			},

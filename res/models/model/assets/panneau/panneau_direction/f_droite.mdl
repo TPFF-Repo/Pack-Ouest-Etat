@@ -1,0 +1,57 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.30000001192093, 0.0011342894285917, 0.054914034903049, },
+		bbMin = { -0.30000001192093, -0.0011342894285917, -0.054913997650146, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.30000001192093, 0.0011342894285917, 0.054914016276598, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/panneau/panneau_direction/f_haut/panneau_droite.mtl", },
+						mesh = "assets/panneau/panneau_direction/f_haut/panneau_destination_2_lod0.msh",
+						name = "panneau_destination_2",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 3.3625127646755e-18, -0.054913997650146, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 48.071147918701,
+		},
+	},
+	metadata = {
+		labelList = {
+			labels = {
+				{
+					alignment = "CENTER",
+					alpha = 1,
+					alphaMode = "CUTOUT",
+					childId = "",
+					color = { 1, 1, 1, },
+					filter = "NONE",
+					fitting = "SCALE",
+					nLines = 1,
+					params = { },
+					renderMode = "STD",
+					size = { 17.39999961853, 4.6100001335144, },
+					transf = { 0.0099999997764826, 0, 0, 0, 0, -4.3711387287537e-10, 0.0099999997764826, 0, 0, -0.0099999997764826, -4.3711387287537e-10, 0, 0.029999999329448, -0.0099999997764826, -0.03999999910593, 1, },
+					type = "NAME",
+					verticalAlignment = "BOTTOM",
+				},
+			},
+		},
+	},
+	version = 1,
+}
+end

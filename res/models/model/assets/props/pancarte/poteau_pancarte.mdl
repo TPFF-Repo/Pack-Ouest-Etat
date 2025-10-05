@@ -1,0 +1,36 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 0.014999999664724, 0.014999999664724, 1.25, },
+		bbMin = { -0.014999999664724, -0.014999999664724, -9.1848511875936e-19, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 0.014999999664724, 0.014999999664724, 0.625, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "assets/props/pancarte/poteau_pancarte/Poteau_pancarte.mtl", },
+						mesh = "assets/props/pancarte/poteau_pancarte/poteau_pancarte_lod0.msh",
+						name = "poteau_pancarte",
+						transf = { 1, 0, 0, 0, 0, 6.1232342629258e-17, -1, 0, 0, 1, 6.1232342629258e-17, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 67.335983276367,
+		},
+	},
+	metadata = { },
+	version = 1,
+}
+end
